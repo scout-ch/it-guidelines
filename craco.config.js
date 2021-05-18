@@ -1,4 +1,3 @@
-const CracoAntDesignPlugin = require("craco-antd");
 const CracoLessPlugin = require("craco-less");
 
 const emotionBabelPreset = require("@emotion/babel-preset-css-prop").default(
@@ -7,7 +6,7 @@ const emotionBabelPreset = require("@emotion/babel-preset-css-prop").default(
 );
 
 module.exports = {
-  plugins: [{ plugin: CracoAntDesignPlugin }, { plugin: CracoLessPlugin }],
+  plugins: [{ plugin: CracoLessPlugin }],
   babel: {
     plugins: [
       ...emotionBabelPreset.plugins
