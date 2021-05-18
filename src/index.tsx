@@ -3,33 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.less';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { css, Global } from '@emotion/react';
 
-const globalStyles = (
-  <Global
-    styles={css`
-      html {
-        height: 100%;
-      }
-
-      body {
-        min-height: 100%;
-        display: flex;
-        flex-direction: column;
-      }
-
-      #root {
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-      }
-
-      input:autofill {
-        filter: none;
-      }
-    `}
-  />
-);
 
 ReactDOM.render(
   <React.StrictMode>
