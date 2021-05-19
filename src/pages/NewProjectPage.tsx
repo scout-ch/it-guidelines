@@ -1,9 +1,19 @@
+import styled from '@emotion/styled'
 import React from 'react'
-import ClippyQuestion from '../components/ClippyQuestion'
+import ClippyStage from '../components/ClippyStage'
+
+const MainContainer = styled.main`
+  padding: 1rem;
+  height: 100%;
+`
 
 export default function NewProjectPage() {
-  return <>
+  return <MainContainer>
     <h1>Neues Projekt</h1>
-    <ClippyQuestion question="Hast du eine Idee oder bist du schon mitten in der Umsetzung" possibleAnswers={["Idee", "Umsetzung"]}></ClippyQuestion>
-  </>
+    <ClippyStage>
+      <p>
+        Hast du eine Idee oder bist du schon mitten in der Umsetzung?
+      </p>
+    </ClippyStage>
+  </MainContainer>
 }

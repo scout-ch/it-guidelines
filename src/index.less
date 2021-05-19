@@ -1,20 +1,29 @@
 @import './fonts/fonts.css';
 
-@red: #521d3a;
-@light-red: #632949;
+@color-primary: #521d3a;
+@color-primary-light: #632949;
 
 html, body {
 	font-family: "Source Sans Pro",sans-serif;
-  background-color: @red !important;
+  background-color: @color-primary !important;
+  color: white;
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
-/* colors */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .bg-primary {
-  background-color: @red !important;
+  background-color: @color-primary !important;
 }
 
 .bg-secondary {
-  background-color: @light-red !important;
+  background-color: @color-primary-light !important;
 }
 
 p, ul, li, a, span, div {
