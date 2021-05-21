@@ -1,33 +1,75 @@
-import React, { PropsWithChildren } from 'react'
+import React from 'react'
 import styled from '@emotion/styled'
+import { keyframes } from '@emotion/react'
 
-const Container = styled.div`
-  background: url("data:image/svg+xml,<svg width='779' height='468' viewBox='0 0 779 468' fill='none' xmlns='http://www.w3.org/2000/svg'><ellipse cx='389.5' cy='234' rx='389.5' ry='234' fill='rgb(255,255,255)' fill-opacity='0.5'/></svg>");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+const blink = keyframes`
+  from {
+    fill: transparent;
+  }
+  10% {
+    fill: transparent;
+  }
+  `
+
+const rolleye = keyframes`
+  from, 8%, 12%, 16%, , 20%, 30%, 50%, to  {
+    transform: translate(0, 0);
+    fill: black;
+  }
+  10%, 18% {
+    fill: transparent;
+  }
+  35%, 45% {
+    transform: translate(0, -15px)
+  }
+  `
+const focus = keyframes`
+  from, 8%, 12%, 30%, 70%, 88%, 92%, to  {
+    transform: translate(0, 0);
+    fill: black;
+  }
+  10%, 90% {
+    fill: transparent;
+  }
+  35%, 65% {
+    transform: translate(-8px, -8px)
+  }
+  `
+
+const StyledSvg = styled.svg`
+
+width: 10vh  ;
+
+  .pupil {
+    animation: ${blink} 3s ease infinite;
+    transition: translate;
+  }
+
+  &.rolleye {
+    .pupil {
+      animation: ${rolleye} 5s ease-in-out infinite;
+    }
+  }
+
+  &.focus {
+    .pupil {
+      animation: ${focus} 5s ease-in-out infinite;
+    }
+  }
 `
 
+interface ClippyProps {
+  variant?: string
+}
 
-export default function Clippy() {
-  return <svg width="91" height="248" viewBox="0 0 91 248" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g filter="url(#filter0_d)">
-      <path d="M31.0001 104C31.0001 104 31.0001 128.5 31.0001 156C31.0001 183.5 66.0001 184 66.0001 156C66.0001 128 66.0001 84.5 66.0001 40C66.0001 -4.50001 19 -9.5 19.0001 40C19.0001 89.5 19.0001 151 19.0001 199C19.0001 247 78.0001 248 78.0001 199C78.0001 150 78.0001 104 78.0001 104" stroke="#A7A7A7" stroke-width="8" />
-    </g>
-    <circle cx="20" cy="74" r="19.5" fill="url(#paint0_linear)" stroke="black" />
-    <circle cx="19.5" cy="73.5" r="4.5" fill="black" />
-    <circle cx="71" cy="74" r="19.5" fill="url(#paint1_linear)" stroke="black" />
-    <circle cx="70.5" cy="73.5" r="4.5" fill="black" />
+export default function Clippy({ variant }: ClippyProps) {
+  return <StyledSvg className={variant} viewBox="0 0 91 248" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M31 104C31 104 31 128.5 31 156C31 183.5 66 184 66 156C66 128 66 84.5 66 40C66 -4.5 19 -9.5 19 40C19 89.5 19 151 19 199C19 247 78 248 78 199C78 150 78 104 78 104" stroke="#A7A7A7" stroke-width="8" />
+    <circle className="eye" cx="20" cy="74" r="19.5" fill="url(#paint0_linear)" stroke="black" />
+    <circle className="pupil" cx="19.5" cy="73.5" r="4.5" fill="black" />
+    <circle className="eye" cx="71" cy="74" r="19.5" fill="url(#paint1_linear)" stroke="black" />
+    <circle className="pupil" cx="70.5" cy="73.5" r="4.5" fill="black" />
     <defs>
-      <filter id="filter0_d" x="11.0001" y="0.724976" width="75" height="246.651" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-        <feOffset dy="4" />
-        <feGaussianBlur stdDeviation="2" />
-        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-      </filter>
       <linearGradient id="paint0_linear" x1="11.5" y1="65" x2="29" y2="94" gradientUnits="userSpaceOnUse">
         <stop stop-color="#F2F2F2" />
         <stop offset="1" stop-color="#CECECE" />
@@ -37,6 +79,6 @@ export default function Clippy() {
         <stop offset="1" stop-color="#CECECE" />
       </linearGradient>
     </defs>
-  </svg>
+  </StyledSvg>
 
 }
