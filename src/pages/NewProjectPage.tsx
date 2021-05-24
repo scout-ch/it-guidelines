@@ -81,7 +81,7 @@ const slides: { [key: string]: Slidable } = {
 const defaultState = (): State => ({ currentSlide: 'projectPhase', clippyVariant: 'focus' })
 
 function Slide({ text, choices }: SlideProps) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
 
   return <>
