@@ -60,7 +60,21 @@ const slides: { [key: string]: Slidable } = {
   "targetAudience": (state, setState) => <Slide
     text="slides.targetAudience.question"
     choices={[
-      { text: "bundesebene", mutator: () => setState(prevState => ({ ...prevState, currentSlide: '' })) },
+      { text: "slides.targetAudience.answers.bundesebene", mutator: () => setState(prevState => ({ ...prevState, currentSlide: 'toolType' })) },
+      { text: "slides.targetAudience.answers.canton", mutator: () => setState(prevState => ({ ...prevState, currentSlide: 'toolType' })) },
+      { text: "slides.targetAudience.answers.external", mutator: () => setState(prevState => ({ ...prevState, currentSlide: 'toolType' })) },
+    ]}></Slide>,
+  "toolType": (state, setState) => <Slide
+    text="slides.toolType.question"
+    choices={[
+      { text: "slides.toolType.answers.dataProcessing", mutator: () => setState(prevState => ({ ...prevState, currentSlide: 'loginNeeded' })) },
+      { text: "slides.toolType.answers.contentOnly", mutator: () => setState(prevState => ({ ...prevState, currentSlide: 'loginNeeded' })) },
+    ]}></Slide>,
+  "loginNeeded": (state, setState) => <Slide
+    text="slides.loginNeeded.question"
+    choices={[
+      { text: "slides.loginNeeded.answers.yes", mutator: () => setState(prevState => ({ ...prevState, currentSlide: '' })) },
+      { text: "slides.loginNeeded.answers.no", mutator: () => setState(prevState => ({ ...prevState, currentSlide: '' })) },
     ]}></Slide>,
 }
 

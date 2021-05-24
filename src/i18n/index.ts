@@ -7,9 +7,37 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
   en: {
     translation: {
-      'slides.projectPhase.question': 'In welcher Phase des Projekts befindest du dich?',
-      'slides.projectPhase.answers.idea': 'Idee',
-      'slides.projectPhase.answers.implementation': 'Umsetzung'
+      slides: {
+        projectPhase: {
+          question: 'In welcher Phase des Projekts befindest du dich?',
+          answers: {
+            idea: 'Idee',
+            implementation: 'Umsetzung'
+          }
+        },
+        targetAudience: {
+          question: 'Wer ist das Zielpublikum?',
+          answers: {
+            bundesebene: 'Bundesebene',
+            canton: 'Kantone',
+            external: 'Externe (z.B. Eltern)'
+          }
+        },
+        toolType: {
+          question: 'Werden Daten verarbeitet oder werden nur Inhalte dargestellt?',
+          answers: {
+            dataProcessing: 'Daten verarbeiten',
+            contentOnly: 'Nur Inhalte'
+          }
+        },
+        loginNeeded: {
+          question: 'Muss man sich einloggen können?',
+          answers: {
+            yes: 'Ja',
+            no: 'Nein',
+          }
+        }
+      },
     }
   },
   fr: {
