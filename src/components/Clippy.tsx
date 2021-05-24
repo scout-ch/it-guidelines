@@ -3,8 +3,8 @@ import styled from '@emotion/styled'
 import { keyframes } from '@emotion/react'
 
 const blink = keyframes`
-  from {
-    fill: transparent;
+  from, 8%, 12%, to {
+    fill: black;
   }
   10% {
     fill: transparent;
@@ -64,19 +64,19 @@ interface ClippyProps {
 
 export default function Clippy({ variant }: ClippyProps) {
   return <StyledSvg className={variant} viewBox="0 0 91 248" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M31 104C31 104 31 128.5 31 156C31 183.5 66 184 66 156C66 128 66 84.5 66 40C66 -4.5 19 -9.5 19 40C19 89.5 19 151 19 199C19 247 78 248 78 199C78 150 78 104 78 104" stroke="#A7A7A7" stroke-width="8" />
+    <path d="M31 104C31 104 31 128.5 31 156C31 183.5 66 184 66 156C66 128 66 84.5 66 40C66 -4.5 19 -9.5 19 40C19 89.5 19 151 19 199C19 247 78 248 78 199C78 150 78 104 78 104" stroke="#A7A7A7" strokeWidth="8" />
     <circle className="eye" cx="20" cy="74" r="19.5" fill="url(#paint0_linear)" stroke="black" />
     <circle className="pupil" cx="19.5" cy="73.5" r="4.5" fill="black" />
     <circle className="eye" cx="71" cy="74" r="19.5" fill="url(#paint1_linear)" stroke="black" />
     <circle className="pupil" cx="70.5" cy="73.5" r="4.5" fill="black" />
     <defs>
       <linearGradient id="paint0_linear" x1="11.5" y1="65" x2="29" y2="94" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#F2F2F2" />
-        <stop offset="1" stop-color="#CECECE" />
+        <stop stopColor="#F2F2F2" />
+        <stop offset="1" stopColor="#CECECE" />
       </linearGradient>
       <linearGradient id="paint1_linear" x1="62.5" y1="65" x2="80" y2="94" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#F2F2F2" />
-        <stop offset="1" stop-color="#CECECE" />
+        <stop stopColor="#F2F2F2" />
+        <stop offset="1" stopColor="#CECECE" />
       </linearGradient>
     </defs>
   </StyledSvg>
