@@ -1,6 +1,6 @@
 {
   "name": "it-guidelines",
-  "version": "0.1.0",
+  "homepage": "https://scout-ch.github.io/it-guidelines/",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.1.2",
