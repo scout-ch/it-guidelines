@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 const MainContainer = styled.main`
   padding: 1rem;
-  height: 100%;
+  flex-grow: 1;
 `
 
 const ButtonContainer = styled.div`
@@ -51,26 +51,26 @@ interface ChoiceType {
 }
 
 const slides: { [key: string]: Slidable } = {
-  "projectPhase": (state, setState) => <Slide
+  "projectPhase": (state, setState) => <Slide key="projectPhase"
     text="slides.projectPhase.question"
     choices={[
       { text: "slides.projectPhase.answers.idea", mutator: () => setState(prevState => ({ ...prevState, projectPhase: 'idea', currentSlide: 'targetAudience' })) },
       { text: "slides.projectPhase.answers.implementation", mutator: () => setState(prevState => ({ ...prevState, projectPhase: 'implementation', currentSlide: 'targetAudience' })) },
     ]}></Slide>,
-  "targetAudience": (state, setState) => <Slide
+  "targetAudience": (state, setState) => <Slide key="targetAudience"
     text="slides.targetAudience.question"
     choices={[
       { text: "slides.targetAudience.answers.bundesebene", mutator: () => setState(prevState => ({ ...prevState, currentSlide: 'toolType' })) },
       { text: "slides.targetAudience.answers.canton", mutator: () => setState(prevState => ({ ...prevState, currentSlide: 'toolType' })) },
       { text: "slides.targetAudience.answers.external", mutator: () => setState(prevState => ({ ...prevState, currentSlide: 'toolType' })) },
     ]}></Slide>,
-  "toolType": (state, setState) => <Slide
+  "toolType": (state, setState) => <Slide key="toolType"
     text="slides.toolType.question"
     choices={[
       { text: "slides.toolType.answers.dataProcessing", mutator: () => setState(prevState => ({ ...prevState, currentSlide: 'loginNeeded' })) },
       { text: "slides.toolType.answers.contentOnly", mutator: () => setState(prevState => ({ ...prevState, currentSlide: 'loginNeeded' })) },
     ]}></Slide>,
-  "loginNeeded": (state, setState) => <Slide
+  "loginNeeded": (state, setState) => <Slide key="loginNeeded"
     text="slides.loginNeeded.question"
     choices={[
       { text: "slides.loginNeeded.answers.yes", mutator: () => setState(prevState => ({ ...prevState, currentSlide: '' })) },
