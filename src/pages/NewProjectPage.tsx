@@ -1,11 +1,15 @@
 import styled from '@emotion/styled'
-import React, { ReactNode, SetStateAction, useState } from 'react'
+import React, { useState } from 'react'
 import ClippyStage from '../components/ClippyStage'
 import { useTranslation } from 'react-i18next';
 
 const MainContainer = styled.main`
   padding: 1rem;
   flex-grow: 1;
+`
+
+const Slide = styled.section<{ show?: boolean }>`
+  display: ${props => props.show ? 'block' : 'none'};
 `
 
 const ButtonContainer = styled.div`
@@ -37,69 +41,54 @@ type State = {
   projectPhase?: "idea" | "implementation";
 }
 
-type SlideProps = {
-  text: string;
-  choices: ChoiceType[];
-}
-
-type Slidable = (state: State, setState: React.Dispatch<SetStateAction<State>>) => ReactNode
-
-interface ChoiceType {
-  // key: string;
-  text: string;
-  mutator: () => void;
-}
-
-const slides: { [key: string]: Slidable } = {
-  "projectPhase": (state, setState) => <Slide key="projectPhase"
-    text="slides.projectPhase.question"
-    choices={[
-      { text: "slides.projectPhase.answers.idea", mutator: () => setState(prevState => ({ ...prevState, projectPhase: 'idea', currentSlide: 'targetAudience' })) },
-      { text: "slides.projectPhase.answers.implementation", mutator: () => setState(prevState => ({ ...prevState, projectPhase: 'implementation', currentSlide: 'targetAudience' })) },
-    ]}></Slide>,
-  "targetAudience": (state, setState) => <Slide key="targetAudience"
-    text="slides.targetAudience.question"
-    choices={[
-      { text: "slides.targetAudience.answers.bundesebene", mutator: () => setState(prevState => ({ ...prevState, currentSlide: 'toolType' })) },
-      { text: "slides.targetAudience.answers.canton", mutator: () => setState(prevState => ({ ...prevState, currentSlide: 'toolType' })) },
-      { text: "slides.targetAudience.answers.external", mutator: () => setState(prevState => ({ ...prevState, currentSlide: 'toolType' })) },
-    ]}></Slide>,
-  "toolType": (state, setState) => <Slide key="toolType"
-    text="slides.toolType.question"
-    choices={[
-      { text: "slides.toolType.answers.dataProcessing", mutator: () => setState(prevState => ({ ...prevState, currentSlide: 'loginNeeded' })) },
-      { text: "slides.toolType.answers.contentOnly", mutator: () => setState(prevState => ({ ...prevState, currentSlide: 'loginNeeded' })) },
-    ]}></Slide>,
-  "loginNeeded": (state, setState) => <Slide key="loginNeeded"
-    text="slides.loginNeeded.question"
-    choices={[
-      { text: "slides.loginNeeded.answers.yes", mutator: () => setState(prevState => ({ ...prevState, currentSlide: '' })) },
-      { text: "slides.loginNeeded.answers.no", mutator: () => setState(prevState => ({ ...prevState, currentSlide: '' })) },
-    ]}></Slide>,
-}
 
 const defaultState = (): State => ({ currentSlide: 'projectPhase', clippyVariant: 'focus' })
 
-function Slide({ text, choices }: SlideProps) {
-  const { t } = useTranslation();
-
-
-  return <>
-    <p>{t(text)}</p>
-    <ButtonContainer>
-      {choices.map(choice => <Button onClick={() => choice.mutator()} type="button">{t(choice.text)}</Button>)}
-    </ButtonContainer>
-  </>
-}
-
 export default function NewProjectPage() {
   const [state, setState] = useState<State>(defaultState)
-  const slide = slides[state.currentSlide]
+  const { t } = useTranslation()
+  const isCurrentSlide = (slide: string) => state.currentSlide === slide;
 
   return <MainContainer>
     <h1>Neues Projekt</h1>
-    {<ClippyStage variant={state.clippyVariant}>
-      {slide != null && slide(state, setState)}
-    </ClippyStage>}
-  </MainContainer>
+    <ClippyStage variant={state.clippyVariant}>
+      <Slide show={isCurrentSlide("projectPhase")}>
+        {t("slides.projectPhase.question")}
+        <ButtonContainer>
+          <Button onClick={() => setState(prevState => ({ ...prevState, projectPhase: 'idea', currentSlide: 'targetAudience' }))}>{t("slides.projectPhase.answers.idea")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, projectPhase: 'implementation', currentSlide: 'targetAudience' }))}>{t("slides.projectPhase.answers.implementation")}</Button>
+        </ButtonContainer>
+      </Slide>
+      <Slide show={isCurrentSlide("targetAudience")}>
+        {t("slides.targetAudience.question")}
+        <ButtonContainer>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'toolType', targetAudience: "bundesebene" }))}>{t("slides.targetAudience.answers.bundesebene")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'toolType', targetAudience: "canton" }))}>{t("slides.targetAudience.answers.canton")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'toolType', targetAudience: "external" }))}>{t("slides.targetAudience.answers.external")}</Button>
+        </ButtonContainer>
+      </Slide>
+      <Slide show={isCurrentSlide("toolType")}>
+        {t("slides.toolType.question")}
+        <ButtonContainer>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'loginNeeded', toolType: "dataProcessing" }))}>{t("slides.toolType.answers.dataProcessing")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'loginNeeded', toolType: "contentOnly" }))}>{t("slides.toolType.answers.contentOnly")}</Button>
+        </ButtonContainer>
+      </Slide>
+      <Slide show={isCurrentSlide("loginNeeded")}>
+        {t("slides.loginNeeded.question")}
+        <ButtonContainer>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'evaluation' }))}>{t("slides.loginNeeded.answers.yes")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'evaluation' }))}>{t("slides.loginNeeded.answers.no")}</Button>
+        </ButtonContainer>
+      </Slide>
+      <Slide show={isCurrentSlide("evaluation")}>
+        <p>{t("slides.evaluation.text")}</p>
+        <code>{JSON.stringify(state)}</code>
+        <ul>
+          <li></li>
+        </ul>
+      </Slide>
+
+    </ClippyStage >
+  </MainContainer >
 }

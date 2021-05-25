@@ -17,14 +17,16 @@
 
   // Add the IDs of extensions you want installed when the container is created.
   "extensions": [
-    "esbenp.prettier-vscode",
-    "eamodio.gitlens",
-    "mgmcdermott.vscode-language-babel",
-    "dbaeumer.vscode-eslint",
-    "jpoissonnier.vscode-styled-components",
-    "graphql.vscode-graphql",
-    "lokalise.i18n-ally"
-  ],
+	"esbenp.prettier-vscode",
+	"eamodio.gitlens",
+	"mgmcdermott.vscode-language-babel",
+	"dbaeumer.vscode-eslint",
+	"jpoissonnier.vscode-styled-components",
+	"graphql.vscode-graphql",
+	"lokalise.i18n-ally",
+	"wix.vscode-import-cost",
+	"ijs.emotionsnippets"
+],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
