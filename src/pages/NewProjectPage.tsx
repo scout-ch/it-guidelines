@@ -53,14 +53,14 @@ export default function NewProjectPage() {
     <h1>Neues Projekt</h1>
     <ClippyStage variant={state.clippyVariant}>
       <Slide show={isCurrentSlide("projectPhase")}>
-        {t("slides.projectPhase.question")}
+        <p>{t("slides.projectPhase.question")}</p>
         <ButtonContainer>
           <Button onClick={() => setState(prevState => ({ ...prevState, projectPhase: 'idea', currentSlide: 'targetAudience' }))}>{t("slides.projectPhase.answers.idea")}</Button>
           <Button onClick={() => setState(prevState => ({ ...prevState, projectPhase: 'implementation', currentSlide: 'targetAudience' }))}>{t("slides.projectPhase.answers.implementation")}</Button>
         </ButtonContainer>
       </Slide>
       <Slide show={isCurrentSlide("targetAudience")}>
-        {t("slides.targetAudience.question")}
+        <p>{t("slides.targetAudience.question")}</p>
         <ButtonContainer>
           <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'toolType', targetAudience: "bundesebene" }))}>{t("slides.targetAudience.answers.bundesebene")}</Button>
           <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'toolType', targetAudience: "canton" }))}>{t("slides.targetAudience.answers.canton")}</Button>
@@ -68,14 +68,14 @@ export default function NewProjectPage() {
         </ButtonContainer>
       </Slide>
       <Slide show={isCurrentSlide("toolType")}>
-        {t("slides.toolType.question")}
+        <p>{t("slides.toolType.question")}</p>
         <ButtonContainer>
           <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'loginNeeded', toolType: "dataProcessing" }))}>{t("slides.toolType.answers.dataProcessing")}</Button>
           <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'loginNeeded', toolType: "contentOnly" }))}>{t("slides.toolType.answers.contentOnly")}</Button>
         </ButtonContainer>
       </Slide>
       <Slide show={isCurrentSlide("loginNeeded")}>
-        {t("slides.loginNeeded.question")}
+        <p>{t("slides.loginNeeded.question")}</p>
         <ButtonContainer>
           <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'evaluation' }))}>{t("slides.loginNeeded.answers.yes")}</Button>
           <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'evaluation' }))}>{t("slides.loginNeeded.answers.no")}</Button>
