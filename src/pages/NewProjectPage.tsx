@@ -55,8 +55,8 @@ export default function NewProjectPage() {
       <Slide show={isCurrentSlide("projectPhase")}>
         <p>{t("slides.projectPhase.question")}</p>
         <ButtonContainer>
-          <Button onClick={() => setState(prevState => ({ ...prevState, projectPhase: 'idea', currentSlide: 'targetAudience' }))}>{t("slides.projectPhase.answers.idea")}</Button>
-          <Button onClick={() => setState(prevState => ({ ...prevState, projectPhase: 'implementation', currentSlide: 'targetAudience' }))}>{t("slides.projectPhase.answers.implementation")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'targetAudience', projectPhase: 'idea' }))}>{t("slides.projectPhase.answers.idea")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'targetAudience', projectPhase: 'implementation' }))}>{t("slides.projectPhase.answers.implementation")}</Button>
         </ButtonContainer>
       </Slide>
       <Slide show={isCurrentSlide("targetAudience")}>
@@ -70,15 +70,47 @@ export default function NewProjectPage() {
       <Slide show={isCurrentSlide("toolType")}>
         <p>{t("slides.toolType.question")}</p>
         <ButtonContainer>
-          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'loginNeeded', toolType: "dataProcessing" }))}>{t("slides.toolType.answers.dataProcessing")}</Button>
-          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'loginNeeded', toolType: "contentOnly" }))}>{t("slides.toolType.answers.contentOnly")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'sensitiveData', toolType: "dataProcessing" }))}>{t("slides.toolType.answers.dataProcessing")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'sensitiveData', toolType: "contentOnly" }))}>{t("slides.toolType.answers.contentOnly")}</Button>
+        </ButtonContainer>
+      </Slide>
+      <Slide show={isCurrentSlide("sensitiveData")}>
+        <p>{t("slides.sensitiveData.question")}</p>
+        <ButtonContainer>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'loginNeeded', sensitiveData: "yes" }))}>{t("slides.sensitiveData.answers.yes")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'loginNeeded', sensitiveData: "no" }))}>{t("slides.sensitiveData.answers.no")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'loginNeeded', sensitiveData: "maybe" }))}>{t("slides.sensitiveData.answers.maybe")}</Button>
         </ButtonContainer>
       </Slide>
       <Slide show={isCurrentSlide("loginNeeded")}>
         <p>{t("slides.loginNeeded.question")}</p>
         <ButtonContainer>
-          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'evaluation' }))}>{t("slides.loginNeeded.answers.yes")}</Button>
-          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'evaluation' }))}>{t("slides.loginNeeded.answers.no")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'apiNedded' }))}>{t("slides.loginNeeded.answers.yes")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'apiNedded' }))}>{t("slides.loginNeeded.answers.no")}</Button>
+        </ButtonContainer>
+      </Slide>
+      <Slide show={isCurrentSlide("apiNedded")}>
+        <p>{t("slides.apiNedded.question")}</p>
+        <ButtonContainer>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'similarToolAvailable', apiNedded: "midata" }))}>{t("slides.apiNedded.answers.midata")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'similarToolAvailable', apiNedded: "other" }))}>{t("slides.apiNedded.answers.other")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'similarToolAvailable', apiNedded: "no" }))}>{t("slides.apiNedded.answers.no")}</Button>
+        </ButtonContainer>
+      </Slide>
+      <Slide show={isCurrentSlide("similarToolAvailable")}>
+        <p>{t("slides.similarToolAvailable.question")}</p>
+        <ButtonContainer>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'responsibility', similarToolAvailable: "yes" }))}>{t("slides.similarToolAvailable.answers.yes")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'responsibility', similarToolAvailable: "no" }))}>{t("slides.similarToolAvailable.answers.no")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'responsibility', similarToolAvailable: "maybe" }))}>{t("slides.similarToolAvailable.answers.maybe")}</Button>
+        </ButtonContainer>
+      </Slide>
+      <Slide show={isCurrentSlide("responsibility")}>
+        <p>{t("slides.responsibility.question")}</p>
+        <ButtonContainer>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'evaluation', responsibility: "yes" }))}>{t("slides.responsibility.answers.yes")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'evaluation', responsibility: "no" }))}>{t("slides.responsibility.answers.no")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'evaluation', responsibility: "maybe" }))}>{t("slides.responsibility.answers.maybe")}</Button>
         </ButtonContainer>
       </Slide>
       <Slide show={isCurrentSlide("evaluation")}>

@@ -36,6 +36,38 @@ const resources = {
             yes: 'Ja',
             no: 'Nein',
           }
+        },
+        sensitiveData: {
+          question: 'Werden schützenswerte Daten verarbeitet?',
+          answers: {
+            yes: 'Ja',
+            no: 'Nein',
+            maybe: 'Glaubs nöd'
+          }
+        },
+        apiNedded: {
+          question: 'Werden Daten von anderen IT-Tools benötigt?',
+          answers: {
+            midata: 'Ja, von der MiData',
+            other: 'Ein anderes Tool',
+            no: 'Nein, braucht es nicht'
+          }
+        },
+        similarToolAvailable: {
+          question: 'Gibt es bereits ein ähnliches Tool in dieser Art (gratis oder kostenpflichtig)?',
+          answers: {
+            yes: 'Ja, das gibts',
+            no: 'Nein, gibt es nicht',
+            maybe: 'Keine Ahnung'
+          }
+        },
+        responsibility: {
+          question: 'Ist eine verantwortliche Person definiert?',
+          answers: {
+            yes: 'Ja, ist klar',
+            no: 'Nein, noch nicht',
+            maybe: 'Wir brauchen das nicht'
+          }
         }
       },
     }
