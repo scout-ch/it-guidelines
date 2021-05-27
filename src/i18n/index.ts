@@ -45,7 +45,7 @@ const resources = {
             maybe: 'Glaubs nöd'
           }
         },
-        apiNedded: {
+        apiNeeded: {
           question: 'Werden Daten von anderen IT-Tools benötigt?',
           answers: {
             midata: 'Ja, von der MiData',

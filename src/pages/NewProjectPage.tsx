@@ -43,11 +43,10 @@ type State = {
   toolType?: "dataProcessing" | "contentOnly"
   sensitiveData?: "yes" | "no" | "maybe"
   loginNeeded?: "yes" | "no"
-  apiNedded?: "midata" | "other" | "no"
+  apiNeeded?: "midata" | "other" | "no"
   similarToolAvailable?: "yes" | "no" | "maybe"
   responsibility?: "yes" | "no" | "maybe"
 }
-
 
 const defaultState = (): State => ({ currentSlide: 'projectPhase', clippyVariant: 'focus' })
 
@@ -92,16 +91,16 @@ export default function NewProjectPage() {
       <Slide show={isCurrentSlide("loginNeeded")}>
         <p>{t("slides.loginNeeded.question")}</p>
         <ButtonContainer>
-          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'apiNedded', loginNeeded: "yes" }))}>{t("slides.loginNeeded.answers.yes")}</Button>
-          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'apiNedded', loginNeeded: "no" }))}>{t("slides.loginNeeded.answers.no")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'apiNeeded', loginNeeded: "yes" }))}>{t("slides.loginNeeded.answers.yes")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'apiNeeded', loginNeeded: "no" }))}>{t("slides.loginNeeded.answers.no")}</Button>
         </ButtonContainer>
       </Slide>
-      <Slide show={isCurrentSlide("apiNedded")}>
-        <p>{t("slides.apiNedded.question")}</p>
+      <Slide show={isCurrentSlide("apiNeeded")}>
+        <p>{t("slides.apiNeeded.question")}</p>
         <ButtonContainer>
-          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'similarToolAvailable', apiNedded: "midata" }))}>{t("slides.apiNedded.answers.midata")}</Button>
-          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'similarToolAvailable', apiNedded: "other" }))}>{t("slides.apiNedded.answers.other")}</Button>
-          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'similarToolAvailable', apiNedded: "no" }))}>{t("slides.apiNedded.answers.no")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'similarToolAvailable', apiNeeded: "midata" }))}>{t("slides.apiNeeded.answers.midata")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'similarToolAvailable', apiNeeded: "other" }))}>{t("slides.apiNeeded.answers.other")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'similarToolAvailable', apiNeeded: "no" }))}>{t("slides.apiNeeded.answers.no")}</Button>
         </ButtonContainer>
       </Slide>
       <Slide show={isCurrentSlide("similarToolAvailable")}>
@@ -123,9 +122,26 @@ export default function NewProjectPage() {
       <Slide show={isCurrentSlide("evaluation")}>
         <p>{t("slides.evaluation.text")}</p>
         <code>{JSON.stringify(state)}</code>
+        <h2>ToDo</h2>
         <ul>
-          <li></li>
+          <li>Kontakt aufnehmen mit der ITKom</li>
+          {state["responsibility"] !== 'yes' && (<li>Verantwortliche Person definieren</li>)}
+          {state["apiNeeded"] === 'midata' && (<li>Definieren welche Daten von der MiData benötigt werden</li>)}
+          {state["similarToolAvailable"] === 'maybe' && (<li>Herausfinden ob es nicht doch schon ähnliche Tools gibt</li>)}
+          {(state["loginNeeded"] === 'no' && state["sensitiveData"] === 'yes') && 
+           (<li>Abklären ob es wirklich kein Login braucht</li>)}
         </ul>
+        
+        <h2>Antworten</h2>
+        {console.log(state)}
+          <p><em>{t('slides.projectPhase.question')}:</em><br/> {t(`slides.projectPhase.answers.${state.projectPhase}`)}</p>
+          <p><em>{t('slides.targetAudience.question')}:</em><br/> {t(`slides.targetAudience.answers.${state.targetAudience}`)}</p>
+          <p><em>{t('slides.toolType.question')}:</em><br/> {t(`slides.toolType.answers.${state.toolType}`)}</p>
+          <p><em>{t('slides.sensitiveData.question')}:</em><br/> {t(`slides.sensitiveData.answers.${state.sensitiveData}`)}</p>
+          <p><em>{t('slides.loginNeeded.question')}:</em><br/> {t(`slides.loginNeeded.answers.${state.loginNeeded}`)}</p>
+          <p><em>{t('slides.apiNeeded.question')}:</em><br/> {t(`slides.apiNeeded.answers.${state.apiNeeded}`)}</p>
+          <p><em>{t('slides.similarToolAvailable.question')}:</em><br/> {t(`slides.similarToolAvailable.answers.${state.similarToolAvailable}`)}</p>
+          <p><em>{t('slides.responsibility.question')}:</em><br/> {t(`slides.responsibility.answers.${state.responsibility}`)}</p>
       </Slide>
 
     </ClippyStage >
