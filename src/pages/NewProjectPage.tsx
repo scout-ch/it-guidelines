@@ -39,6 +39,13 @@ type State = {
   currentSlide: string;
   clippyVariant: "" | "focus" | "rolleye";
   projectPhase?: "idea" | "implementation";
+  targetAudience?: "bundesebene" | "canton" | "external"
+  toolType?: "dataProcessing" | "contentOnly"
+  sensitiveData?: "yes" | "no" | "maybe"
+  loginNeeded?: "yes" | "no"
+  apiNedded?: "midata" | "other" | "no"
+  similarToolAvailable?: "yes" | "no" | "maybe"
+  responsibility?: "yes" | "no" | "maybe"
 }
 
 
@@ -85,8 +92,8 @@ export default function NewProjectPage() {
       <Slide show={isCurrentSlide("loginNeeded")}>
         <p>{t("slides.loginNeeded.question")}</p>
         <ButtonContainer>
-          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'apiNedded' }))}>{t("slides.loginNeeded.answers.yes")}</Button>
-          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'apiNedded' }))}>{t("slides.loginNeeded.answers.no")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'apiNedded', loginNeeded: "yes" }))}>{t("slides.loginNeeded.answers.yes")}</Button>
+          <Button onClick={() => setState(prevState => ({ ...prevState, currentSlide: 'apiNedded', loginNeeded: "no" }))}>{t("slides.loginNeeded.answers.no")}</Button>
         </ButtonContainer>
       </Slide>
       <Slide show={isCurrentSlide("apiNedded")}>
