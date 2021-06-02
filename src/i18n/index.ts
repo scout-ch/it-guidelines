@@ -9,67 +9,70 @@ const resources = {
     translation: {
       slides: {
         projectPhase: {
-          question: 'In welcher Phase des Projekts befindest du dich?',
-          answers: {
+          text: 'In welcher Phase des Projekts befindest du dich?',
+          buttons: {
             idea: 'Idee',
             implementation: 'Umsetzung'
           }
         },
         targetAudience: {
-          question: 'Wer ist das Zielpublikum?',
-          answers: {
+          text: 'Wer ist das Zielpublikum?',
+          buttons: {
             bundesebene: 'Bundesebene',
             canton: 'Kantone',
             external: 'Externe (z.B. Eltern)'
           }
         },
         toolType: {
-          question: 'Werden Daten verarbeitet oder werden nur Inhalte dargestellt?',
-          answers: {
+          text: 'Werden Daten verarbeitet oder werden nur Inhalte dargestellt?',
+          buttons: {
             dataProcessing: 'Daten verarbeiten',
             contentOnly: 'Nur Inhalte'
           }
         },
         loginNeeded: {
-          question: 'Muss man sich einloggen können?',
-          answers: {
+          text: 'Muss man sich einloggen können?',
+          buttons: {
             yes: 'Ja',
-            no: 'Nein',
+            no: 'Nein'
           }
         },
         sensitiveData: {
-          question: 'Werden schützenswerte Daten verarbeitet?',
-          answers: {
+          text: 'Werden schützenswerte Daten verarbeitet?',
+          buttons: {
             yes: 'Ja',
             no: 'Nein',
             maybe: 'Glaubs nöd'
           }
         },
-        apiNeeded: {
-          question: 'Werden Daten von anderen IT-Tools benötigt?',
-          answers: {
+        apiNedded: {
+          text: 'Werden Daten von anderen IT-Tools benötigt?',
+          buttons: {
             midata: 'Ja, von der MiData',
             other: 'Ein anderes Tool',
             no: 'Nein, braucht es nicht'
           }
         },
         similarToolAvailable: {
-          question: 'Gibt es bereits ein ähnliches Tool in dieser Art (gratis oder kostenpflichtig)?',
-          answers: {
+          text: 'Gibt es bereits ein ähnliches Tool in dieser Art (gratis oder kostenpflichtig)?',
+          buttons: {
             yes: 'Ja, das gibts',
             no: 'Nein, gibt es nicht',
             maybe: 'Keine Ahnung'
           }
         },
+        similarToolAvailableMaybe: {
+          text: ''
+        },
         responsibility: {
-          question: 'Ist eine verantwortliche Person definiert?',
-          answers: {
+          text: 'Ist eine verantwortliche Person definiert?',
+          buttons: {
             yes: 'Ja, ist klar',
             no: 'Nein, noch nicht',
             maybe: 'Wir brauchen das nicht'
           }
         }
-      },
+      }
     }
   },
   fr: {

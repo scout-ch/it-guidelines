@@ -10,7 +10,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   max-width: 800px;
   margin: 0 auto;
 `
@@ -30,7 +30,7 @@ const ClippyContainer = styled.div`
 `
 
 type ClippyStageProps = PropsWithChildren<{
-  variant?: string;
+  variant?: "" | "focus" | "rolleye" | 'angry';
 }>
 
 export default function ClippyStage({ children, variant }: ClippyStageProps) {

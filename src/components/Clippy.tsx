@@ -38,7 +38,10 @@ const focus = keyframes`
 
 const svgStyles = css`
 
-width: 10vh  ;
+width: 10vh;
+.brows {
+  opacity: 0;
+}
 
   .pupil {
     animation: ${blink} 3s ease infinite;
@@ -56,10 +59,19 @@ width: 10vh  ;
       animation: ${focus} 5s ease-in-out infinite;
     }
   }
+
+  &.angry {
+    .brows {
+      opacity: 1;
+    }
+    .pupil {
+      animation: ${focus} 5s ease-in-out infinite;
+    }
+  }
 `
 
 interface ClippyProps {
-  variant?: string
+  variant?: "" | "focus" | "rolleye" | 'angry';
 }
 
 export default function Clippy({ variant }: ClippyProps) {
@@ -69,6 +81,8 @@ export default function Clippy({ variant }: ClippyProps) {
     <circle className="pupil" cx="19.5" cy="73.5" r="4.5" fill="black" />
     <circle className="eye" cx="71" cy="74" r="19.5" fill="url(#paint1_linear)" stroke="black" />
     <circle className="pupil" cx="70.5" cy="73.5" r="4.5" fill="black" />
+    <path className="brows" d="M4 36L38 60" stroke="black" strokeWidth="8" strokeLinecap="round" />
+    <path className="brows" d="M89 36L55 60" stroke="black" strokeWidth="8" strokeLinecap="round" />
     <defs>
       <linearGradient id="paint0_linear" x1="11.5" y1="65" x2="29" y2="94" gradientUnits="userSpaceOnUse">
         <stop stopColor="#F2F2F2" />
