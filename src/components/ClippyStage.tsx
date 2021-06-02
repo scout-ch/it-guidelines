@@ -8,7 +8,6 @@ const Container = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
-  flex-direction: column;
   height: 100%;
   justify-content: space-between;
   max-width: 800px;
@@ -22,11 +21,14 @@ const ContentContainer = styled.div`
   color: black;
   padding: 1em;
   margin-bottom: 2em;
+  margin-right: 1em;
   width: 80%;
 `
 
 const ClippyContainer = styled.div`
-  text-align: right;
+position: sticky;
+top: 40vh;
+align-self: flex-start;
 `
 
 type ClippyStageProps = PropsWithChildren<{

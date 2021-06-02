@@ -37,8 +37,7 @@ const focus = keyframes`
   `
 
 const svgStyles = css`
-
-width: 10vh;
+width: 8vh;
 .brows {
   opacity: 0;
 }
