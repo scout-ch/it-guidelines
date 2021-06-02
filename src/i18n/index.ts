@@ -7,7 +7,24 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
   en: {
     translation: {
+      new_project_page: {
+        title: 'Neues Projekt'
+      },
       slides: {
+        evaluation: {
+          text: 'Danke fürs ausfüllen.',
+          todo: {
+            title: 'ToDo',
+            contact_itkom: 'Kontakt aufnehmen mit der IT-Kom',
+            define_po: 'Verantwortliche Person definieren',
+            define_api_consumption: 'Definieren welche Daten von der MiData benötigt werden',
+            check_existing: 'Herausfinden ob es nicht doch schon ähnliche Tools gibt',
+            check_login: 'Abklären ob es wirklich kein Login braucht'
+          },
+          answers: {
+            title: 'Antworten'
+          }
+        },
         projectPhase: {
           text: 'In welcher Phase des Projekts befindest du dich?',
           buttons: {
@@ -45,7 +62,7 @@ const resources = {
             maybe: 'Glaubs nöd'
           }
         },
-        apiNedded: {
+        apiNeeded: {
           text: 'Werden Daten von anderen IT-Tools benötigt?',
           buttons: {
             midata: 'Ja, von der MiData',
@@ -62,7 +79,10 @@ const resources = {
           }
         },
         similarToolAvailableMaybe: {
-          text: ''
+          text: 'Dann kläre das doch bitte zuerst ab, bevor du ein neues Projekt startest!',
+          buttons: {
+            ok: 'Ok'
+          }
         },
         responsibility: {
           text: 'Ist eine verantwortliche Person definiert?',
