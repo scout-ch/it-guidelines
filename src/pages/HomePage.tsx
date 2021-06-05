@@ -2,7 +2,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { MainContainer } from '../App'
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 export default function HomePage() {
   const { t } = useTranslation()

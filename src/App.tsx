@@ -29,7 +29,15 @@ const Footer = styled.footer`
 `
 
 const Right = styled.div`
-  float: right
+  float: right;
+`
+
+const Button = styled.button`
+  border: none;
+  background: none;
+  font-size: 20px;
+  color: white;
+  padding: 14px 5px;
 `
 
 export const MainContainer = styled.main`
@@ -46,8 +54,8 @@ const Header = () => {
     <NavUl role="nav">
       <NavLi><Link to="/home">home</Link></NavLi>
       <NavLi><Link to="/new-project">new project</Link></NavLi>
-      <Right><NavLi><a onClick={() => changeLanguage('de')}>DE</a></NavLi></Right>
-      <Right><NavLi><a onClick={() => changeLanguage('fr')}>FR</a></NavLi></Right>
+      <Right><NavLi><Button onClick={() => changeLanguage('de')}>DE</Button></NavLi></Right>
+      <Right><NavLi><Button onClick={() => changeLanguage('fr')}>FR</Button></NavLi></Right>
     </NavUl>
   </div>
 }
