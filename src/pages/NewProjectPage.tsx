@@ -3,11 +3,7 @@ import React, { useState } from 'react'
 import ClippyStage from '../components/ClippyStage'
 import { useTranslation, Trans } from 'react-i18next';
 import { Helmet } from 'react-helmet'
-
-const MainContainer = styled.main`
-  padding: 1rem;
-  flex-grow: 1;
-`
+import { MainContainer } from '../App'
 
 const Slide = styled.section<{ show?: boolean }>`
   display: ${props => props.show ? 'block' : 'none'};
@@ -63,7 +59,7 @@ export default function NewProjectPage() {
     <Helmet>
       <title>{t('new_project_page.title')}</title>
     </Helmet>
-    <h1>Neues Projekt</h1>
+    <h1>{t('new_project_page.title')}</h1>
     <ClippyStage variant={state.clippyVariant}>
       <Slide show={isCurrentSlide("projectPhase")}>
         <p>{t("slides.projectPhase.text")}</p>
