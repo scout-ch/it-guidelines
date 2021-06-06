@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage'
 import FooterImage from './images/footer.svg'
 import i18n from './i18n';
 import { withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import {
   BrowserRouter as Router,
   Switch,
@@ -38,6 +39,11 @@ const Button = styled.button`
   font-size: 20px;
   color: white;
   padding: 14px 5px;
+
+  &:hover {
+    color: white;
+    opacity: 0.5;
+  }
 `
 
 export const MainContainer = styled.main`
@@ -49,13 +55,15 @@ const Header = () => {
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
   }
-  
+  const { t } = useTranslation()
+  const lang = i18n.language
+
   return <div className='nav'>
     <NavUl role="nav">
-      <NavLi><Link to="/home">home</Link></NavLi>
-      <NavLi><Link to="/new-project">new project</Link></NavLi>
-      <Right><NavLi><Button onClick={() => changeLanguage('de')}>DE</Button></NavLi></Right>
-      <Right><NavLi><Button onClick={() => changeLanguage('fr')}>FR</Button></NavLi></Right>
+      <NavLi><Link to="/home">{t('home_page.title')}</Link></NavLi>
+      <NavLi><Link to="/new-project">{t('new_project_page.title')}</Link></NavLi>
+      <Right><NavLi><Button className={lang === 'de' ? 'active' : ''} onClick={() => changeLanguage('de')}>DE</Button></NavLi></Right>
+      <Right><NavLi><Button className={lang === 'fr' ? 'active' : ''} onClick={() => changeLanguage('fr')}>FR</Button></NavLi></Right>
     </NavUl>
   </div>
 }
