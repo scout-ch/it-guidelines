@@ -32,14 +32,13 @@ body {
 }
 
 a {
-  color: white;
+  color: @color-primary;
   opacity: 1;
 }
 a:focus,
 a:hover,
 a:active,
 a.active {
-  color: white;
   opacity: 0.5;
 }
 
@@ -98,21 +97,5 @@ div {
   div,
   h2 .btn {
     font-size: 20px;
-  }
-}
-
-.nav {
-  background-color: @color-primary;
-
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  .active {
-    text-decoration: underline;
   }
 }

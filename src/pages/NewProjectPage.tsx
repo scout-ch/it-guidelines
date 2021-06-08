@@ -7,12 +7,15 @@ import { MainContainer } from '../App'
 
 const Slide = styled.section<{ show?: boolean }>`
   display: ${props => props.show ? 'block' : 'none'};
-  word-break: break-all;
 `
 
 const ButtonContainer = styled.div`
-  margin-top: 1.5em;
   display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 420px) {
+    flex-direction: column;
+  }
 `
 
 const Button = styled.button`
@@ -24,13 +27,11 @@ const Button = styled.button`
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  margin: 0.25em;
 
   &:hover {
-    background-color: #EEE;
-  }
-
-  & + & {
-    margin-left: 1em;
+    /* background-color: #eee; */
+    outline: 3px solid var(--color-primary)
   }
 `
 
@@ -38,7 +39,7 @@ type State = {
   currentSlide: string;
   clippyVariant: "" | "focus" | "rolleye" | 'angry';
   projectPhase?: "idea" | "implementation";
-  targetAudience?: "bundesebene" | "canton" | "external"
+  targetAudience?: "bundesebene" | "canton" | "external" | "leaders" | "participants"
   toolType?: "dataProcessing" | "contentOnly"
   sensitiveData?: "yes" | "no" | "maybe"
   loginNeeded?: "yes" | "no"
@@ -73,6 +74,8 @@ export default function NewProjectPage() {
         <ButtonContainer>
           <Button type="button" onClick={() => updateState({ currentSlide: 'toolType', targetAudience: "bundesebene" })}>{t("slides.targetAudience.buttons.bundesebene")}</Button>
           <Button type="button" onClick={() => updateState({ currentSlide: 'toolType', targetAudience: "canton" })}>{t("slides.targetAudience.buttons.canton")}</Button>
+          <Button type="button" onClick={() => updateState({ currentSlide: 'toolType', targetAudience: "leaders" })}>{t("slides.targetAudience.buttons.leaders")}</Button>
+          <Button type="button" onClick={() => updateState({ currentSlide: 'toolType', targetAudience: "participants" })}>{t("slides.targetAudience.buttons.participants")}</Button>
           <Button type="button" onClick={() => updateState({ currentSlide: 'toolType', targetAudience: "external" })}> {t("slides.targetAudience.buttons.external")}</Button >
         </ButtonContainer >
       </Slide >
@@ -134,7 +137,7 @@ export default function NewProjectPage() {
         <p>{t("slides.evaluation.text")}</p>
         <h2>{t("slides.evaluation.todo.title")}</h2>
         <ul>
-          <li>{t("slides.evaluation.todo.contact_itkom")}</li>
+          <li><a href="mailto:itkom@example.com">{t("slides.evaluation.todo.contact_itkom")}</a></li>
           {state["responsibility"] !== 'yes' && <li>{t("slides.evaluation.todo.define_po")}</li>}
           {state["apiNeeded"] === 'midata' && <li>{t("slides.evaluation.todo.define_api_consumption")}</li>}
           {state["similarToolAvailable"] === 'maybe' && <li>{t("slides.evaluation.todo.check_existing")}</li>}

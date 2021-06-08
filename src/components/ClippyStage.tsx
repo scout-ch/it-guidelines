@@ -26,9 +26,9 @@ const ContentContainer = styled.div`
 `
 
 const ClippyContainer = styled.div`
-position: sticky;
-top: 40vh;
-align-self: flex-start;
+  position: sticky;
+  top: 40vh;
+  align-self: flex-start;
 `
 
 type ClippyStageProps = PropsWithChildren<{

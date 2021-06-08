@@ -13,14 +13,41 @@ import {
   Link,
 } from "react-router-dom";
 
-const NavUl = styled.ul`
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-`
-const NavLi = styled.li`
-  float: left;
+const Nav = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-primary);
+
+  &>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+  }
+
+  a, button {
+    color: white;
+    opacity: 1;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  a:focus, button:focus,
+  a:hover, button:hover,
+  a:active, button:active,
+  a.active, button.active {
+    color: white;
+    opacity: 0.5;
+  }
+
+  .active {
+    text-decoration: underline;
+  }
+}
 `
 
 const Footer = styled.footer`
@@ -29,16 +56,10 @@ const Footer = styled.footer`
   height: 236px;
 `
 
-const Right = styled.div`
-  float: right;
-`
-
 const Button = styled.button`
   border: none;
   background: none;
-  font-size: 20px;
   color: white;
-  padding: 14px 5px;
 
   &:hover {
     color: white;
@@ -59,12 +80,16 @@ const Header = () => {
   const lang = i18n.language
 
   return <div className='nav'>
-    <NavUl role="nav">
-      <NavLi><Link to="/home">{t('home_page.title')}</Link></NavLi>
-      <NavLi><Link to="/new-project">{t('new_project_page.title')}</Link></NavLi>
-      <Right><NavLi><Button className={lang === 'de' ? 'active' : ''} onClick={() => changeLanguage('de')}>DE</Button></NavLi></Right>
-      <Right><NavLi><Button className={lang === 'fr' ? 'active' : ''} onClick={() => changeLanguage('fr')}>FR</Button></NavLi></Right>
-    </NavUl>
+    <Nav role="nav">
+      <ul>
+        <li><Link to="/home">{t('home_page.title')}</Link></li>
+        <li><Link to="/new-project">{t('new_project_page.title')}</Link></li>
+      </ul>
+      <ul>
+        <li><Button className={lang === 'de' ? 'active' : ''} onClick={() => changeLanguage('de')}>DE</Button></li>
+        <li><Button className={lang === 'fr' ? 'active' : ''} onClick={() => changeLanguage('fr')}>FR</Button></li>
+      </ul>
+    </Nav>
   </div>
 }
 

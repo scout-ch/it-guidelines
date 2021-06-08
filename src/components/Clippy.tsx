@@ -37,10 +37,10 @@ const focus = keyframes`
   `
 
 const svgStyles = css`
-width: 8vh;
-.brows {
-  opacity: 0;
-}
+  width: 8vh;
+  .brows {
+    opacity: 0;
+  }
 
   .pupil {
     animation: ${blink} 3s ease infinite;

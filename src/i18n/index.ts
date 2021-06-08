@@ -39,7 +39,9 @@ const resources = {
           text: 'Wer ist das Zielpublikum?',
           buttons: {
             bundesebene: 'Bundesebene',
-            canton: 'Kantone',
+            canton: 'Kantone, Regionen',
+            leaders: 'Leitende',
+            participants: 'Pfadi',
             external: 'Externe (z.B. Eltern)'
           }
         },
@@ -102,7 +104,7 @@ const resources = {
     translation: {
       home_page: {
         title: 'Lignes directrices IT'
-      },
+      }
     }
   }
 };
