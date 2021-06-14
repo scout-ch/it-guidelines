@@ -82,8 +82,8 @@ const Header = () => {
   return <div className='nav'>
     <Nav role="nav">
       <ul>
-        <li><Link to="/home">{t('home_page.title')}</Link></li>
-        <li><Link to="/new-project">{t('new_project_page.title')}</Link></li>
+        <li><Link to="/it-guidelines/home">{t('home_page.title')}</Link></li>
+        <li><Link to="/it-guidelines/new-project">{t('new_project_page.title')}</Link></li>
       </ul>
       <ul>
         <li><Button className={lang === 'de' ? 'active' : ''} onClick={() => changeLanguage('de')}>DE</Button></li>
@@ -97,11 +97,11 @@ function App() {
   return <Router>
     <Header></Header>
     <Switch>
-      <Route path="/home">
-        <HomePage></HomePage>
-      </Route>
-      <Route>
+      <Route path="/it-guidelines/new-project">
         <NewProjectPage></NewProjectPage>
+      </Route>
+      <Route path="/it-guidelines/">
+        <HomePage></HomePage>
       </Route>
     </Switch>
     <Footer></Footer>

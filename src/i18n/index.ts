@@ -8,7 +8,9 @@ const resources = {
   de: {
     translation: {
       home_page: {
-        title: 'IT Richtlinien'
+        title: 'IT Richtlinien',
+        introduction: 'Diese IT-Richtlinien definieren die Prinzipien und regeln die Prozesse der IT auf der PBS Bundesebene, sie dürfen gerne von den Kantonalverbänden und Abteilungen übernommen und weiterentwickelt wer- den. Geregelt werden die Punkte Beschaffung, Betrieb und Informationssicherheit sowie die zugehörigen Verantwortlichkeiten. Weiter schaffen Sie die Voraussetzungen für eine aktive IT-Community in der PBS.',
+        new_project: 'Startest du gerade ein IT-Projekt? Dann bist du hier genau richtig! Schaue dir die Leitfragen hier an:'
       },
       new_project_page: {
         title: 'Neues Projekt'
@@ -103,7 +105,8 @@ const resources = {
   fr: {
     translation: {
       home_page: {
-        title: 'Lignes directrices IT'
+        title: 'Lignes directrices IT',
+        introduction: 'Ces directives sur l’utilisation des Technologies de l’Information (en anglais IT - Information Technology) définissent les principes et règlent les processus informatiques au niveau fédéral du MSdS. Elles peuvent volontiers être reprises et développées davantage par les associations cantonales et les groupes. Les points régulés sont : l’approvisionnement, le fonctionnement et la sécurité des informations, ainsi que les responsabilités associées. C’est ensuite vous qui mettez en place les conditions préalables pour une communauté informatique active au sein du MSdS.'
       }
     }
   }
