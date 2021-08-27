@@ -1,0 +1,125 @@
+{
+    "translation": {
+        "home_page": {
+            "title": "Lignes directrices IT",
+            "introduction": "Ces directives sur l’utilisation des Technologies de l’Information (en anglais IT - Information Technology) définissent les principes et règlent les processus informatiques au niveau fédéral du MSdS. Elles peuvent volontiers être reprises et développées davantage par les associations cantonales et les groupes. Les points régulés sont : l’approvisionnement, le fonctionnement et la sécurité des informations, ainsi que les responsabilités associées. C’est ensuite vous qui mettez en place les conditions préalables pour une communauté informatique active au sein du MSdS.",
+            "new_project": "#Startest du gerade ein IT-Projekt? Dann bist du hier genau richtig! Schaue dir die Leitfragen hier an:",
+            "content": "Contenu",
+            "principles": "Principes",
+            "information_security": "Sécurité de l’information",
+            "acquisition": "Acquisition et exploitation",
+            "community": "Communauté"
+        },
+        "new_project_page": {
+          "title": "Nouveau projet"
+        },
+        "principles_page": {
+          "title": "Principes",
+          "one": "Les outils informatiques du MSdS sont des moyens et servent en première ligne au fonctionnement des groupes scouts et des associations cantonales.          ",
+          "two": "Toutes les données appartiennent au MSdS et à ses membres et doivent être correctement protégées. Les données doivent être stockées séparément des outils informatiques et sécurisées. Les données non protégées peuvent être publiées en tant que open data.",
+          "three": "Les processus existants sont examinés de manière critique avant la numérisation et adaptés si nécessaire.",
+          "four": "Chaque outil informatique a un usage thématique défini, le plus limité possible. Cela facilite le remplacement.",
+          "five": "Pour les nouveaux outils informatique, l'acquisition de solutions standard doit être préférée aux développements sur mesure. Il convient aussi, dans chaque contexte, d'examiner si un processus existe déjà et peut être adapté.",
+          "six": "Les outils informatiques développés, commandés ou soutenus par le MSdS sont publiés sous une licence open source.",
+          "seven": "Les outils informatiques doivent être conçus sans barrières. S'il y a un petit effort financier supplémentaire, il est fait automatiquement, sinon les coûts et les bénéfices sont évalués.",
+          "eight": "Pour l'exploitation des outils informatiques au niveau fédéral, les services de prestataires professionnels doivent généralement être préférés à une infrastructure en interne afin de garantir la disponibilité et le support nécessaires.",
+          "nine": {
+            "priciple": "Les outils informatiques exploités ou soutenus par le niveau fédéral doivent être reliés entre eux via des interfaces API.",
+            "one": "Les outils informatiques mettent à disposition les données et les services qu'ils gèrent de manière aussi dynamique et flexible que possible via des interfaces.",
+            "two": "Les outils informatiques obtiennent des données externes via les interfaces fournies.",
+            "three": "Les interfaces et leur documentation doivent être mises à la disposition de la communauté pour permettre des développements ultérieurs."
+          },
+          "ten": "Le MSdS promeut et soutient les idées, les outils informatiques, les services et les projets qui aident le scoutisme (en particulier les groupes et les associations cantonales). À cette fin, une communauté active est recherchée.",
+          "eleven": {
+            "priciple": "Le niveau fédéral adopte une approche ouverte et pragmatique des outils informatiques:",
+            "one": "Les synergies entre les différents outils informatiques sont utilisées dans la mesure du possible. Cependant, si une solution multipiste/multivoie est plus efficace, c'est également possible.",
+            "two": "Pour chaque outil informatique, une décision individuelle est prise sur la technologie la plus appropriée et l’outillage (tooling) utilisé. Toutefois on cherche à utiliser dans la mesure du possible les technologies basées sur le web et multiplateformes."
+          }
+        },
+        "slides": {
+          "evaluation": {
+            "text": "Danke fürs ausfüllen.",
+            "todo": {
+              "title": "ToDo",
+              "contact_itkom": "Kontakt aufnehmen mit der IT-Kom",
+              "define_po": "Verantwortliche Person definieren",
+              "define_api_consumption": "Definieren welche Daten von der MiData benötigt werden",
+              "check_existing": "Herausfinden ob es nicht doch schon ähnliche Tools gibt",
+              "check_login": "Abklären ob es wirklich kein Login braucht"
+            },
+            "answers": {
+              "title": "Antworten"
+            }
+          },
+          "projectPhase": {
+            "text": "In welcher Phase des Projekts befindest du dich?",
+            "buttons": {
+              "idea": "Idee",
+              "implementation": "Umsetzung"
+            }
+          },
+          "targetAudience": {
+            "text": "Wer ist das Zielpublikum?",
+            "buttons": {
+              "bundesebene": "Bundesebene",
+              "canton": "Kantone, Regionen",
+              "leaders": "Leitende",
+              "participants": "Pfadi",
+              "external": "Externe (z.B. Eltern)"
+            }
+          },
+          "toolType": {
+            "text": "Werden Daten verarbeitet oder werden nur Inhalte dargestellt?",
+            "buttons": {
+              "dataProcessing": "Daten verarbeiten",
+              "contentOnly": "Nur Inhalte"
+            }
+          },
+          "loginNeeded": {
+            "text": "Muss man sich einloggen können?",
+            "buttons": {
+              "yes": "Ja",
+              "no": "Nein"
+            }
+          },
+          "sensitiveData": {
+            "text": "Werden schützenswerte Daten verarbeitet?",
+            "buttons": {
+              "yes": "Ja",
+              "no": "Nein",
+              "maybe": "Glaubs nöd"
+            }
+          },
+          "apiNeeded": {
+            "text": "Werden Daten von anderen IT-Tools benötigt?",
+            "buttons": {
+              "midata": "Ja, von der MiData",
+              "other": "Ein anderes Tool",
+              "no": "Nein, braucht es nicht"
+            }
+          },
+          "similarToolAvailable": {
+            "text": "Gibt es bereits ein ähnliches Tool in dieser Art (gratis oder kostenpflichtig)?",
+            "buttons": {
+              "yes": "Ja, das gibts",
+              "no": "Nein, gibt es nicht",
+              "maybe": "Keine Ahnung"
+            }
+          },
+          "similarToolAvailableMaybe": {
+            "text": "Dann kläre das doch bitte zuerst ab, bevor du ein neues Projekt startest!",
+            "buttons": {
+              "ok": "Ok"
+            }
+          },
+          "responsibility": {
+            "text": "Ist eine verantwortliche Person definiert?",
+            "buttons": {
+              "yes": "Ja, ist klar",
+              "no": "Nein, noch nicht",
+              "maybe": "Wir brauchen das nicht"
+            }
+          }
+        }
+    }
+}

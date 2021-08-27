@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import React from 'react';
 import NewProjectPage from './pages/NewProjectPage'
+import PrinciplesPage from './pages/PrinciplesPage';
 import HomePage from './pages/HomePage'
 import FooterImage from './images/footer.svg'
 import i18n from './i18n';
@@ -97,6 +98,9 @@ function App() {
   return <Router>
     <Header></Header>
     <Switch>
+      <Route path="/it-guidelines/priciples">
+        <PrinciplesPage/>
+      </Route>
       <Route path="/it-guidelines/new-project">
         <NewProjectPage></NewProjectPage>
       </Route>

@@ -1,6 +1,6 @@
 # IT Richtlinien
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Die IT-Richtlinien der PBS mit Leitfragen
 
 ## Available Scripts
 

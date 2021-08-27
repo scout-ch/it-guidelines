@@ -1,0 +1,125 @@
+{
+    "translation": {
+        "home_page": {
+            "title": "IT Richtlinien",
+            "introduction": "Diese IT-Richtlinien definieren die Prinzipien und regeln die Prozesse der IT auf der PBS Bundesebene, sie dürfen gerne von den Kantonalverbänden und Abteilungen übernommen und weiterentwickelt wer- den. Geregelt werden die Punkte Beschaffung, Betrieb und Informationssicherheit sowie die zugehörigen Verantwortlichkeiten. Weiter schaffen Sie die Voraussetzungen für eine aktive IT-Community in der PBS.",
+            "new_project": "Startest du gerade ein IT-Projekt? Dann bist du hier genau richtig! Schaue dir die Leitfragen hier an:",
+            "content": "Inhalt",
+            "principles": "Prinzipien",
+            "information_security": "Informationssicherheit",
+            "acquisition": "Beschaffung und Betrieb",
+            "community": "Community"
+        },
+        "new_project_page": {
+          "title": "Neues Projekt"
+        },
+        "principles_page": {
+          "title": "Prinzipien",
+          "one": "Die IT-Tools der PBS sind Werkzeuge und nützen in erster Linie dem Pfadibetrieb in den Abteilungen und Kantonalverbänden.",
+          "two": "Alle Daten gehören der PBS sowie ihren Mitgliedern und müssen angemessen geschützt werden. Daten sollen entkoppelt von den IT-Tools gespeichert und gesichert werden. Nicht schützenswerte Daten dürfen im Sinne von open data veröffentlicht werden.",
+          "three": "Bestehende Prozesse werden vor der Digitalisierung kritisch hinterfragt und gegebenenfalls angepasst.",
+          "four": "Jedes IT-Tool hat einen definierten, möglichst begrenzten thematischen Zweck. Dies erleichtert die Ablösung.",
+          "five": "Für neue IT-Tools soll die Beschaffung von Standardlösungen den Eigenentwicklungen vorgezogen werden. Dabei ist zu prüfen, ob ein bestehender Prozess anzupassen ist.",
+          "six": "Von der PBS entwickelte, in Auftrag gegebene oder unterstützte IT-Tools werden unter einer open source Lizenz veröffentlicht.",
+          "seven": "Die IT-Tools sollen barrierefrei gestaltet werden. Bei kleinem Mehraufwand erfolgt dies automatisch, ansonsten werden Kosten und Nutzen abgewogen.",
+          "eight": "Für den Betrieb von IT-Tools auf Bundesebene sollen Dienstleistungen von professionellen Anbietern einer eigenen Infrastruktur im Allgemeinen vorgezogen werden, um die nötige Verfügbarkeit und den Support sicherzustellen.",
+          "nine": {
+            "priciple": "Von der Bundesebene betriebene oder unterstützte IT-Tools sollen über Schnittstellen (APIs) untereinander vernetzt werden können.",
+            "one": "IT-Tools stellen die von ihnen verwalteten Daten und Dienste so dynamisch und flexibel wie möglich über Schnittstellen zur Verfügung.",
+            "two": "IT-Tools beziehen fremde Daten über die zur Verfügung gestellten Schnittstellen.",
+            "three": "Die Schnittstellen und ihre Dokumentation sollen für die Community zur Verfügung stehen, um weitere Entwicklungen zu ermöglichen."
+          },
+          "ten": "Die PBS fördert und unterstützt Ideen, IT-Tools, -Services und -Projekte, welche dem Pfadibetrieb (insbesondere den Abteilungen und Kantonalverbänden) helfen. Dazu wird eine aktive Community angestrebt.",
+          "eleven": {
+            "priciple": "Die Bundesebene geht offen und pragmatisch mit IT-Tools um:",
+            "one": "Synergien zwischen verschiedenen IT-Tools werden nach Möglichkeit genutzt. Falls Mehrspurigkeiten effizienter sind, ist dies aber auch möglich.",
+            "two": "Für jedes IT-Tool wird individuell über die zweckmässigste Technologie und das eingesetzte Tooling entschieden. Es soll aber, soweit möglich, mit webbasierten und plattformübergreifenden Technologien gearbeitet werden."
+          }
+        },
+        "slides": {
+          "evaluation": {
+            "text": "Danke fürs ausfüllen.",
+            "todo": {
+              "title": "ToDo",
+              "contact_itkom": "Kontakt aufnehmen mit der IT-Kom",
+              "define_po": "Verantwortliche Person definieren",
+              "define_api_consumption": "Definieren welche Daten von der MiData benötigt werden",
+              "check_existing": "Herausfinden ob es nicht doch schon ähnliche Tools gibt",
+              "check_login": "Abklären ob es wirklich kein Login braucht"
+            },
+            "answers": {
+              "title": "Antworten"
+            }
+          },
+          "projectPhase": {
+            "text": "In welcher Phase des Projekts befindest du dich?",
+            "buttons": {
+              "idea": "Idee",
+              "implementation": "Umsetzung"
+            }
+          },
+          "targetAudience": {
+            "text": "Wer ist das Zielpublikum?",
+            "buttons": {
+              "bundesebene": "Bundesebene",
+              "canton": "Kantone, Regionen",
+              "leaders": "Leitende",
+              "participants": "Pfadi",
+              "external": "Externe (z.B. Eltern)"
+            }
+          },
+          "toolType": {
+            "text": "Werden Daten verarbeitet oder werden nur Inhalte dargestellt?",
+            "buttons": {
+              "dataProcessing": "Daten verarbeiten",
+              "contentOnly": "Nur Inhalte"
+            }
+          },
+          "loginNeeded": {
+            "text": "Muss man sich einloggen können?",
+            "buttons": {
+              "yes": "Ja",
+              "no": "Nein"
+            }
+          },
+          "sensitiveData": {
+            "text": "Werden schützenswerte Daten verarbeitet?",
+            "buttons": {
+              "yes": "Ja",
+              "no": "Nein",
+              "maybe": "Glaubs nöd"
+            }
+          },
+          "apiNeeded": {
+            "text": "Werden Daten von anderen IT-Tools benötigt?",
+            "buttons": {
+              "midata": "Ja, von der MiData",
+              "other": "Ein anderes Tool",
+              "no": "Nein, braucht es nicht"
+            }
+          },
+          "similarToolAvailable": {
+            "text": "Gibt es bereits ein ähnliches Tool in dieser Art (gratis oder kostenpflichtig)?",
+            "buttons": {
+              "yes": "Ja, das gibts",
+              "no": "Nein, gibt es nicht",
+              "maybe": "Keine Ahnung"
+            }
+          },
+          "similarToolAvailableMaybe": {
+            "text": "Dann kläre das doch bitte zuerst ab, bevor du ein neues Projekt startest!",
+            "buttons": {
+              "ok": "Ok"
+            }
+          },
+          "responsibility": {
+            "text": "Ist eine verantwortliche Person definiert?",
+            "buttons": {
+              "yes": "Ja, ist klar",
+              "no": "Nein, noch nicht",
+              "maybe": "Wir brauchen das nicht"
+            }
+          }
+        }
+    }
+}

@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 import styled from '@emotion/styled'
 import {
   Link,
-} from "react-router-dom"
+} from "react-router-dom";
 
 
 export default function HomePage() {
@@ -29,6 +29,15 @@ export default function HomePage() {
     <p>
       {t('home_page.new_project')}{' '}
       <Link style={{color: 'white'}} to="/it-guidelines/new-project">{t('new_project_page.title')}</Link>
+    </p>
+    <p>
+    <h2>{t('home_page.content')}</h2>
+      <ul>
+        <li><Link style={{color: 'white'}} to="/it-guidelines/priciples">{t('home_page.principles')}</Link></li>
+        <li>{t('home_page.information_security')}</li>
+        <li>{t('home_page.acquisition')}</li>
+        <li>{t('home_page.community')}</li>
+      </ul>
     </p>
     <h2>Downloads</h2>
     <ul>
