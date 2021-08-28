@@ -3,23 +3,10 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { MainContainer } from '../App'
 import { useTranslation } from 'react-i18next'
-import styled from '@emotion/styled'
-import {
-  Link,
-} from "react-router-dom"
-
 
 export default function PrinciplesPage() {
   const { t } = useTranslation()
 
-  const A = styled.a`
-  color: white;
-
-  &:hover {
-    color: white;
-    opacity: 0.5;
-  }
-`
   return <MainContainer>
   <Helmet>
     <title>{t('principles_page.title')}</title>
