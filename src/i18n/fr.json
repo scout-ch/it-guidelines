@@ -38,86 +38,86 @@
         },
         "slides": {
           "evaluation": {
-            "text": "Danke fürs ausfüllen.",
+            "text": "Merci de me remplacer.",
             "todo": {
               "title": "ToDo",
-              "contact_itkom": "Kontakt aufnehmen mit der IT-Kom",
-              "define_po": "Verantwortliche Person definieren",
-              "define_api_consumption": "Definieren welche Daten von der MiData benötigt werden",
-              "check_existing": "Herausfinden ob es nicht doch schon ähnliche Tools gibt",
-              "check_login": "Abklären ob es wirklich kein Login braucht"
+              "contact_itkom": "Contacter le Comité IT",
+              "define_po": "Définir la personne responsable",
+              "define_api_consumption": "Définir quelles données sont requises par le MiData",
+              "check_existing": "Déterminer si des outils similaires existent déjà",
+              "check_login": "Clarifier s'il n'est vraiment pas nécessaire d'avoir une connexion."
             },
             "answers": {
-              "title": "Antworten"
+              "title": "Réponses"
             }
           },
           "projectPhase": {
-            "text": "In welcher Phase des Projekts befindest du dich?",
+            "text": "Dans quelle phase du projet vous trouvez-vous?",
             "buttons": {
-              "idea": "Idee",
-              "implementation": "Umsetzung"
+              "idea": "Idée",
+              "implementation": "Mise en œuvre"
             }
           },
           "targetAudience": {
-            "text": "Wer ist das Zielpublikum?",
+            "text": "Qui est le public cible ?",
             "buttons": {
-              "bundesebene": "Bundesebene",
-              "canton": "Kantone, Regionen",
-              "leaders": "Leitende",
-              "participants": "Pfadi",
-              "external": "Externe (z.B. Eltern)"
+              "bundesebene": "Niveau fédéral",
+              "canton": "Cantons, régions",
+              "leaders": "Responsable",
+              "participants": "Scouts",
+              "external": "Externes (par exemple, les parents)"
             }
           },
           "toolType": {
-            "text": "Werden Daten verarbeitet oder werden nur Inhalte dargestellt?",
+            "text": "Les données sont-elles traitées ou le contenu est-il seulement affiché?",
             "buttons": {
-              "dataProcessing": "Daten verarbeiten",
-              "contentOnly": "Nur Inhalte"
+              "dataProcessing": "Données de processus",
+              "contentOnly": "Contenu uniquement"
             }
           },
           "loginNeeded": {
-            "text": "Muss man sich einloggen können?",
+            "text": "Faut-il pouvoir se connecter?",
             "buttons": {
-              "yes": "Ja",
-              "no": "Nein"
+              "yes": "Oui",
+              "no": "No"
             }
           },
           "sensitiveData": {
-            "text": "Werden schützenswerte Daten verarbeitet?",
+            "text": "Des données dignes de protection sont-elles traitées?",
             "buttons": {
-              "yes": "Ja",
-              "no": "Nein",
-              "maybe": "Glaubs nöd"
+              "yes": "Oui",
+              "no": "No",
+              "maybe": "Je ne pense pas"
             }
           },
           "apiNeeded": {
-            "text": "Werden Daten von anderen IT-Tools benötigt?",
+            "text": "Les données provenant d'autres outils informatiques sont-elles nécessaires?",
             "buttons": {
-              "midata": "Ja, von der MiData",
-              "other": "Ein anderes Tool",
-              "no": "Nein, braucht es nicht"
+              "midata": "Oui, à partir du MiData",
+              "other": "Un autre outil",
+              "no": "No, n'a pas besoin"
             }
           },
           "similarToolAvailable": {
-            "text": "Gibt es bereits ein ähnliches Tool in dieser Art (gratis oder kostenpflichtig)?",
+            "text": "Existe-t-il déjà un outil similaire de ce type (gratuit ou payant) ?",
             "buttons": {
-              "yes": "Ja, das gibts",
-              "no": "Nein, gibt es nicht",
-              "maybe": "Keine Ahnung"
+              "yes": "Oui",
+              "no": "No",
+              "maybe": "Aucune idée"
             }
           },
           "similarToolAvailableMaybe": {
-            "text": "Dann kläre das doch bitte zuerst ab, bevor du ein neues Projekt startest!",
+            "text": "Veuillez donc clarifier ce point avant de commencer un nouveau projet!",
             "buttons": {
               "ok": "Ok"
             }
           },
           "responsibility": {
-            "text": "Ist eine verantwortliche Person definiert?",
+            "text": "Une personne responsable est-elle définie ?",
             "buttons": {
-              "yes": "Ja, ist klar",
-              "no": "Nein, noch nicht",
-              "maybe": "Wir brauchen das nicht"
+              "yes": "Oui",
+              "no": "No",
+              "maybe": "Nous n'avons pas besoin de cela"
             }
           }
         }
