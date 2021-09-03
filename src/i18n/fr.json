@@ -36,6 +36,19 @@
             "two": "Pour chaque outil informatique, une décision individuelle est prise sur la technologie la plus appropriée et l’outillage (tooling) utilisé. Toutefois on cherche à utiliser dans la mesure du possible les technologies basées sur le web et multiplateformes."
           }
         },
+        "security_page": {
+          "title": "Sécurité de l’information",
+          "one": "Les lois sur la protection des données en vigueur en Suisse sont respectées à tout moment.",
+          "two": "Les données sensibles sont déclarées et traitées en conséquence.",
+          "three": "Une déclaration d'utilisation des données par outil informatique est disponible et est accessible à tous les membres du MSdS.",
+          "four": "Les données sensibles ne peuvent être consultées que s’il y a un bénéfice proportionné et justifié pour le fonctionnement scout. Les outils informatiques du MSdS assurent cette protection, par exemple via les rôles et les droits d'accès des personnes et des outils informatiques.",
+          "five": "Lorsqu'une personne n'a plus besoin d'une autorisation/login, celle-ci est révoquée.",
+          "six": "Les données sensibles ne peuvent être stockées que dans des pays dont la législation sur la protection des données est équivalente ou plus stricte que celle de la Suisse.",
+          "seven": "L'archivage est assuré pour toutes les données pertinentes (voir chapitre 6.2).",
+          "eight": "L'accès externe aux données sensibles est régi par un accord de non-divulgation (AND).",
+          "nine": "La cybersécurité doit être thématisée relativement à chaque outil informatique et implémentée en conséquence. Les outils informatiques considérés critiques pour l'activité, ou qui traitent des données sensibles, doivent répondre à des normes communes de cybersécurité.",
+          "ten": "Le MSdS sensibilise ses membres à la protection des données et aux éventuelles cyberattaques telles que le phishing et l’ingénieurie sociale (Social Engineering), afin d'assurer la sécurité des données sensibles (par exemple, sécurité des mots de passe, W-LAN étranger, login sur des appareils étrangers, protection visuelle, mais aussi laisser traîner des listes de participants sur papier)."
+        },
         "slides": {
           "evaluation": {
             "text": "Merci de me remplacer.",

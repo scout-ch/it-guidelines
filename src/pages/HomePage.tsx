@@ -34,7 +34,7 @@ export default function HomePage() {
     <h2>{t('home_page.content')}</h2>
       <ul>
         <li><Link style={{color: 'white'}} to="/it-guidelines/priciples">{t('home_page.principles')}</Link></li>
-        <li>{t('home_page.information_security')}</li>
+        <li><Link style={{color: 'white'}} to="/it-guidelines/security">{t('home_page.information_security')}</Link></li>
         <li>{t('home_page.acquisition')}</li>
         <li>{t('home_page.community')}</li>
       </ul>

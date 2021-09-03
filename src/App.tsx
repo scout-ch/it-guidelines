@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import React from 'react';
 import NewProjectPage from './pages/NewProjectPage'
 import PrinciplesPage from './pages/PrinciplesPage';
+import SecurityPage from './pages/SecurityPage';
 import HomePage from './pages/HomePage'
 import FooterImage from './images/footer.svg'
 import i18n from './i18n';
@@ -100,6 +101,9 @@ function App() {
     <Switch>
       <Route path="/it-guidelines/priciples">
         <PrinciplesPage/>
+      </Route>
+      <Route path="/it-guidelines/security">
+        <SecurityPage/>
       </Route>
       <Route path="/it-guidelines/new-project">
         <NewProjectPage></NewProjectPage>

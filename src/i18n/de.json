@@ -36,6 +36,19 @@
             "two": "Für jedes IT-Tool wird individuell über die zweckmässigste Technologie und das eingesetzte Tooling entschieden. Es soll aber, soweit möglich, mit webbasierten und plattformübergreifenden Technologien gearbeitet werden."
           }
         },
+        "security_page": {
+          "title": "Informationssicherheit",
+          "one": "Die geltenden Datenschutzgesetze der Schweiz werden jederzeit eingehalten.",
+          "two": "Schützenswerte Daten werden deklariert und entsprechend behandelt.",
+          "three": "Eine Datennutzungserklärung liegt pro IT-Tool vor und ist für alle PBS Mitglieder zugänglich.",
+          "four": "Auf schützenswerte Daten darf nur zugegriffen werden, wenn der Nutzen für den Pfadibetrieb gegeben und verhältnismässig ist. Die IT-Tools der PBS stellen diesen Schutz z.B. über Rollen und Zugriffsrechte für Personen und IT-Tools sicher.",
+          "five": "Wenn eine Person eine Berechtigung/Login nicht mehr benötigt, wird dieses wieder entzogen.",
+          "six": "Schützenswerte Daten dürfen nur in Ländern gespeichert werden, welche gleichwertige oder strengere Datenschutzgesetze haben wie die Schweiz.",
+          "seven": "Für alle relevanten Daten (siehe Kapitel 6.2) wird die Archivierung sichergestellt.",
+          "eight": "Externe Zugriffe auf schützenswerte Daten werden durch ein Non-Disclosure Agreement (NDA) geregelt.",
+          "nine": "Cyber-Security soll verhältnismässig bei jedem IT-Tool thematisiert und entsprechend implementiert werden. IT-Tools mit Geschäftskritikalität oder schützenswerten Daten müssen gängige Cy- ber-Security Standards erfüllen.",
+          "ten": "Die PBS sensibilisiert ihre Mitglieder bezüglich des Datenschutzes und möglichen Cyber-Angrif- fen wie Phishing und Social Engineering, um die Sicherheit schützenswerter Daten sicherzustel- len (z.B. Passwortsicherheit, fremde W-LAN, Login auf fremden Geräten, Sichtschutz, aber auch Liegenlassen von Teilnehmerlisten auf Papier)."
+        },
         "slides": {
           "evaluation": {
             "text": "Danke fürs ausfüllen.",
