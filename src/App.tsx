@@ -14,6 +14,8 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import AcquisitionPage from './pages/AcquisitionPage';
+import CommunityPage from './pages/CommunityPage';
 
 const Nav = styled.nav`
   display: flex;
@@ -101,6 +103,12 @@ function App() {
     <Switch>
       <Route path="/it-guidelines/priciples">
         <PrinciplesPage/>
+      </Route>
+      <Route path="/it-guidelines/acquisition">
+        <AcquisitionPage/>
+      </Route>
+      <Route path="/it-guidelines/community">
+        <CommunityPage/>
       </Route>
       <Route path="/it-guidelines/security">
         <SecurityPage/>

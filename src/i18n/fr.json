@@ -49,6 +49,12 @@
           "nine": "La cybersécurité doit être thématisée relativement à chaque outil informatique et implémentée en conséquence. Les outils informatiques considérés critiques pour l'activité, ou qui traitent des données sensibles, doivent répondre à des normes communes de cybersécurité.",
           "ten": "Le MSdS sensibilise ses membres à la protection des données et aux éventuelles cyberattaques telles que le phishing et l’ingénieurie sociale (Social Engineering), afin d'assurer la sécurité des données sensibles (par exemple, sécurité des mots de passe, W-LAN étranger, login sur des appareils étrangers, protection visuelle, mais aussi laisser traîner des listes de participants sur papier)."
         },
+        "acquisition_page": {
+          "title": "Acquisition et exploitation"
+        },
+        "community_page": {
+          "title": "Communauté"
+        },
         "slides": {
           "evaluation": {
             "text": "Merci de me remplacer.",

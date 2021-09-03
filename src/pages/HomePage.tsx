@@ -35,8 +35,8 @@ export default function HomePage() {
       <ul>
         <li><Link style={{color: 'white'}} to="/it-guidelines/priciples">{t('home_page.principles')}</Link></li>
         <li><Link style={{color: 'white'}} to="/it-guidelines/security">{t('home_page.information_security')}</Link></li>
-        <li>{t('home_page.acquisition')}</li>
-        <li>{t('home_page.community')}</li>
+        <li><Link style={{color: 'white'}} to="/it-guidelines/acquisition">{t('home_page.acquisition')}</Link></li>
+        <li><Link style={{color: 'white'}} to="/it-guidelines/community">{t('home_page.community')}</Link></li>
       </ul>
     </p>
     <h2>Downloads</h2>
