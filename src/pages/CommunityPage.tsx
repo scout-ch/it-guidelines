@@ -13,6 +13,18 @@ export default function CommunityPage() {
   </Helmet>
     <h1>{t('community_page.title')}</h1>
     <p>
+    {t('community_page.intro')}
+    <ul>
+        <li>{t('community_page.one')}</li>
+        <li>{t('community_page.two')}</li>
+      </ul>
+    </p>
+    <p>
+    {t('community_page.intro2')}
+    <ul>
+        <li>{t('community_page.three')}</li>
+        <li>{t('community_page.four')}</li>
+      </ul>
     </p>
   </MainContainer>
 }

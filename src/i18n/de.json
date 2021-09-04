@@ -50,10 +50,48 @@
           "ten": "Die PBS sensibilisiert ihre Mitglieder bezüglich des Datenschutzes und möglichen Cyber-Angrif- fen wie Phishing und Social Engineering, um die Sicherheit schützenswerter Daten sicherzustel- len (z.B. Passwortsicherheit, fremde W-LAN, Login auf fremden Geräten, Sichtschutz, aber auch Liegenlassen von Teilnehmerlisten auf Papier)."
         },
         "acquisition_page": {
-          "title": "Beschaffung und Betrieb"
+          "title": "Beschaffung und Betrieb",
+          "intro": {
+            "text": "Für IT-Tools gelten folgende Grundsätze:",
+            "standard": {
+              "text": "Standardlösungen: \"Wir passen unsere Prozesse der Software an\"",
+              "one": "Der langfristige Betrieb ist durch den Einsatz der Standardlösungen gesichert.",
+              "two": "Anpassungen sollen vermieden werden, um die initialen und laufenden Kosten tief zu halten."
+            },
+            "inhouse": {
+              "text": "Eigenentwicklungen: \"Wir passen die Software unseren Prozessen an\"",
+              "one": "Die langfristige Weiterentwicklung muss bedacht werden, weil es nicht möglich ist, bei der Beschaffung bereits alle Aspekte zu berücksichtigen.",
+              "two": "Eine grobe Spezifikation des \"Minimal Viable Product (MVP)\" muss vorab erstellt werden, auf deren Basis der Auftrag zur Entwicklung erteilt werden kann."
+            }
+          },
+          "acquisition": {
+            "title": "Beschaffungsregeln",
+            "one": "Die Verhältnismässigkeit zwischen Beschaffungs-/Betriebskosten und zu erwartendem Nutzen muss geprüft und festgehalten werden.",
+            "two": "Lifecycle-Überlegungen bis hin zur Abschaltung müssen gemacht und festgehalten werden.",
+            "three": "Sowohl bei Beschaffung von Standardlösungen als auch bei Eigenentwicklungen muss ein zuständiger Product Owner bestimmt werden.",
+            "four": "Eigenentwicklungen sollen in der Schweiz entwickelt werden. Standardlösungen können auch im Ausland eingekauft werden.",
+            "five": "Die IT-Tools sollen möglichst den CI/CD-Richtlinien der PBS entsprechen.",
+            "six": "Geschäftskritische IT-Tools müssen nach gängigen Standards der Softwareentwicklung inkl. Technologiewahl umgesetzt werden.",
+            "seven": "Für geschäftskritische IT-Tools müssen zusätzliche Überlegungen zur Unterstützung der Anwen- denden (Support) gemacht werden.",
+            "eight": "IT-Tools sollen möglichst ressourcenschonend wartbar sein."
+          },
+          "operation": {
+            "title": "Betrieb",
+            "one": "Eine SLA/SLO muss anhand der Geschäftskritikalität definiert werden.",
+            "two": "Ein verhältnismässiges Monitoring soll betrieben werden.",
+            "three": "Ein zentrales Lifecycle Management mit Ablösungs-Roadmap über alle IT-Tools muss geführt werden.",
+            "four": "Geschäftskritische Daten müssen durch ein Backup gesichert werden.",
+            "five": "Damit der Pfadibetrieb nicht unter dem Ausfall (Tool, Daten, Strom nicht verfügbar, usw.) von IT- Tools leidet, soll für geschäftskritischen IT-Tools ein Plan B (Business Continuity Management) existieren."
+          }
         },
         "community_page": {
-          "title": "Community"
+          "title": "Community",
+          "intro": "Die PBS fördert und unterstützt Ideen, IT-Tools, -Services und -Projekte, welche dem Pfadibetrieb (insbesondere den Abteilungen und Kantonalverbänden) helfen.",
+          "one": "Alle geförderten IT-Tools müssen unter einer open source Lizenz veröffentlicht werden, damit möglichst viele davon profitieren.",
+          "two": "Unterstützung kann in verschiedenen Formen erfolgen: Durch Hosting, Source Control, Bereitstellung von unterstützenden IT-Tools, Organisation eines Hackathons, Vermittlung von Res- sourcen und Know-how oder durch Beschaffung von finanziellen Mitteln.",
+          "intro2": "Die PBS bietet eine Anlaufstelle für die Kantonalverbände und Abteilungen. Sie fördert einen aktiven Austausch, holt Ideen ein, bringt Bedürfnisse und Praktiken der Community in Erfahrung und unterhält diese.",
+          "three": "Es werden regelmässige Anlässe organisiert, um diese Ziele zu erreichen z.B. IT-Konferenz, MiData-Hackathon, usw.",
+          "four": "Die Zusammenarbeit wird auch über den Verband hinaus gepflegt, um die Synergien von grös- seren Communities (z.B. Hitobito) zu nutzen."
         },
         "slides": {
           "evaluation": {

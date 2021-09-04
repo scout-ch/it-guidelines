@@ -50,10 +50,47 @@
           "ten": "Le MSdS sensibilise ses membres à la protection des données et aux éventuelles cyberattaques telles que le phishing et l’ingénieurie sociale (Social Engineering), afin d'assurer la sécurité des données sensibles (par exemple, sécurité des mots de passe, W-LAN étranger, login sur des appareils étrangers, protection visuelle, mais aussi laisser traîner des listes de participants sur papier)."
         },
         "acquisition_page": {
-          "title": "Acquisition et exploitation"
+          "title": "Acquisition et exploitation",
+          "intro": {
+            "text": "Les principes suivants s’appliquent aux outils informatiques:",
+            "standard": {
+              "text": "Solutions standards : « Nous adaptons nos processus au logiciel »",
+              "one": "L’exploitation à long terme est assurée par le recours aux solutions standard.",
+              "two": "Il faut éviter les adaptations afin de maintenir bas les coûts initiaux et permanents."
+            },
+            "inhouse": {
+              "text": "Développement sur mesure : « Nous adaptons le logiciel à nos processus »",
+              "one": "Le développement sur mesure doit être considéré sur le long terme car il n'est pas possible de prendre en compte tous les aspects au stade de l’acquisition.",
+              "two": "Une spécification approximative du \"produit minimal viable (PMV)\" doit être établie à l'avance ; elle sert de base pour passer la commande de développement."
+            }
+          },
+          "acquisition": {
+            "one": "La proportionnalité entre les coûts d'acquisition/d’exploitation et les bénéfices attendus doit être examinée puis respectée.",
+            "two": "Le cycle de vie doit être pris en considération jusqu’à la mise hors service et ces considérations doivent être observées.",
+            "three": "Un Product Owner doit être désigné tant pour l'acquisition de solutions standard que pour les développements sur mesure.",
+            "four": "Les développements sur mesure doivent être développés en Suisse. Les solutions standard peu- vent être achetées également à l'étranger.",
+            "five": "Les outils informatiques doivent être conformes, dans la mesure du possible, aux directives CI/CD du MSdS.",
+            "six": "Les outils informatiques critiques pour l’activité doivent être mis en œuvre selon les standards courants de développement de logiciels, y compris dans le choix de la technologie.",
+            "seven": "Pour les outils informatique critiques pour l’activité il faut de plus réfléchir aux utilisateurs (soutien technique).",
+            "eight": "Les outils informatiques doivent être maintenus les plus économes possibles en ressources."
+          },
+          "operation": {
+            "title": "Exploitation",
+            "one": "Une SLA/SLO doit être définie en fonction de la criticité pour l’activité.",
+            "two": "Un Monitoring proportionné doit être effectué.",
+            "three": "Pour tous les outils informatiques, il faut une gestion centrale du cycle de vie (Lifecycle Management) avec une feuille de route en cas de remplacement.",
+            "four": "Geschäftskritische Daten müssen durch ein Backup gesichert werden.",
+            "five": "Pour éviter que le fonctionnement scout ne souffre d’une défaillance technique (outil, données, électricité non disponible, etc.), un plan B (Business Continuity Management) doit exister pour les outils informatiques critiques pour l'activité."
+          }
         },
         "community_page": {
-          "title": "Communauté"
+          "title": "Communauté",
+          "intro": "Le MSdS promeut et soutient les idées, outils, services et projets informatiques qui aident au fonc- tionnement scout (en particulier les groupes et les associations cantonales).",
+          "one": "Tous les outils informatiques soutenus doivent être publiés sous une licence Open source pour que le plus grand nombre possible en profite.",
+          "two": "Le soutien peut prendre diverses formes : Hosting, Source Control, mise à disposition d'outils informatiques, organisation d'un Hackathon, mise à disposition de ressources et de savoir-faire ou recherche de fonds.",
+          "intro2": "Le MSdS est un point de contact pour les associations cantonales et les groupes. Il favorise un échange actif, récolte des idées, s'informe sur les besoins et les pratiques de la communauté et les entretient.",
+          "three": "Des événements réguliers sont organisés pour atteindre ces objectifs, par exemple la conférence sur l'informatique, Hackathon MiData, etc.",
+          "four": "La coopération est également soignée au-delà de l'association afin de profiter des synergies de communautés plus importantes (par exemple Hitobito)."
         },
         "slides": {
           "evaluation": {
