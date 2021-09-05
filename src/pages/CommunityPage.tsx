@@ -3,6 +3,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { MainContainer } from '../App'
 import { useTranslation } from 'react-i18next'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function CommunityPage() {
   const { t } = useTranslation()
@@ -11,7 +12,7 @@ export default function CommunityPage() {
   <Helmet>
     <title>{t('community_page.title')}</title>
   </Helmet>
-    <h1>{t('community_page.title')}</h1>
+    <h1><FontAwesomeIcon icon="users" /> {t('community_page.title')}</h1>
     <p>
     {t('community_page.intro')}
     <ul>

@@ -137,10 +137,13 @@ export default function NewProjectPage() {
         <p>{t("slides.evaluation.text")}</p>
         <h2>{t("slides.evaluation.todo.title")}</h2>
         <ul>
-          <li><a href="mailto:itkom@example.com">{t("slides.evaluation.todo.contact_itkom")}</a></li>
+          <li><a href="mailto:itkom@pbs.com">{t("slides.evaluation.todo.contact_itkom")}</a></li>
+          <li>{t("slides.evaluation.todo.content_definition")}</li>
           {state["responsibility"] !== 'yes' && <li>{t("slides.evaluation.todo.define_po")}</li>}
           {state["apiNeeded"] === 'midata' && <li>{t("slides.evaluation.todo.define_api_consumption")}</li>}
-          {state["similarToolAvailable"] === 'maybe' && <li>{t("slides.evaluation.todo.check_existing")}</li>}
+          {state["similarToolAvailable"] === 'yes' && <li>{t("slides.evaluation.todo.check_existing")}</li>}
+          {state["toolType"] === 'contentOnly' && <li>{t("slides.evaluation.todo.content")}</li>}
+          {state["toolType"] === 'dataProcessing' && <li>{t("slides.evaluation.todo.data_processing")}</li>}
           {(state["loginNeeded"] === 'no' && state["sensitiveData"] === 'yes') && <li>{t("slides.evaluation.todo.check_login")}</li>}
         </ul>
 

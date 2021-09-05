@@ -8,7 +8,11 @@
             "principles": "Prinzipien",
             "information_security": "Informationssicherheit",
             "acquisition": "Beschaffung und Betrieb",
-            "community": "Community"
+            "community": "Community",
+            "contact": "Kontakt IT-Kom",
+            "downloads": "Downloads",
+            "mail": "Sende uns eine E-Mail",
+            "github": "Schaue unsere Projekte auf Github an"
         },
         "new_project_page": {
           "title": "Neues Projekt"
@@ -100,9 +104,12 @@
               "title": "ToDo",
               "contact_itkom": "Kontakt aufnehmen mit der IT-Kom",
               "define_po": "Verantwortliche Person definieren",
+              "content_definition": "Anforderungen definieren",
               "define_api_consumption": "Definieren welche Daten von der MiData benötigt werden",
-              "check_existing": "Herausfinden ob es nicht doch schon ähnliche Tools gibt",
-              "check_login": "Abklären ob es wirklich kein Login braucht"
+              "check_existing": "Abklären, ob das existierende Tool genutzt werden kann",
+              "check_login": "Abklären ob es wirklich kein Login braucht",
+              "content": "Inhalte und geeignete Darstellung definieren",
+              "data_processing": "Anforderungen an die zu verarbeitenden Daten definieren"
             },
             "answers": {
               "title": "Antworten"

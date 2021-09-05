@@ -2,6 +2,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { MainContainer } from '../App'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from 'react-i18next'
 
 export default function PrinciplesPage() {
@@ -11,7 +12,7 @@ export default function PrinciplesPage() {
   <Helmet>
     <title>{t('principles_page.title')}</title>
   </Helmet>
-    <h1>{t('principles_page.title')}</h1>
+    <h1><FontAwesomeIcon icon="scroll" /> {t('principles_page.title')}</h1>
     <p>
       <ol>
         <li>{t('principles_page.one')}</li>

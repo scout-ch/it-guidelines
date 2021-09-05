@@ -16,6 +16,8 @@ import {
 } from "react-router-dom";
 import AcquisitionPage from './pages/AcquisitionPage';
 import CommunityPage from './pages/CommunityPage';
+import { faScroll, faLock, faTools, faShoppingCart, faUsers, faHandsHelping, faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core'
 
 const Nav = styled.nav`
   display: flex;
@@ -82,6 +84,8 @@ const Header = () => {
   }
   const { t } = useTranslation()
   const lang = i18n.language
+
+  library.add(faScroll, faLock, faTools, faShoppingCart, faUsers, faHandsHelping, faCalendarAlt)
 
   return <div className='nav'>
     <Nav role="nav">

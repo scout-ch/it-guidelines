@@ -8,7 +8,11 @@
             "principles": "Principes",
             "information_security": "Sécurité de l’information",
             "acquisition": "Acquisition et exploitation",
-            "community": "Communauté"
+            "community": "Communauté",
+            "contact": "Kontakt IT-Kom",
+            "downloads": "Downloads",
+            "mail": "# Sende unse eine E-Mail",
+            "github": "Schaue unsere Projekte auf Github an"
         },
         "new_project_page": {
           "title": "Nouveau projet"
@@ -86,7 +90,7 @@
         "community_page": {
           "title": "Communauté",
           "intro": "Le MSdS promeut et soutient les idées, outils, services et projets informatiques qui aident au fonc- tionnement scout (en particulier les groupes et les associations cantonales).",
-          "one": "Tous les outils informatiques soutenus doivent être publiés sous une licence Open source pour que le plus grand nombre possible en profite.",
+          "one": "Tous les outils informatiques soutenus d  oivent être publiés sous une licence Open source pour que le plus grand nombre possible en profite.",
           "two": "Le soutien peut prendre diverses formes : Hosting, Source Control, mise à disposition d'outils informatiques, organisation d'un Hackathon, mise à disposition de ressources et de savoir-faire ou recherche de fonds.",
           "intro2": "Le MSdS est un point de contact pour les associations cantonales et les groupes. Il favorise un échange actif, récolte des idées, s'informe sur les besoins et les pratiques de la communauté et les entretient.",
           "three": "Des événements réguliers sont organisés pour atteindre ces objectifs, par exemple la conférence sur l'informatique, Hackathon MiData, etc.",
@@ -99,9 +103,12 @@
               "title": "ToDo",
               "contact_itkom": "Contacter le Comité IT",
               "define_po": "Définir la personne responsable",
+              "content_definition": "Définir les besoins",
               "define_api_consumption": "Définir quelles données sont requises par le MiData",
-              "check_existing": "Déterminer si des outils similaires existent déjà",
-              "check_login": "Clarifier s'il n'est vraiment pas nécessaire d'avoir une connexion."
+              "check_existing": "Clarifier si l'outil existant doit être utilisé",
+              "check_login": "Clarifier s'il n'est vraiment pas nécessaire d'avoir une connexion.",
+              "content": "Définir le contenu et la présentation appropriée",
+              "data_processing": "Définir les exigences relatives aux données à traiter"
             },
             "answers": {
               "title": "Réponses"

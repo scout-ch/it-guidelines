@@ -3,6 +3,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { MainContainer } from '../App'
 import { useTranslation } from 'react-i18next'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function SecurityPage() {
   const { t } = useTranslation()
@@ -11,7 +12,7 @@ export default function SecurityPage() {
   <Helmet>
     <title>{t('security_page.title')}</title>
   </Helmet>
-    <h1>{t('security_page.title')}</h1>
+    <h1><FontAwesomeIcon icon="lock" /> {t('security_page.title')}</h1>
     <p>
       <ul>
         <li>{t('security_page.one')}</li>
