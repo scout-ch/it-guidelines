@@ -9,7 +9,7 @@ import i18n from './i18n';
 import { withTranslation } from 'react-i18next';
 import { useTranslation } from 'react-i18next';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link,
@@ -90,8 +90,8 @@ const Header = () => {
   return <div className='nav'>
     <Nav role="nav">
       <ul>
-        <li><Link to="/it-guidelines/home">{t('home_page.title')}</Link></li>
-        <li><Link to="/it-guidelines/new-project">{t('new_project_page.title')}</Link></li>
+        <li><Link to="/">{t('home_page.title')}</Link></li>
+        <li><Link to="/new-project">{t('new_project_page.title')}</Link></li>
       </ul>
       <ul>
         <li><Button className={lang === 'de' ? 'active' : ''} onClick={() => changeLanguage('de')}>DE</Button></li>
@@ -102,25 +102,25 @@ const Header = () => {
 }
 
 function App() {
-  return <Router>
+  return <Router basename="/">
     <Header></Header>
     <Switch>
-      <Route path="/it-guidelines/priciples">
+      <Route path="/priciples">
         <PrinciplesPage/>
       </Route>
-      <Route path="/it-guidelines/acquisition">
+      <Route path="/acquisition">
         <AcquisitionPage/>
       </Route>
-      <Route path="/it-guidelines/community">
+      <Route path="/community">
         <CommunityPage/>
       </Route>
-      <Route path="/it-guidelines/security">
+      <Route path="/security">
         <SecurityPage/>
       </Route>
-      <Route path="/it-guidelines/new-project">
+      <Route path="/new-project">
         <NewProjectPage></NewProjectPage>
       </Route>
-      <Route path="/it-guidelines/">
+      <Route path="/">
         <HomePage></HomePage>
       </Route>
     </Switch>

@@ -43,15 +43,15 @@ export default function HomePage() {
     <p>{t('home_page.introduction')}</p>
     <Infobox>
       {t('home_page.new_project')}{' '}
-      <Link to="/it-guidelines/new-project">{t('new_project_page.title')}</Link>
+      <Link to="/new-project">{t('new_project_page.title')}</Link>
     </Infobox>
     <p>
     <h2>{t('home_page.content')}</h2>
       <ul>
-        <li><Link style={{color: 'white'}} to="/it-guidelines/priciples">{t('home_page.principles')}</Link></li>
-        <li><Link style={{color: 'white'}} to="/it-guidelines/security">{t('home_page.information_security')}</Link></li>
-        <li><Link style={{color: 'white'}} to="/it-guidelines/acquisition">{t('home_page.acquisition')}</Link></li>
-        <li><Link style={{color: 'white'}} to="/it-guidelines/community">{t('home_page.community')}</Link></li>
+        <li><Link style={{color: 'white'}} to="/priciples">{t('home_page.principles')}</Link></li>
+        <li><Link style={{color: 'white'}} to="/security">{t('home_page.information_security')}</Link></li>
+        <li><Link style={{color: 'white'}} to="/acquisition">{t('home_page.acquisition')}</Link></li>
+        <li><Link style={{color: 'white'}} to="/community">{t('home_page.community')}</Link></li>
       </ul>
     </p>
     <Box>
