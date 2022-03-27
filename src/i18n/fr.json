@@ -96,6 +96,9 @@
           "three": "Des événements réguliers sont organisés pour atteindre ces objectifs, par exemple la conférence sur l'informatique, Hackathon MiData, etc.",
           "four": "La coopération est également soignée au-delà de l'association afin de profiter des synergies de communautés plus importantes (par exemple Hitobito)."
         },
+        "impressum_page": {
+          "title": "Impressum"
+        },
         "slides": {
           "evaluation": {
             "text": "Merci de me remplacer.",

@@ -13,12 +13,7 @@ export default function HomePage() {
   const { t } = useTranslation()
 
   const A = styled.a`
-  color: white;
 
-  &:hover {
-    color: white;
-    opacity: 0.5;
-  }
 `
   const Infobox = styled.p`
     background: rgba(250, 250, 250, 0.8);
@@ -48,10 +43,10 @@ export default function HomePage() {
     <p>
     <h2>{t('home_page.content')}</h2>
       <ul>
-        <li><Link style={{color: 'white'}} to="/priciples">{t('home_page.principles')}</Link></li>
-        <li><Link style={{color: 'white'}} to="/security">{t('home_page.information_security')}</Link></li>
-        <li><Link style={{color: 'white'}} to="/acquisition">{t('home_page.acquisition')}</Link></li>
-        <li><Link style={{color: 'white'}} to="/community">{t('home_page.community')}</Link></li>
+        <li><Link to="/priciples">{t('home_page.principles')}</Link></li>
+        <li><Link to="/security">{t('home_page.information_security')}</Link></li>
+        <li><Link to="/acquisition">{t('home_page.acquisition')}</Link></li>
+        <li><Link to="/community">{t('home_page.community')}</Link></li>
       </ul>
     </p>
     <Box>

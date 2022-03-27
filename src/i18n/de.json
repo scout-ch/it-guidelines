@@ -97,6 +97,9 @@
           "three": "Es werden regelmässige Anlässe organisiert, um diese Ziele zu erreichen z.B. IT-Konferenz, MiData-Hackathon, usw.",
           "four": "Die Zusammenarbeit wird auch über den Verband hinaus gepflegt, um die Synergien von grösseren Communities (z.B. Hitobito) zu nutzen."
         },
+        "impressum_page": {
+          "title": "Impressum"
+        },
         "slides": {
           "evaluation": {
             "text": "Danke fürs ausfüllen.",
@@ -112,7 +115,7 @@
               "data_processing": "Anforderungen an die zu verarbeitenden Daten definieren"
             },
             "answers": {
-              "title": "Antworten"
+              "title": "Deine Antworten:"
             }
           },
           "projectPhase": {

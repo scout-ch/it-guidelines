@@ -4,8 +4,6 @@ import NewProjectPage from './pages/NewProjectPage'
 import PrinciplesPage from './pages/PrinciplesPage';
 import SecurityPage from './pages/SecurityPage';
 import HomePage from './pages/HomePage'
-import FooterImage from './images/footer.svg'
-import i18n from './i18n';
 import { withTranslation } from 'react-i18next';
 import { useTranslation } from 'react-i18next';
 import {
@@ -18,6 +16,8 @@ import AcquisitionPage from './pages/AcquisitionPage';
 import CommunityPage from './pages/CommunityPage';
 import { faScroll, faLock, faTools, faShoppingCart, faUsers, faHandsHelping, faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
+import Footer from './components/Footer';
+import ImpressumPage from './pages/ImpressumPage';
 
 const Nav = styled.nav`
   display: flex;
@@ -56,34 +56,14 @@ const Nav = styled.nav`
 }
 `
 
-const Footer = styled.footer`
-  background-image: url(${FooterImage});
-  background-repeat: repeat-x;
-  height: 236px;
-`
-
-const Button = styled.button`
-  border: none;
-  background: none;
-  color: white;
-
-  &:hover {
-    color: white;
-    opacity: 0.5;
-  }
-`
-
 export const MainContainer = styled.main`
   padding: 1rem;
+  margin: 0 9rem 0 2rem;
   flex-grow: 1;
 `
 
 const Header = () => {
-  const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
-  }
   const { t } = useTranslation()
-  const lang = i18n.language
 
   library.add(faScroll, faLock, faTools, faShoppingCart, faUsers, faHandsHelping, faCalendarAlt)
 
@@ -92,10 +72,6 @@ const Header = () => {
       <ul>
         <li><Link to="/">{t('home_page.title')}</Link></li>
         <li><Link to="/new-project">{t('new_project_page.title')}</Link></li>
-      </ul>
-      <ul>
-        <li><Button className={lang === 'de' ? 'active' : ''} onClick={() => changeLanguage('de')}>DE</Button></li>
-        <li><Button className={lang === 'fr' ? 'active' : ''} onClick={() => changeLanguage('fr')}>FR</Button></li>
       </ul>
     </Nav>
   </div>
@@ -119,6 +95,9 @@ function App() {
       </Route>
       <Route path="/new-project">
         <NewProjectPage></NewProjectPage>
+      </Route>
+      <Route path="/impressum">
+        <ImpressumPage></ImpressumPage>
       </Route>
       <Route path="/">
         <HomePage></HomePage>
