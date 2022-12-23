@@ -30,10 +30,10 @@
     "web-vitals": "^1.0.1"
   },
   "devDependencies": {
-    "@emotion/babel-preset-css-prop": "^11.2.0",
-    "@types/react-helmet": "^6.1.1",
-    "@types/react-router-dom": "^5.1.7",
-    "prettier": "^2.3.0"
+    "@emotion/babel-preset-css-prop": "^11.10.0",
+    "@types/react-helmet": "^6.1.6",
+    "@types/react-router-dom": "^5.3.3",
+    "prettier": "^2.8.1"
   },
   "scripts": {
     "start": "craco start",
