@@ -58,8 +58,23 @@ const Nav = styled.nav`
 
 export const MainContainer = styled.main`
   padding: 1rem;
-  margin: 0 9rem 0 2rem;
+  margin: 0 1.8rem 0 2rem;
   flex-grow: 1;
+  @media (min-width:1100px) {
+    margin: 0 9rem 0 2rem;
+  }
+`
+
+export const Ol = styled.ol`
+  @media (max-width:1100px) {
+    padding: 8px;
+  }
+`
+
+export const Ul = styled.ul`
+  @media (max-width:1100px) {
+    padding: 8px;
+  }
 `
 
 const Header = () => {

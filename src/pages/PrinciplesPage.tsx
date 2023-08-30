@@ -1,7 +1,7 @@
 // import styled from '@emotion/styled'
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { MainContainer } from '../App'
+import { MainContainer, Ol } from '../App'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from 'react-i18next'
 
@@ -14,7 +14,7 @@ export default function PrinciplesPage() {
   </Helmet>
     <h1><FontAwesomeIcon icon="scroll" /> {t('principles_page.title')}</h1>
     <p>
-      <ol>
+      <Ol>
         <li>{t('principles_page.one')}</li>
         <li>{t('principles_page.two')}</li>
         <li>{t('principles_page.three')}</li>
@@ -39,7 +39,7 @@ export default function PrinciplesPage() {
             <li>{t('principles_page.eleven.two')}</li>
           </ul>
         </li>
-      </ol>
+      </Ol>
     </p>
   </MainContainer>
 }

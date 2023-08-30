@@ -1,7 +1,7 @@
 // import styled from '@emotion/styled'
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { MainContainer } from '../App'
+import { MainContainer, Ul } from '../App'
 import { useTranslation } from 'react-i18next'
 import styled from '@emotion/styled'
 import {
@@ -52,18 +52,18 @@ export default function HomePage() {
     <Box>
       <div>
         <h3>{t('home_page.contact')}</h3>
-        <ul>
+        <Ul>
           <li><A href="mailto:itkom@pbs.com">{t('home_page.mail')}</A></li>
           <li><A href="https://github.com/scout-ch">{t('home_page.github')}</A></li>
-        </ul>
+        </Ul>
       </div>
 
       <div>
         <h3>{t('home_page.downloads')}</h3>
-        <ul>
+        <Ul>
           <li><A href={process.env.PUBLIC_URL + '/docs/guidelines_de.pdf'} download>Richtlinien DE</A></li>
           <li><A href={process.env.PUBLIC_URL + '/docs/guidelines_fr.pdf'} download>Lignes directrices FR</A></li>
-        </ul>
+        </Ul>
       </div>
     </Box>
   </MainContainer>

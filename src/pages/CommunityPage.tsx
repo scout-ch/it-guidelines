@@ -1,7 +1,7 @@
 // import styled from '@emotion/styled'
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { MainContainer } from '../App'
+import { MainContainer, Ul } from '../App'
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -14,18 +14,18 @@ export default function CommunityPage() {
   </Helmet>
     <h1><FontAwesomeIcon icon="users" /> {t('community_page.title')}</h1>
     <p>
-    {t('community_page.intro')}
-    <ul>
+      {t('community_page.intro')}
+      <Ul>
         <li>{t('community_page.one')}</li>
         <li>{t('community_page.two')}</li>
-      </ul>
+      </Ul>
     </p>
     <p>
-    {t('community_page.intro2')}
-    <ul>
+      {t('community_page.intro2')}
+      <Ul>
         <li>{t('community_page.three')}</li>
         <li>{t('community_page.four')}</li>
-      </ul>
+      </Ul>
     </p>
   </MainContainer>
 }

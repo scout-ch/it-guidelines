@@ -1,7 +1,7 @@
 // import styled from '@emotion/styled'
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { MainContainer } from '../App'
+import { MainContainer, Ul } from '../App'
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -15,7 +15,7 @@ export default function AcquisitionPage() {
     <h1>{t('acquisition_page.title')}</h1>
     <p>
       {t('acquisition_page.intro.text')}
-      <ul>
+      <Ul>
         <li>
           {t('acquisition_page.intro.standard.text')}
           <ul>
@@ -31,11 +31,11 @@ export default function AcquisitionPage() {
             <li>{t('acquisition_page.intro.inhouse.two')}</li>
           </ul>
         </li>
-      </ul>
+      </Ul>
     </p>
     <h2><FontAwesomeIcon icon="shopping-cart" /> {t('acquisition_page.acquisition.title')}</h2>
     <p>
-    <ul>
+      <Ul>
         <li>{t('acquisition_page.acquisition.one')}</li>
         <li>{t('acquisition_page.acquisition.two')}</li>
         <li>{t('acquisition_page.acquisition.three')}</li>
@@ -44,17 +44,17 @@ export default function AcquisitionPage() {
         <li>{t('acquisition_page.acquisition.six')}</li>
         <li>{t('acquisition_page.acquisition.seven')}</li>
         <li>{t('acquisition_page.acquisition.eight')}</li>
-      </ul>
+      </Ul>
     </p>
     <h2><FontAwesomeIcon icon="tools" /> {t('acquisition_page.operation.title')}</h2>
     <p>
-    <ul>
+      <Ul>
         <li>{t('acquisition_page.operation.one')}</li>
         <li>{t('acquisition_page.operation.two')}</li>
         <li>{t('acquisition_page.operation.three')}</li>
         <li>{t('acquisition_page.operation.four')}</li>
         <li>{t('acquisition_page.operation.five')}</li>
-      </ul>
+      </Ul>
     </p>
   </MainContainer>
 }

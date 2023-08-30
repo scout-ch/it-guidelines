@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import ClippyStage from '../components/ClippyStage'
 import { useTranslation, Trans } from 'react-i18next';
 import { Helmet } from 'react-helmet'
-import { MainContainer } from '../App'
+import { MainContainer, Ul } from '../App'
 
 const Slide = styled.section<{ show?: boolean }>`
   display: ${props => props.show ? 'block' : 'none'};
@@ -136,7 +136,7 @@ export default function NewProjectPage() {
       <Slide show={isCurrentSlide("evaluation")}>
         <p>{t("slides.evaluation.text")}</p>
         <h2>{t("slides.evaluation.todo.title")}</h2>
-        <ul>
+        <Ul>
           <li><a href="mailto:itkom@pbs.com">{t("slides.evaluation.todo.contact_itkom")}</a></li>
           <li>{t("slides.evaluation.todo.content_definition")}</li>
           {state["responsibility"] !== 'yes' && <li>{t("slides.evaluation.todo.define_po")}</li>}
@@ -145,7 +145,7 @@ export default function NewProjectPage() {
           {state["toolType"] === 'contentOnly' && <li>{t("slides.evaluation.todo.content")}</li>}
           {state["toolType"] === 'dataProcessing' && <li>{t("slides.evaluation.todo.data_processing")}</li>}
           {(state["loginNeeded"] === 'no' && state["sensitiveData"] === 'yes') && <li>{t("slides.evaluation.todo.check_login")}</li>}
-        </ul>
+        </Ul>
 
         <h2>{t("slides.evaluation.answers.title")}</h2>
         {console.log(state)}
