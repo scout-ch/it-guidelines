@@ -8,9 +8,9 @@ import { withTranslation } from 'react-i18next';
 import { useTranslation } from 'react-i18next';
 import {
   HashRouter as Router,
-  Switch,
   Route,
   Link,
+  Routes,
 } from "react-router-dom";
 import AcquisitionPage from './pages/AcquisitionPage';
 import CommunityPage from './pages/CommunityPage';
@@ -95,29 +95,15 @@ const Header = () => {
 function App() {
   return <Router basename="/">
     <Header></Header>
-    <Switch>
-      <Route path="/priciples">
-        <PrinciplesPage/>
-      </Route>
-      <Route path="/acquisition">
-        <AcquisitionPage/>
-      </Route>
-      <Route path="/community">
-        <CommunityPage/>
-      </Route>
-      <Route path="/security">
-        <SecurityPage/>
-      </Route>
-      <Route path="/new-project">
-        <NewProjectPage></NewProjectPage>
-      </Route>
-      <Route path="/impressum">
-        <ImpressumPage></ImpressumPage>
-      </Route>
-      <Route path="/">
-        <HomePage></HomePage>
-      </Route>
-    </Switch>
+    <Routes>
+      <Route path="/priciples" element={<PrinciplesPage/>}/>
+      <Route path="/acquisition" element={<AcquisitionPage/>}/>
+      <Route path="/community" element={<CommunityPage/>}/>
+      <Route path="/security" element={<SecurityPage/>}/>
+      <Route path="/new-project" element={ <NewProjectPage/>}/>
+      <Route path="/impressum" element={<ImpressumPage/>}/>
+      <Route path="/" element={<HomePage/>}/>
+    </Routes>
     <Footer></Footer>
   </Router>
 }
