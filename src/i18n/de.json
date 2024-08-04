@@ -1,21 +1,141 @@
 {
     "translation": {
         "home_page": {
-            "title": "IT Richtlinien",
-            "introduction": "Diese IT-Richtlinien definieren die Prinzipien und regeln die Prozesse der IT auf der PBS Bundesebene, sie dürfen gerne von den Kantonalverbänden und Abteilungen übernommen und weiterentwickelt werden. Geregelt werden die Punkte Beschaffung, Betrieb und Informationssicherheit sowie die zugehörigen Verantwortlichkeiten. Weiter schaffen Sie die Voraussetzungen für eine aktive IT-Community in der PBS.",
-            "new_project": "Startest du gerade ein IT-Projekt? Dann bist du hier genau richtig! Schaue dir die Leitfragen hier an:",
-            "content": "Inhalt",
-            "principles": "Prinzipien",
-            "information_security": "Informationssicherheit",
-            "acquisition": "Beschaffung und Betrieb",
-            "community": "Community",
-            "contact": "Kontakt IT-Kom",
-            "downloads": "Downloads",
-            "mail": "Sende uns eine E-Mail",
-            "github": "Schaue unsere Projekte auf Github an"
+          "title": "IT-Kompass",
+          "introduction": "Hier findest du alle wichtigen Informationen zu digitalen Projekten in der Pfadi. Brauchst du Hilfe bei der Form deines digitalen Produkts? -> schau unter Grundsätze nach. ODER: du weisst wie dein Produkt aussehen soll, brauchst aber Unterstützung bei der Umsetzung -> schau dir die IT-Richtlinien an.",
+          "new_project": "Startest du gerade ein IT-Projekt? Dann bist du hier genau richtig! Schaue dir die Leitfragen hier an:",
+          "content": "Inhalt",
+          "it_guidelines": "IT-Richtlinien",
+          "digitalisation": "Grundsätze für die Digitalisierung",
+          "contact": "Kontakt IT-Kom",
+          "mail": "Sende uns eine E-Mail",
+          "github": "Schaue unsere Projekte auf Github an"
         },
-        "new_project_page": {
+        "new_project_guidelines_page": {
           "title": "Neues Projekt"
+        },
+        "new_project_digitalisation_page": {
+          "title": "Neues Projekt",
+          "evaluation": {
+            "title": "Resultat"
+          },
+          "tools": {
+            "app": "App",
+            "game": "Game",
+            "youtube": "Youtube",
+            "e_learning": "E-Learning Plattform",
+            "website": "Webseite",
+            "podcast": "Podcast",
+            "office": "Office",
+            "pdf": "PDF",
+            "pm_tool": "PM Tool (z. B. Trello)",
+            "collaboration": "kollaborative Plattformen"
+          },
+          "questions": {
+            "printable": {
+              "text": "Muss es gedruckt funktionieren?",
+              "responses": {
+                "yes": "Ja",
+                "no": "Nein"
+              }
+            },
+            "simultan": {
+              "text": "Müssen mehrere Personen gleichzeitig mit dem Tool etwas erarbeiten/verändern können?",
+              "responses": {
+                "no": "Nein",
+                "yes": "Ja"
+              }
+            },
+            "internet_connection": {
+              "text": "Wo wird das Produkt eingesetzt? Wird Internet benötigt?",
+              "responses": {
+                "none": "kein Internet (Wald)",
+                "instable": "instabiles / langsames Internet (Kurs, ÖV)",
+                "stable": "stabiles / schnelles Internet (Zuhause)"
+              }
+            },
+            "content_types": {
+              "text": "Welche Datenformate werden verwendet (Mehrfachauswahl)?",
+              "responses": {
+                "audio": "Audio",
+                "video": "Video",
+                "text": "Text",
+                "image": "Bild",
+                "none": "keine (mehr)"
+              }
+            },
+            "interaction": {
+              "text": "Sollen die Nutzenden mit dem Produkt interagieren können?",
+              "responses": {
+                "none": "gar nicht",
+                "like_and_comment": "kommentieren / liken",
+                "content_creation": "Inhalte erstellen"
+              }
+            },
+            "feedback": {
+              "text": "Muss das Feedback auf die Interaktion automatisch generiert werden (z.B. Quiz, Datenberechnung, richtig oder falsch etc.)?",
+              "responses": {
+                "no": "Nein",
+                "yes": "Ja"
+              }
+            },
+            "creators": {
+              "text": "Wird das Tool durch die Projektgruppe erstellt oder von einer externer Firma?",
+              "responses": {
+                "self": "Projektgruppe",
+                "external": "Extern"
+              }
+            },
+            "self_creators": {
+              "text": "Gibt es im Team die folgenden Skills?",
+              "responses": {
+                "coding": "Programmieren",
+                "coding_light": "Programmieren light",
+                "basic": "Basic"
+              }
+            },
+            "external_creators": {
+              "text": "Welches Budget steht zur Verfügung?",
+              "responses": {
+                "large": "Gross (>50k)",
+                "medium": "Mittel (11-49k)",
+                "small": "Klein (<10k)"
+              }
+            },
+            "modification": {
+              "text": "Wie viel Vorwissen braucht es für das Anpassen der Inhalte?",
+              "responses": {
+                "much": "Viel",
+                "medium": "Mittel",
+                "little": "Wenig"
+              }
+            },
+            "moderation": {
+              "text": "Wie viel Aufwand bin ich bereit aufzuwenden für die Moderation (Forum, Community...)?",
+              "responses": {
+                "often": "Viel",
+                "little": "Wenig",
+                "none": "Kein"
+              }
+            }
+          }
+        },
+        "it_guidelines_page": {
+          "title": "IT-Richtlinien",
+          "introduction": "Diese IT-Richtlinien definieren die Prinzipien und regeln die Prozesse der IT auf der PBS Bundesebene, sie dürfen gerne von den Kantonalverbänden und Abteilungen übernommen und weiterentwickelt werden. Geregelt werden die Punkte Beschaffung, Betrieb und Informationssicherheit sowie die zugehörigen Verantwortlichkeiten. Weiter schaffen Sie die Voraussetzungen für eine aktive IT-Community in der PBS.",
+          "new_project": "Startest du gerade ein IT-Projekt? Dann bist du hier genau richtig! Schaue dir die Leitfragen hier an:",
+          "content": "Inhalt",
+          "principles": "Prinzipien",
+          "information_security": "Informationssicherheit",
+          "acquisition": "Beschaffung und Betrieb",
+          "community": "Community",
+          "downloads": "Downloads"
+        },
+        "digitalisation_page": {
+          "title": "Grundsätze für die Digitalisierung",
+          "introduction": "lorem Ipsum",
+          "new_project": "Neues Projekt",
+          "downloads": "Hilfsblatt herunterladen"
         },
         "principles_page": {
           "title": "Prinzipien",

@@ -1,0 +1,538 @@
+{
+  "questions": [
+    {
+      "index": 0,
+      "key": "printable",
+      "responses": [
+        {
+          "key": "no",
+          "tools": [
+            "app",
+            "game",
+            "youtube",
+            "e_learning",
+            "website",
+            "podcast",
+            "office",
+            "pm_tool",
+            "collaboration"
+          ],
+          "kills": []
+        },
+        {
+          "key": "yes",
+          "tools": [
+            "pdf"
+          ],
+          "kills": [
+            "app",
+            "game",
+            "youtube",
+            "e_learning",
+            "website",
+            "podcast",
+            "office",
+            "pm_tool",
+            "collaboration"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "key": "simultan",
+      "responses": [
+        {
+          "key": "yes",
+          "tools": [
+            "e_learning",
+            "website",
+            "office",
+            "pdf",
+            "pm_tool",
+            "collaboration"
+          ],
+          "kills": []
+        },
+        {
+          "key": "no",
+          "tools": [
+            "app",
+            "game",
+            "youtube",
+            "podcast"
+          ],
+          "kills": []
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "key": "internet_connection",
+      "responses": [
+        {
+          "key": "none",
+          "tools": [
+            "youtube",
+            "podcast",
+            "pdf"
+          ],
+          "kills": [
+            "app",
+            "game",
+            "youtube",
+            "e_learning",
+            "website",
+            "podcast",
+            "office",
+            "pdf",
+            "pm_tool",
+            "collaboration"
+          ]
+        },
+        {
+          "key": "instable",
+          "tools": [
+            "app",
+            "e_learing",
+            "website",
+            "office",
+            "pm_tool",
+            "youtube",
+            "podcast",
+            "pdf"
+          ],
+          "kills": [
+            "game",
+            "collaboration"
+          ]
+        },
+        {
+          "key": "stable",
+          "tools": [
+            "app",
+            "game",
+            "youtube",
+            "e_learning",
+            "website",
+            "podcast",
+            "office",
+            "pdf",
+            "pm_tool",
+            "collaboration"
+          ],
+          "kills": []
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "key": "content_types",
+      "responses": [
+        {
+          "key": "audio",
+          "next_question": 3,
+          "tools": [
+            "app",
+            "game",
+            "youtube",
+            "e_learing",
+            "website",
+            "podcast"
+          ],
+          "kills": [
+            "office",
+            "pdf",
+            "pm_tool",
+            "collaboration"
+          ]
+        },
+        {
+          "key": "video",
+          "next_question": 3,
+          "tools": [
+            "app",
+            "game",
+            "youtube",
+            "e_learing",
+            "website"
+          ],
+          "kills": [
+            "pdf",
+            "podcast",
+            "office",
+            "pm_tool",
+            "collaboration"
+          ]
+        },
+        {
+          "key": "text",
+          "next_question": 3,
+          "tools": [
+            "app",
+            "game",
+            "e_learning",
+            "website",
+            "office",
+            "pdf",
+            "pm_tool",
+            "collaboration"
+          ],
+          "kills": [
+            "youtube",
+            "podcast"
+          ]
+        },
+        {
+          "key": "image",
+          "next_question": 3,
+          "tools": [
+            "app",
+            "game",
+            "youtube",
+            "e_learning",
+            "website",
+            "office",
+            "pdf",
+            "pm_tool",
+            "collaboration"
+          ],
+          "kills": [
+            "podcast"
+          ]
+        },
+        {
+          "key": "none",
+          "tools": [],
+          "kills": []
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "key": "interaction",
+      "responses": [
+        {
+          "key": "none",
+          "tools": [
+            "app",
+            "game",
+            "youtube",
+            "e_learning",
+            "website",
+            "podcast",
+            "office",
+            "pdf",
+            "pm_tool",
+            "collaboration"
+          ],
+          "kills": []
+        },
+        {
+          "key": "like_and_comment",
+          "tools": [
+            "app",
+            "youtube",
+            "e_learing",
+            "website",
+            "podcast",
+            "office",
+            "pm_tool",
+            "collaboration"
+          ],
+          "kills": [
+            "game",
+            "pdf"
+          ]
+        },
+        {
+          "key": "content_creation",
+          "tools": [
+            "e_learning",
+            "office",
+            "pm_tool",
+            "collaboration"
+          ],
+          "kills": [
+            "pdf",
+            "app",
+            "game",
+            "youtube",
+            "website",
+            "podcast"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "key": "feedback",
+      "responses": [
+        {
+          "key": "yes",
+          "tools": [
+            "app",
+            "game",
+            "e_learning",
+            "website",
+            "pm_tool",
+            "collaboration"
+          ],
+          "kills": [
+            "youtube",
+            "podcast",
+            "office",
+            "pdf"
+          ]
+        },
+        {
+          "key": "no",
+          "tools": [
+            "youtube",
+            "podcast",
+            "office",
+            "pdf"
+          ],
+          "kills": []
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "key": "creators",
+      "responses": [
+        {
+          "key": "self",
+          "next_question": 7,
+          "tools": [],
+          "kills": []
+        },
+        {
+          "key": "external",
+          "next_question": 8,
+          "tools": [],
+          "kills": []
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "key": "self_creators",
+      "responses": [
+        {
+          "key": "coding",
+          "next_question": 9,
+          "tools": [
+            "app",
+            "game",
+            "youtube",
+            "e_learning",
+            "website",
+            "podcast",
+            "office",
+            "pdf",
+            "pm_tool",
+            "collaboration"
+          ],
+          "kills": []
+        },
+        {
+          "key": "coding_light",
+          "next_question": 9,
+          "tools": [
+            "youtube",
+            "e_learning",
+            "website",
+            "podcast",
+            "office",
+            "pdf",
+            "pm_tool",
+            "collaboration"
+          ],
+          "kills": [
+            "app",
+            "game"
+          ]
+        },
+        {
+          "key": "basic",
+          "next_question": 9,
+          "tools": [
+            "youtube",
+            "podcast",
+            "office",
+            "pdf",
+            "pm_tool"
+          ],
+          "kills": [
+            "app",
+            "game",
+            "e_learning",
+            "website",
+            "collaboration"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "key": "external_creators",
+      "responses": [
+        {
+          "key": "large",
+          "tools": [
+            "app",
+            "game",
+            "youtube",
+            "e_learning",
+            "website",
+            "podcast",
+            "office",
+            "pdf",
+            "pm_tool",
+            "collaboration"
+          ],
+          "kills": []
+        },
+        {
+          "key": "medium",
+          "tools": [
+            "youtube",
+            "e_learning",
+            "website",
+            "podcast",
+            "office",
+            "pdf",
+            "pm_tool",
+            "collaboration"
+          ],
+          "kills": [
+            "app",
+            "game"
+          ]
+        },
+        {
+          "key": "small",
+          "tools": [
+            "youtube",
+            "website",
+            "podcast",
+            "pdf",
+            "office",
+            "pm_tool"
+          ],
+          "kills": [
+            "app",
+            "game",
+            "e_learning",
+            "collaboration"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "key": "modification",
+      "responses": [
+        {
+          "key": "much",
+          "tools": [
+            "app",
+            "game",
+            "youtube",
+            "e_learning",
+            "website",
+            "podcast",
+            "office",
+            "pdf",
+            "pm_tool",
+            "collaboration"
+          ],
+          "kills": []
+        },
+        {
+          "key": "medium",
+          "tools": [
+            "youtube",
+            "website",
+            "podcast",
+            "office",
+            "pdf",
+            "pm_tool"
+          ],
+          "kills": [
+            "app",
+            "game",
+            "e_learning",
+            "collaboration"
+          ]
+        },
+        {
+          "key": "little",
+          "tools": [
+            "office",
+            "pdf",
+            "pm_tool"
+          ],
+          "kills": [
+            "app",
+            "game",
+            "youtube",
+            "e_learning",
+            "website",
+            "podcast",
+            "collaboration"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "key": "moderation",
+      "responses": [
+        {
+          "key": "often",
+          "tools": [
+            "youtube",
+            "e_learning",
+            "podcast",
+            "pm_tool",
+            "collaboration"
+          ],
+          "kills": []
+        },
+        {
+          "key": "little",
+          "tools": [
+            "app",
+            "office"
+          ],
+          "kills": [
+            "youtube",
+            "e_learning",
+            "podcast",
+            "pm_tool",
+            "collaboration"
+          ]
+        },
+        {
+          "key": "none",
+          "tools": [
+            "game",
+            "website",
+            "pdf"
+          ],
+          "kills": [
+            "app",
+            "youtube",
+            "e_learning",
+            "podcast",
+            "office",
+            "pm_tool",
+            "collaboration"
+          ]
+        }
+      ]
+    }
+  ]
+}

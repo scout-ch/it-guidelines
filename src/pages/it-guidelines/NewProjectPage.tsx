@@ -1,38 +1,13 @@
 import styled from '@emotion/styled'
 import React, { useState } from 'react'
-import ClippyStage from '../components/ClippyStage'
+import ClippyStage from '../../components/ClippyStage'
 import { useTranslation, Trans } from 'react-i18next';
 import { Helmet } from 'react-helmet'
-import { MainContainer, Ul } from '../App'
+import { MainContainer, Ul } from '../../App'
+import { Button, ButtonContainer } from '../HomePage';
 
 const Slide = styled.section<{ show?: boolean }>`
   display: ${props => props.show ? 'block' : 'none'};
-`
-
-const ButtonContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-
-  @media (max-width: 420px) {
-    flex-direction: column;
-  }
-`
-
-const Button = styled.button`
-  font-size: 1em;
-  padding: .5em;
-  text-align: center;
-  min-width: 5em;
-  background-color: #DDD;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  margin: 0.25em;
-
-  &:hover {
-    /* background-color: #eee; */
-    outline: 3px solid var(--color-primary)
-  }
 `
 
 type State = {
@@ -58,9 +33,9 @@ export default function NewProjectPage() {
 
   return <MainContainer>
     <Helmet>
-      <title>{t('new_project_page.title')}</title>
+      <title>{t('new_project_guidelines_page.title')}</title>
     </Helmet>
-    <h1>{t('new_project_page.title')}</h1>
+    <h1>{t('new_project_guidelines_page.title')}</h1>
     <ClippyStage variant={state.clippyVariant}>
       <Slide show={isCurrentSlide("projectPhase")}>
         <p>{t("slides.projectPhase.text")}</p>

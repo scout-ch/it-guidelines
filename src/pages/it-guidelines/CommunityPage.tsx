@@ -1,7 +1,7 @@
 // import styled from '@emotion/styled'
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { MainContainer, Ul } from '../App'
+import { MainContainer, Ul } from '../../App'
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
