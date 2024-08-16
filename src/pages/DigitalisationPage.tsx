@@ -21,6 +21,11 @@ export default function DigitalisationPage() {
       {t('digitalisation_page.new_project')}{' '}
       <Link to="/digitalisation/new-project">{t('new_project_digitalisation_page.title')}</Link>
     </Infobox>
+    <h2>{t('digitalisation_page.content')}</h2>
+    <ul>
+      <li><Link to="/digitalisation/documentation">{t('digitalisation_page.documentation')}</Link></li>
+    </ul>
+    
 
     <Box>
       <div>

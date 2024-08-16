@@ -45,10 +45,10 @@ export default function HomePage() {
     <p>{t('home_page.introduction')}</p>
     <p>
       <h2>{t('home_page.content')}</h2>
-      <ul>
-        <li><Link to="/digitalisation">{t('home_page.digitalisation')}</Link></li>
-        <li><Link to="/it-guidelines">{t('home_page.it_guidelines')}</Link></li>
-      </ul>
+      <ButtonContainer>
+        <Button><Link to="/digitalisation">{t('home_page.digitalisation')}</Link></Button>
+        <Button><Link to="/it-guidelines">{t('home_page.it_guidelines')}</Link></Button>
+      </ButtonContainer>
     </p>
 
     <Box>

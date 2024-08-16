@@ -24,7 +24,7 @@ export default function ItGuidelinesPage() {
     <p>
     <h2>{t('it_guidelines_page.content')}</h2>
       <ul>
-        <li><Link to="/it-guidelines/priciples">{t('it_guidelines_page.principles')}</Link></li>
+        <li><Link to="/it-guidelines/principles">{t('it_guidelines_page.principles')}</Link></li>
         <li><Link to="/it-guidelines/security">{t('it_guidelines_page.information_security')}</Link></li>
         <li><Link to="/it-guidelines/acquisition">{t('it_guidelines_page.acquisition')}</Link></li>
         <li><Link to="/it-guidelines/community">{t('it_guidelines_page.community')}</Link></li>

@@ -21,6 +21,7 @@ import ImpressumPage from './pages/ImpressumPage';
 import ItGuidelinesPage from './pages/ItGuidelinesPage';
 import DigitalisationPage from './pages/DigitalisationPage';
 import NewDigitalisationProjectPage from './pages/digitalisation/NewDigitalisationProjectPage';
+import DocumentationPage from './pages/digitalisation/DocumentationPage';
 
 
 const Nav = styled.nav`
@@ -34,6 +35,12 @@ const Nav = styled.nav`
     padding: 0;
     overflow: hidden;
     display: flex;
+
+    li {
+      &:hover ul:first-of-type {
+        display: block;
+      }
+    }
   }
 
   a, button {
@@ -58,6 +65,14 @@ const Nav = styled.nav`
     text-decoration: underline;
   }
 }
+`
+const SubNav = styled.ul`
+    display: none; 
+    position: absolute; 
+    background-color: var(--color-primary);
+    list-style-type: none; 
+    padding-left: 0;
+
 `
 
 export const MainContainer = styled.main`
@@ -108,8 +123,23 @@ const Header = () => {
     <Nav role="nav">
       <ul>
         <li><Link to="/">{t('home_page.title')}</Link></li>
-        <li><Link to="/digitalisation">{t('digitalisation_page.title')}</Link></li>
-        <li><Link to="/it-guidelines">{t('it_guidelines_page.title')}</Link></li>
+        <li>
+          <Link to="/digitalisation">{t('digitalisation_page.title')}</Link>
+          <SubNav>
+            <li><Link to="/digitalisation/new-project">{t('new_project_digitalisation_page.title')}</Link></li>
+            <li><Link to="/digitalisation/documentation">{t('documentation_page.title')}</Link></li>
+          </SubNav>
+        </li>
+        <li>
+          <Link to="/it-guidelines">{t('it_guidelines_page.title')}</Link>
+          <SubNav>
+            <li><Link to="/it-guidelines/new-project">{t('new_project_guidelines_page.title')}</Link></li>
+            <li><Link to="/it-guidelines/principles">{t('principles_page.title')}</Link></li>
+            <li><Link to="/it-guidelines/security">{t('security_page.title')}</Link></li>
+            <li><Link to="/it-guidelines/acquisition">{t('acquisition_page.title')}</Link></li>
+            <li><Link to="/it-guidelines/community">{t('community_page.title')}</Link></li>
+          </SubNav>
+        </li>
       </ul>
     </Nav>
   </div>
@@ -122,7 +152,8 @@ function App() {
       <Route path="/it-guidelines" element={<ItGuidelinesPage/>}/>
       <Route path="/digitalisation" element={<DigitalisationPage/>}/>
       <Route path="/digitalisation/new-project" element={ <NewDigitalisationProjectPage/>}/>
-      <Route path="/it-guidelines/priciples" element={<PrinciplesPage/>}/>
+      <Route path="/digitalisation/documentation" element={ <DocumentationPage/>}/>
+      <Route path="/it-guidelines/principles" element={<PrinciplesPage/>}/>
       <Route path="/it-guidelines/acquisition" element={<AcquisitionPage/>}/>
       <Route path="/it-guidelines/community" element={<CommunityPage/>}/>
       <Route path="/it-guidelines/security" element={<SecurityPage/>}/>
