@@ -3,224 +3,33 @@ import ClippyStage from '../../components/ClippyStage'
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet'
 import { MainContainer } from '../../App'
-import { Question, ScoreList, WarningList, Response, Warning, Root } from '../../types';
+import { Question, ScoreList, Response, Warning, Root, Reply } from '../../types';
 import { Button, ButtonContainer } from '../HomePage';
 import questionJson from './../../questions.json';
+import styled from '@emotion/styled';
 
 type State = {
   currentSlide: string;
   clippyVariant: "" | "focus" | "rolleye" | 'angry';
 }
 
+const Checkbox = styled.input`
+    margin-right: 10px
+`
+
 const defaultState = (): State => ({ currentSlide: 'projectPhase', clippyVariant: 'focus' })
-const defaultScore = (): ScoreList => ({
-  tools: {
-    app: 0,
-    game: 0,
-    youtube: 0,
-    website: 0,
-    pdf: 0,
-    office: 0,
-    pm_tool: 0,
-    collaboration: 0,
-    e_learning: 0,
-    podcast: 0
-  }
-})
-const defaultWarning = (): WarningList => ({
-  tools: {
-    app: [],
-    game: [],
-    youtube: [],
-    website: [],
-    pdf: [],
-    office: [],
-    pm_tool: [],
-    collaboration: [],
-    e_learning: [],
-    podcast: []
-  }
-})
+
+const defaultReplies = (): Reply[] => ([])
 
 export default function NewDigitalisationProjectPage() {
   const [state, setState] = useState<State>(defaultState)
+  const [replies, setReplies] = useState<Reply[]>(defaultReplies)
   const { t } = useTranslation()
   const [currentQuestion, setCurrentQuestion] = useState<number>(0);
   const [showScore, setShowScore] = useState<Boolean>(false);
-  const [score, setScore] = useState<ScoreList>(defaultScore);
-  const [warnings, setWarnings] = useState<WarningList>(defaultWarning);
 
-  function updateScore(question: Question, option: Response) {
-    let newState = score
-    if (option.tools.includes('app')) {
-      newState = {
-        tools: {
-          ...newState.tools,
-          app: score.tools.app + 1
-        }
-      }
-    }
-    if (option.tools.includes('game')) {
-      newState = {
-        tools: {
-          ...newState.tools,
-          game: score.tools.game + 1
-        }
-      }
-    }
-    if (option.tools.includes('youtube')) {
-      newState = {
-        tools: {
-          ...newState.tools,
-          youtube: score.tools.youtube + 1
-        }
-      }
-    }
-    if (option.tools.includes('e_learning')) {
-      newState = {
-        tools: {
-          ...newState.tools,
-          e_learning: score.tools.e_learning + 1
-        }
-      }
-    }
-    if (option.tools.includes('website')) {
-      newState = {
-        tools: {
-          ...newState.tools,
-          website: score.tools.website + 1
-        }
-      }
-    }
-    if (option.tools.includes('podcast')) {
-      newState = {
-        tools: {
-          ...newState.tools,
-          podcast: score.tools.podcast + 1
-        }
-      }
-    }
-    if (option.tools.includes('office')) {
-      newState = {
-        tools: {
-          ...newState.tools,
-          office: score.tools.office + 1
-        }
-      }
-    }
-    if (option.tools.includes('pdf')) {
-      newState = {
-        tools: {
-          ...newState.tools,
-          pdf: score.tools.pdf + 1
-        }
-      }
-    }
-    if (option.tools.includes('pm_tool')) {
-      newState = {
-        tools: {
-          ...newState.tools,
-          pm_tool: score.tools.pm_tool + 1
-        }
-      }
-    }
-    if (option.tools.includes('collaboration')) {
-      newState = {
-        tools: {
-          ...newState.tools,
-          collaboration: score.tools.collaboration + 1
-        }
-      }
-    }
-    setScore(newState)
-  }
 
-  function updateWarnings(question: Question, option: Response) {
-    let newState = warnings
-    if (option.kills.includes('app')) {
-      newState = {
-        tools: {
-          ...newState.tools,
-          app: warnings.tools.app.concat({ question: question, response: option })
-        }
-      }
-    }
-    if (option.kills.includes('game')) {
-      newState = {
-        tools: {
-          ...newState.tools,
-          game: warnings.tools.game.concat({ question: question, response: option })
-        }
-      }
-    }
-    if (option.kills.includes('youtube')) {
-      newState = {
-        tools: {
-          ...newState.tools,
-          youtube: warnings.tools.youtube.concat({ question: question, response: option })
-        }
-      }
-    }
-    if (option.kills.includes('e_learning')) {
-      newState = {
-        tools: {
-          ...newState.tools,
-          e_learning: warnings.tools.e_learning.concat({ question: question, response: option })
-        }
-      }
-    }
-    if (option.kills.includes('website')) {
-      newState = {
-        tools: {
-          ...newState.tools,
-          website: warnings.tools.website.concat({ question: question, response: option })
-        }
-      }
-    }
-    if (option.kills.includes('podcast')) {
-      newState = {
-        tools: {
-          ...newState.tools,
-          podcast: warnings.tools.podcast.concat({ question: question, response: option })
-        }
-      }
-    }
-    if (option.kills.includes('office')) {
-      newState = {
-        tools: {
-          ...newState.tools,
-          office: warnings.tools.office.concat({ question: question, response: option })
-        }
-      }
-    }
-    if (option.kills.includes('pdf')) {
-      newState = {
-        tools: {
-          ...newState.tools,
-          pdf: warnings.tools.pdf.concat({ question: question, response: option })
-        }
-      }
-    }
-    if (option.kills.includes('pm_tool')) {
-      newState = {
-        tools: {
-          ...newState.tools,
-          pm_tool: warnings.tools.pm_tool.concat({ question: question, response: option })
-        }
-      }
-    }
-    if (option.kills.includes('collaboration')) {
-      newState = {
-        tools: {
-          ...newState.tools,
-          collaboration: warnings.tools.collaboration.concat({ question: question, response: option })
-        }
-      }
-    }
-    setWarnings(newState)
-  }
-
-  function replyWith(option: Response, question: Question) {
+  function nextQuestion(option: Response) {
     let nextQuestion = currentQuestion + 1;
     if (option.next_question) {
       nextQuestion = option.next_question
@@ -231,11 +40,48 @@ export default function NewDigitalisationProjectPage() {
     } else {
       setShowScore(true)
     }
-    updateScore(question, option)
-    updateWarnings(question, option)
+    return
+  }
+
+  function replyWith(option: Response, question: Question, event?: React.ChangeEvent<HTMLInputElement>) {
+    if (event) {
+      if (event.target.checked) {
+        setReplies([
+          ...replies,
+          { id: question.key + option.key, question: question, response: option }
+        ])
+      } else {
+        setReplies(replies.filter(a =>
+          a.id !== question.key + option.key
+        ))
+      }
+      return
+    }
+
+    nextQuestion(option)
+
+    setReplies([
+      ...replies,
+      { id: `${question.key}-${option.key}`, question: question, response: option }
+    ])
   }
 
   function printOptions(question: Question) {
+    if (question.multiple_choice && question.multiple_choice === true) {
+      const checkboxes = question.responses.map(function (option: Response) {
+        return <div>
+          <label>
+            <Checkbox type="checkbox" value={option.key} name={question.key} onChange={(e) => replyWith(option, question, e)} />
+            {t(`new_project_digitalisation_page.questions.${question.key}.responses.${option.key}`)}
+          </label>
+        </div>
+      })
+      return <div id={question.key}>
+        {checkboxes}<br />
+        <Button type="button" onClick={() => nextQuestion(question.responses[0])}>{t('new_project_digitalisation_page.questions.next')}</Button>
+      </div>
+    }
+
     return question.responses.map(function (option: Response) {
       return <Button key={option.key} type="button" onClick={() => replyWith(option, question)}>
         {t(`new_project_digitalisation_page.questions.${question.key}.responses.${option.key}`)}
@@ -254,26 +100,49 @@ export default function NewDigitalisationProjectPage() {
 
 
   function calculateResult() {
-    const scoreResultsSortedAndSliced: [string, number][] = Object.entries(score.tools).sort(([, a], [, b]) => b - a)//.slice(5)
-    const warningEntries: [string, Warning[]][] = Object.entries(warnings.tools)
+
+    let score: ScoreList[] = [
+      { key: 'app', score: 0, warnings: [] },
+      { key: 'game', score: 0, warnings: [] },
+      { key: 'youtube', score: 0, warnings: [] },
+      { key: 'website', score: 0, warnings: [] },
+      { key: 'pdf', score: 0, warnings: [] },
+      { key: 'office', score: 0, warnings: [] },
+      { key: 'pm_tool', score: 0, warnings: [] },
+      { key: 'collaboration', score: 0, warnings: [] },
+      { key: 'e_learning', score: 0, warnings: [] },
+      { key: 'podcast', score: 0, warnings: [] }
+    ]
+    replies.forEach(function (reply: Reply) {
+      reply.response.tools.forEach(function (tool: string) {
+        const scoreTool = score.find(a => a.key === tool)
+        if (scoreTool) {
+          scoreTool.score += 1
+        }
+      })
+      reply.response.kills.forEach(function (tool: string) {
+        const killTool = score.find(a => a.key === tool)
+        if (killTool) {
+          killTool.warnings.push({ question: reply.question, response: reply.response })
+        }
+      })
+    })
 
     return <div className='result-section'>
-      {scoreResultsSortedAndSliced.map((a) => {
-        let warnings = warningEntries.find((warning) => {
-          return warning[0] === a[0]
-        })
+      {score.sort((a, b) => b.score - a.score).map((a) => {
+        let warnings = a.warnings
         return <div>
-          <h3>{t(`new_project_digitalisation_page.tools.${a[0]}`)} (Score: {a[1]})</h3>
-          {warnings && warnings[1].length > 0 ?
-            <div><h5>Warnungen</h5>
+          <h3>{t(`new_project_digitalisation_page.tools.${a.key}`)} (Score: {a.score})</h3>
+          {warnings && warnings.length > 0 ?
+            <div><h5>{t('new_project_digitalisation_page.questions.warnings')}</h5>
               <ul>
-                {printWarnings(warnings[1])}
+                {printWarnings(warnings)}
               </ul>
             </div>
             :
             ""
           }
-          <hr/>
+          <hr />
 
         </div>
       })}
@@ -287,7 +156,7 @@ export default function NewDigitalisationProjectPage() {
     </Helmet>
     <h1>{t('new_project_digitalisation_page.title')}</h1>
     <ClippyStage variant={state.clippyVariant}>
-    {showScore ? <div className='score-section'>
+      {showScore ? <div className='score-section'>
         <h2>{t("new_project_digitalisation_page.evaluation.title")}</h2>
         {calculateResult()}
       </div> :

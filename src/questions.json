@@ -128,10 +128,10 @@
     {
       "index": 3,
       "key": "content_types",
+      "multiple_choice": true,
       "responses": [
         {
           "key": "audio",
-          "next_question": 3,
           "tools": [
             "app",
             "game",
@@ -149,7 +149,6 @@
         },
         {
           "key": "video",
-          "next_question": 3,
           "tools": [
             "app",
             "game",
@@ -167,7 +166,6 @@
         },
         {
           "key": "text",
-          "next_question": 3,
           "tools": [
             "app",
             "game",
@@ -185,7 +183,6 @@
         },
         {
           "key": "image",
-          "next_question": 3,
           "tools": [
             "app",
             "game",
@@ -200,11 +197,6 @@
           "kills": [
             "podcast"
           ]
-        },
-        {
-          "key": "none",
-          "tools": [],
-          "kills": []
         }
       ]
     },

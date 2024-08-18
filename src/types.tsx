@@ -1,38 +1,20 @@
 
-export interface ScoreList {
-  tools: Score
+
+export type ScoreList = {
+  key: string
+  score: number
+  warnings: Warning[]
 }
 
-export interface WarningList {
-  tools: ToolWarning
-}
 export interface Warning {
   question: Question
   response: Response
 }
-export interface ToolWarning {
-  app: Warning[]
-  game: Warning[]
-  youtube: Warning[]
-  e_learning: Warning[]
-  website: Warning[]
-  podcast: Warning[]
-  office: Warning[]
-  pdf: Warning[]
-  pm_tool: Warning[]
-  collaboration: Warning[]
-}
-export interface Score {
-  app: number
-  game: number
-  youtube: number
-  e_learning: number
-  website: number
-  podcast: number
-  office: number
-  pdf: number
-  pm_tool: number
-  collaboration: number
+
+export type Reply = {
+  id: string
+  question: Question
+  response: Response
 }
 
 export interface Root {
@@ -42,6 +24,7 @@ export interface Root {
 export interface Question {
   index: number
   key: string
+  multiple_choice?: boolean
   responses: Response[]
 }
 

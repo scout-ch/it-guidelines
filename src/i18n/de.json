@@ -32,6 +32,8 @@
             "collaboration": "kollaborative Plattformen"
           },
           "questions": {
+            "next": "weiter",
+            "warnings": "Warnungen",
             "printable": {
               "text": "Muss es gedruckt funktionieren?",
               "responses": {
@@ -60,8 +62,7 @@
                 "audio": "Audio",
                 "video": "Video",
                 "text": "Text",
-                "image": "Bild",
-                "none": "keine (mehr)"
+                "image": "Bild"
               }
             },
             "interaction": {
