@@ -14,7 +14,7 @@ import {
 } from "react-router-dom";
 import AcquisitionPage from './pages/it-guidelines/AcquisitionPage';
 import CommunityPage from './pages/it-guidelines/CommunityPage';
-import { faScroll, faLock, faTools, faShoppingCart, faUsers, faHandsHelping, faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
+import { faScroll, faLock, faTools, faShoppingCart, faUsers, faHandsHelping, faCalendarAlt, faCompass } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import Footer from './components/Footer';
 import ImpressumPage from './pages/ImpressumPage';
@@ -22,6 +22,8 @@ import ItGuidelinesPage from './pages/ItGuidelinesPage';
 import DigitalisationPage from './pages/DigitalisationPage';
 import NewDigitalisationProjectPage from './pages/digitalisation/NewDigitalisationProjectPage';
 import DocumentationPage from './pages/digitalisation/DocumentationPage';
+import CompletionPage from './pages/CompletionPage';
+import OrganisationPage from './pages/it-guidelines/OrganisationPage';
 
 
 const Nav = styled.nav`
@@ -37,6 +39,8 @@ const Nav = styled.nav`
     display: flex;
 
     li {
+      border-right: 1px solid white;
+      margin: 5px 0;
       &:hover ul:first-of-type {
         display: block;
       }
@@ -73,6 +77,10 @@ const SubNav = styled.ul`
     list-style-type: none; 
     padding-left: 0;
 
+`
+
+export const NavLocation = styled.div`
+  font-size: 0.8rem;
 `
 
 export const MainContainer = styled.main`
@@ -117,7 +125,7 @@ border-top: 1px solid white;
 const Header = () => {
   const { t } = useTranslation()
 
-  library.add(faScroll, faLock, faTools, faShoppingCart, faUsers, faHandsHelping, faCalendarAlt)
+  library.add(faScroll, faLock, faTools, faShoppingCart, faUsers, faHandsHelping, faCalendarAlt, faCompass)
 
   return <div className='nav'>
     <Nav role="nav">
@@ -138,7 +146,11 @@ const Header = () => {
             <li><Link to="/it-guidelines/security">{t('security_page.title')}</Link></li>
             <li><Link to="/it-guidelines/acquisition">{t('acquisition_page.title')}</Link></li>
             <li><Link to="/it-guidelines/community">{t('community_page.title')}</Link></li>
+            <li><Link to="/it-guidelines/organisation">{t('organisation_page.title')}</Link></li>
           </SubNav>
+        </li>
+        <li>
+          <Link to="/completion">{t('completion_page.title')}</Link>
         </li>
       </ul>
     </Nav>
@@ -151,11 +163,13 @@ function App() {
     <Routes>
       <Route path="/it-guidelines" element={<ItGuidelinesPage/>}/>
       <Route path="/digitalisation" element={<DigitalisationPage/>}/>
+      <Route path="/completion" element={<CompletionPage/>}/>
       <Route path="/digitalisation/new-project" element={ <NewDigitalisationProjectPage/>}/>
       <Route path="/digitalisation/documentation" element={ <DocumentationPage/>}/>
       <Route path="/it-guidelines/principles" element={<PrinciplesPage/>}/>
       <Route path="/it-guidelines/acquisition" element={<AcquisitionPage/>}/>
       <Route path="/it-guidelines/community" element={<CommunityPage/>}/>
+      <Route path="/it-guidelines/organisation" element={<OrganisationPage/>}/>
       <Route path="/it-guidelines/security" element={<SecurityPage/>}/>
       <Route path="/it-guidelines/new-project" element={ <NewProjectPage/>}/>
       <Route path="/impressum" element={<ImpressumPage/>}/>

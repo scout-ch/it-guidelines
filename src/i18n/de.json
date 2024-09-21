@@ -3,10 +3,10 @@
         "home_page": {
           "title": "IT-Kompass",
           "introduction": "Hier findest du alle wichtigen Informationen zu digitalen Projekten in der Pfadi. Brauchst du Hilfe bei der Form deines digitalen Produkts? -> schau unter Grundsätze nach. ODER: du weisst wie dein Produkt aussehen soll, brauchst aber Unterstützung bei der Umsetzung -> schau dir die IT-Richtlinien an.",
-          "new_project": "Startest du gerade ein IT-Projekt? Dann bist du hier genau richtig! Schaue dir die Leitfragen hier an:",
           "content": "Inhalt",
           "it_guidelines": "IT-Richtlinien",
           "digitalisation": "Grundsätze für die Digitalisierung",
+          "completion": "Grundsätze für den Projektabschluss",
           "contact": "Kontakt IT-Kom",
           "mail": "Sende uns eine E-Mail",
           "github": "Schaue unsere Projekte auf Github an"
@@ -130,6 +130,7 @@
           "information_security": "Informationssicherheit",
           "acquisition": "Beschaffung und Betrieb",
           "community": "Community",
+          "organisation": "Organisation",
           "downloads": "Downloads"
         },
         "digitalisation_page": {
@@ -143,6 +144,13 @@
         "documentation_page": {
           "title": "Hilfsmittel / Dokumentation",
           "introduction": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum"
+        },
+        "completion_page": {
+          "title": "Grundsätze für den Projektabschluss",
+          "introduction": "lorem Ipsum",
+          "complete_project": "Projekt abschliessen",
+          "content": "Inhalt",
+          "downloads": "Hilfsblatt herunterladen"
         },
         "principles_page": {
           "title": "Prinzipien",
@@ -158,7 +166,8 @@
             "priciple": "Von der Bundesebene betriebene oder unterstützte IT-Tools sollen über Schnittstellen (APIs) untereinander vernetzt werden können.",
             "one": "IT-Tools stellen die von ihnen verwalteten Daten und Dienste so dynamisch und flexibel wie möglich über Schnittstellen zur Verfügung.",
             "two": "IT-Tools beziehen fremde Daten über die zur Verfügung gestellten Schnittstellen.",
-            "three": "Die Schnittstellen und ihre Dokumentation sollen für die Community zur Verfügung stehen, um weitere Entwicklungen zu ermöglichen."
+            "three": "Die Schnittstellen und ihre Dokumentation sollen für die Community zur Verfügung stehen, um weitere Entwicklungen zu ermöglichen.",
+            "four": "Schnittstellen sollen möglichst allgemein gehalten werden und stabil bleiben (d.h. Information bei Änderung, API-Versionierung)"
           },
           "ten": "Die PBS fördert und unterstützt Ideen, IT-Tools, -Services und -Projekte, welche dem Pfadibetrieb (insbesondere den Abteilungen und Kantonalverbänden) helfen. Dazu wird eine aktive Community angestrebt.",
           "eleven": {
@@ -212,7 +221,8 @@
             "two": "Ein verhältnismässiges Monitoring soll betrieben werden.",
             "three": "Ein zentrales Lifecycle Management mit Ablösungs-Roadmap über alle IT-Tools muss geführt werden.",
             "four": "Geschäftskritische Daten müssen durch ein Backup gesichert werden.",
-            "five": "Damit der Pfadibetrieb nicht unter dem Ausfall (Tool, Daten, Strom nicht verfügbar, usw.) von IT-Tools leidet, soll für geschäftskritischen IT-Tools ein Plan B (Business Continuity Management) existieren."
+            "five": "Damit der Pfadibetrieb nicht unter dem Ausfall (Tool, Daten, Strom nicht verfügbar, usw.) von IT-Tools leidet, soll für geschäftskritischen IT-Tools ein Plan B (Business Continuity Management) existieren.",
+            "six": "Der kontinuierliche Betrieb muss sichergestellt werden (z.B. durch kontinuierliches Patching, Monitoring, Pen-Test)"
           }
         },
         "community_page": {
@@ -223,6 +233,36 @@
           "intro2": "Die PBS bietet eine Anlaufstelle für die Kantonalverbände und Abteilungen. Sie fördert einen aktiven Austausch, holt Ideen ein, bringt Bedürfnisse und Praktiken der Community in Erfahrung und unterhält diese.",
           "three": "Es werden regelmässige Anlässe organisiert, um diese Ziele zu erreichen z.B. IT-Konferenz, MiData-Hackathon, usw.",
           "four": "Die Zusammenarbeit wird auch über den Verband hinaus gepflegt, um die Synergien von grösseren Communities (z.B. Hitobito) zu nutzen."
+        },
+        "organisation_page": {
+          "title": "Organisation",
+          "intro": "Um IT-Tools zu managen, setzt die Bundesebene Product Owner (PO) ein. Diese sind auf der Bundesebene eingegliedert. PO müssen keine IT-Spezialisten sein, sondern die Anforderungen des Verbandes an das Produkt kennen, verstehen, weiterentwickeln und verantworten können.",
+          "po": {
+            "title": "Verantwortlichkeiten des Product Owner (PO)",
+            "intro": "Die Rolle PO wird idealerweise nur von einer Person besetzt, wobei eine Person mehrere PO- Rollen haben kann.",
+            "one": "Sammlung und Definition der Anforderungen an das Produkt sowie die Priorisierung der Arbeiten.",
+            "two": "Aufgaben nach PBS Projektleitfaden, falls keine dedizierte Projektleitung vorhanden ist.",
+            "three": "Verantwortung über den ganzen Lifecycle eines IT-Tools.",
+            "four": "Lieferung von Informationen bezüglich IT-Tool-Lifecycle an die ITKom.",
+            "five": "Erarbeitung der Datennutzungserklärung inkl. Zugriffsberechtigungen, wobei insbesondere auf alle schützenswerten Daten eingegangen werden muss.",
+            "six": "Erarbeitung eines Vorschlags zur Klassifikation von schützenswerten Daten des IT-Tools zuhanden der ITKom.",
+            "seven": "Im-Auge-Behalten von technischen Schulden und diese transparent machen. Grundsätzlich gilt, dass technische Schulden nur begründet in Kauf genommen und in der Weiterentwicklung abgebaut werden sollen."
+          },
+          "itkom": {
+            "title": "Verantwortlichkeiten der IT-Kommission (ITKom)",
+            "one": "Pflege der IT-Community. Die ITKom übernimmt in diesem Zusammenhang die Rolle eines Katalysators und vernetzt Ideen und Projekte der Pfadi in der Schweiz.",
+            "two": "Unterhaltung der Unternehmensarchitektur, mit deren Hilfe die Softwarelandschaft der PBS überblickt und weiterentwickelt werden kann. Die Unternehmensarchitektur sollte pro IT-Tool folgende Punkte beinhalten: Zweck, Services, High-Level-Prozesse, Klassifi- kation, Technologie-Stack, Lifecycle, Schnittstellen und Verbindungen (zu anderen IT- Tools) und deren Daten-Modelle.",
+            "three": "Zentrales Lifecycle-Management für die langfristige Planung der benötigten Ressourcen.",
+            "four": "Initiale Klassifikation von Geschäftskritikalität, schützenswerten und archivierungspflichtigen Daten pro IT-Tool. Diese Klassifikationen sollen jährlich überprüft werden.",
+            "five": "Regelmässige Überprüfung und bei Bedarf Anpassung der IT-Richtlinien."
+          }, 
+          "vl": {
+            "title": "Verantwortlichkeiten der Verbandsleitung (VL)",
+            "one": "Verantwortung für die Überprüfung aller Berechtigungen (z.B. Rollen in der MiData oder generelle Zugriffe auf gewisse IT-Tools) auf Bundesebene pro IT-Tool in einem jeweils sinnvollen, regelmässigen Abstand, mindestens aber jährlich.",
+            "two": "Sicherstellen der Zuweisung eines Product Owner pro IT-Tool.",
+            "three": "Sensibilisierung der Geschäftsstelle und der Bundesebene bezüglich Informationssicherheit und Cyber-Angriffe.",
+            "four": "Sicherstellen der Business Continuity im Zusammenhang mit IT-Tools."
+          }
         },
         "impressum_page": {
           "title": "Impressum"
