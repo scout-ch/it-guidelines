@@ -17,7 +17,8 @@
         "new_project_digitalisation_page": {
           "title": "Neues Projekt",
           "evaluation": {
-            "title": "Resultat"
+            "title": "Resultat",
+            "restart": "Antworten bearbeiten"
           },
           "tools": {
             "app": "App",
@@ -274,6 +275,7 @@
               "title": "ToDo",
               "contact_itkom": "Kontakt aufnehmen mit der IT-Kom",
               "define_po": "Verantwortliche Person definieren",
+              "fill_operations": "Fülle das Formular für die Betriebsplattform aus",
               "content_definition": "Anforderungen definieren",
               "define_api_consumption": "Definieren welche Daten von der MiData benötigt werden",
               "check_existing": "Abklären, ob das existierende Tool genutzt werden kann",
@@ -289,7 +291,8 @@
             "text": "In welcher Phase des Projekts befindest du dich?",
             "buttons": {
               "idea": "Idee",
-              "implementation": "Umsetzung"
+              "implementation": "Umsetzung",
+              "operation": "Betrieb"
             }
           },
           "targetAudience": {

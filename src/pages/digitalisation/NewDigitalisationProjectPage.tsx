@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ClippyStage from '../../components/ClippyStage'
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet'
@@ -25,9 +25,43 @@ export default function NewDigitalisationProjectPage() {
   const [state, setState] = useState<State>(defaultState)
   const [replies, setReplies] = useState<Reply[]>(defaultReplies)
   const { t } = useTranslation()
-  const [currentQuestion, setCurrentQuestion] = useState<number>(0);
-  const [showScore, setShowScore] = useState<Boolean>(false);
+  const [currentQuestion, setCurrentQuestion] = useState<number>(() => {
+    const store = localStorage.getItem('digitalisationCurrentQuestion');
+    if (store) {
+      return JSON.parse(store) || 0
+    }
+    return 0
+  });
 
+  const [showScore, setShowScore] = useState<Boolean>(() => {
+    const store = localStorage.getItem('digitalisationShowScore');
+    if (store) {
+      return Boolean(JSON.parse(store)) || false
+    }
+    return false
+  });
+
+  useEffect(() => {
+    const store = localStorage.getItem('digitalisationReplies')
+    if (store) {
+      const items = JSON.parse(store);
+      if (items) {
+       setReplies(items);
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("digitalisationReplies", JSON.stringify(replies));
+  }, [replies]);
+
+  useEffect(() => {
+    localStorage.setItem("digitalisationShowScore", JSON.stringify(showScore));
+  }, [showScore]);
+
+  useEffect(() => {
+    localStorage.setItem("digitalisationCurrentQuestion", JSON.stringify(currentQuestion));
+  }, [currentQuestion]);
 
   function nextQuestion(option: Response) {
     let nextQuestion = currentQuestion + 1;
@@ -44,12 +78,21 @@ export default function NewDigitalisationProjectPage() {
   }
 
   function replyWith(option: Response, question: Question, event?: React.ChangeEvent<HTMLInputElement>) {
+    // doesn't work because of response id includes option.... fuuu
     if (event) {
       if (event.target.checked) {
-        setReplies([
-          ...replies,
-          { id: question.key + option.key, question: question, response: option }
-        ])
+
+        const existing = replies.find((r:Reply) =>  r.id === question.key + option.key)
+        if (existing) {
+          setReplies(replies.filter(a =>
+            a.id !== question.key + option.key
+          ))
+        } else {
+          setReplies([
+            ...replies,
+            { id: question.key + option.key, question: question, response: option }
+          ])
+        }
       } else {
         setReplies(replies.filter(a =>
           a.id !== question.key + option.key
@@ -59,19 +102,33 @@ export default function NewDigitalisationProjectPage() {
     }
 
     nextQuestion(option)
-
-    setReplies([
-      ...replies,
-      { id: `${question.key}-${option.key}`, question: question, response: option }
-    ])
+    
+    const found = replies.find((r:Reply) =>  r.question.key === question.key)
+    if (found) {
+      found.response = option
+      const newReplies = replies.map<Reply>((r: Reply) => r.question.key === question.key ? found : r)
+      setReplies(newReplies)
+    } else {
+      setReplies([
+        ...replies,
+        { id: `${question.key}-${option.key}`, question: question, response: option }
+      ])
+    }
   }
 
   function printOptions(question: Question) {
     if (question.multiple_choice && question.multiple_choice === true) {
       const checkboxes = question.responses.map(function (option: Response) {
+        const response = replies.find((r:Reply) =>  r.id === question.key + option.key)
+        let storedResponseKey
+        if (response) {
+          storedResponseKey = response.response.key
+        }
         return <div>
           <label>
-            <Checkbox type="checkbox" value={option.key} name={question.key} onChange={(e) => replyWith(option, question, e)} />
+            <Checkbox type="checkbox" value={option.key} name={question.key} 
+            onChange={(e) => replyWith(option, question, e)}
+            checked={storedResponseKey === option.key} />
             {t(`new_project_digitalisation_page.questions.${question.key}.responses.${option.key}`)}
           </label>
         </div>
@@ -83,7 +140,16 @@ export default function NewDigitalisationProjectPage() {
     }
 
     return question.responses.map(function (option: Response) {
-      return <Button key={option.key} type="button" onClick={() => replyWith(option, question)}>
+      const replyStore = localStorage.getItem('digitalisationReplies')
+      let storedResponseKey
+      if (replyStore) {
+        const items = JSON.parse(replyStore);
+        const response:Reply = items.find((e: Reply) => e.question.key === question.key);
+        if (response) {
+          storedResponseKey = response.response.key
+        }
+      }
+      return <Button key={option.key} type="button" onClick={() => replyWith(option, question)} className={storedResponseKey === option.key ? 'selected-response' : ''}>
         {t(`new_project_digitalisation_page.questions.${question.key}.responses.${option.key}`)}
       </Button>
     })
@@ -93,6 +159,11 @@ export default function NewDigitalisationProjectPage() {
     return warnings.map(function (warning: Warning) {
       return <li>{`${t(`new_project_digitalisation_page.questions.${warning.question.key}.text`)} => ${t(`new_project_digitalisation_page.questions.${warning.question.key}.responses.${warning.response.key}`)}`}</li>
     })
+  }
+
+  function restart() {
+    setShowScore(false)
+    setCurrentQuestion(0)
   }
 
   const questionsRoot: Root = questionJson
@@ -158,6 +229,7 @@ export default function NewDigitalisationProjectPage() {
     <ClippyStage variant={state.clippyVariant}>
       {showScore ? <div className='score-section'>
         <h2>{t("new_project_digitalisation_page.evaluation.title")}</h2>
+        <Button type="button" onClick={() => restart()}>{t('new_project_digitalisation_page.evaluation.restart')}</Button>
         {calculateResult()}
       </div> :
         <div className='question-section'>

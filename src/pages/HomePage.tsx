@@ -33,6 +33,9 @@ const Card = styled.div`
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   button {
     background-color: var(--color-primary-light);

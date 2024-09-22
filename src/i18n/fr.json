@@ -15,7 +15,11 @@
           "title": "Nouveau projet"
         },
         "new_project_digitalisation_page": {
-          "title": "Nouveau projet"
+          "title": "Nouveau projet",
+          "evaluation": {
+            "title": "Résultat",
+            "restart": "Modifier les réponses"
+          }
         },
         "it_guidelines_page": {
             "title": "Lignes directrices IT",
@@ -170,6 +174,7 @@
               "title": "ToDo",
               "contact_itkom": "Contacter le Comité IT",
               "define_po": "Définir la personne responsable",
+              "fill_operations": "#Fülle das Formular für die Betriebsplattform aus",
               "content_definition": "Définir les besoins",
               "define_api_consumption": "Définir quelles données sont requises par le MiData",
               "check_existing": "Clarifier si l'outil existant doit être utilisé",
@@ -185,7 +190,8 @@
             "text": "Dans quelle phase du projet vous trouvez-vous?",
             "buttons": {
               "idea": "Idée",
-              "implementation": "Mise en œuvre"
+              "implementation": "Mise en œuvre",
+              "operation": "Opération"
             }
           },
           "targetAudience": {
