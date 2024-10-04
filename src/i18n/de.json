@@ -4,9 +4,21 @@
           "title": "IT-Kompass",
           "introduction": "Hier findest du alle wichtigen Informationen zu digitalen Projekten in der Pfadi. Brauchst du Hilfe bei der Form deines digitalen Produkts? -> schau unter Grundsätze nach. ODER: du weisst wie dein Produkt aussehen soll, brauchst aber Unterstützung bei der Umsetzung -> schau dir die IT-Richtlinien an.",
           "content": "Inhalt",
-          "it_guidelines": "IT-Richtlinien",
-          "digitalisation": "Grundsätze für die Digitalisierung",
-          "completion": "Grundsätze für den Projektabschluss",
+          "it_guidelines": {
+            "title": "IT-Richtlinien",
+            "button": "zu den IT-Richtlinien",
+            "teaser": "Die IT-Richtlinien definieren die Prinzipien und regeln die Prozesse der IT auf der PBS Bundesebene. Schaue dir die Leitfragen für dein neues Projekt an."
+          },
+          "digitalisation": {
+            "title": "Grundsätze für die Digitalisierung",
+            "button": "zu den Grundsätzen für die Digitalisierung",
+            "teaser": "Finde heraus welches die beste Digitalisierungsart ist für dein Projekt."
+          },
+          "completion": {
+            "title": "Grundsätze für den Projektabschluss",
+            "button": "zu den Grundsätzen für den Projektabschluss",
+            "teaser": "Du schliesst ein IT-Projekt ab, schaue dir die Hilfsfragen an damit du nichts vergisst."
+          },
           "contact": "Kontakt IT-Kom",
           "mail": "Sende uns eine E-Mail",
           "github": "Schaue unsere Projekte auf Github an"
@@ -137,7 +149,7 @@
         "digitalisation_page": {
           "title": "Grundsätze für die Digitalisierung",
           "introduction": "lorem Ipsum",
-          "new_project": "Neues Projekt",
+          "new_project": "Finde heraus welches die beste Digitalisierungsart ist für dein Projekt. Beantworte die Hilfsfragen für dein",
           "content": "Inhalt",
           "documentation": "Hilfsmittel / Dokumentation",
           "downloads": "Hilfsblatt herunterladen"

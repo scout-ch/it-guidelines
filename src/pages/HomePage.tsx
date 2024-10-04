@@ -69,31 +69,25 @@ export default function HomePage() {
       <h2>{t('home_page.content')}</h2>
       <ButtonContainer>
         <Card>
-          <h2>1. {t('home_page.digitalisation')}</h2>
+          <h2>1. {t('home_page.digitalisation.title')}</h2>
           <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-           invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            {t('home_page.digitalisation.teaser')}
           </p>
-          <Button><Link to="/digitalisation">{t('home_page.digitalisation')}</Link></Button>
+          <Button><Link to="/digitalisation">{t('home_page.digitalisation.button')}</Link></Button>
         </Card>
         <Card>
-          <h2>2. {t('home_page.it_guidelines')}</h2>
+          <h2>2. {t('home_page.it_guidelines.title')}</h2>
           <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-           invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            {t('home_page.it_guidelines.teaser')}
           </p>
-          <Button><Link to="/it-guidelines">{t('home_page.it_guidelines')}</Link></Button>
+          <Button><Link to="/it-guidelines">{t('home_page.it_guidelines.button')}</Link></Button>
         </Card>
         <Card>
-          <h2>3. {t('home_page.completion')}</h2>
+          <h2>3. {t('home_page.completion.title')}</h2>
           <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-           invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            {t('home_page.completion.title')}
           </p>
-          <Button><Link to="/completion">{t('home_page.completion')}</Link></Button>
+          <Button><Link to="/completion">{t('home_page.completion.button')}</Link></Button>
         </Card>
       </ButtonContainer>
     </p>
