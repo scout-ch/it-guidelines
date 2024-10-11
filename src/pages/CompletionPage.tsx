@@ -19,15 +19,32 @@ export default function CompletionPage() {
     <p>{t('completion_page.introduction')}</p>
     <Infobox>
       {t('completion_page.complete_project')}{' '}
-      <Link to="/digitalisation/new-project">{t('new_project_completion_page.title')}</Link>
+      <Link to="/digitalisation/tbd">{t('completion_page.complete_project')}</Link>
     </Infobox>
-    <h2>{t('completion_page.content')}</h2>
+    <div>
+      <h2>{t('completion_page.content')}</h2>
+      <ul>
+        <li>Allgmeines</li>
+        <ul>
+          <li>Lifecycle-Überlegungen</li>
+          <li>Stakeholder</li>
+          <li>Spezifische Rollen definieren</li>
+        </ul>
+        <li>Betrieb</li>
+        <ul>
+          <li>Betriebskosten Budget / Ressourcen klären</li>
+          <li>Wartungskosten Budget</li>
+          <li>Sicherheit / Geschäftskritikalität</li>
+        </ul>
+        <li>Organisatorisches</li>
+      </ul>
+    </div>
 
     <Box>
       <div>
         <h3>{t('completion_page.downloads')}</h3>
         <Ul>
-          <li><A href={process.env.PUBLIC_URL + '/docs/guidelines_de.pdf'} download>Hilfsblatt DE</A></li>
+          {/* <li><A href={process.env.PUBLIC_URL + '/docs/guidelines_de.pdf'} download>Hilfsblatt DE</A></li> */}
           {/* <li><A href={process.env.PUBLIC_URL + '/docs/guidelines_fr.pdf'} download>Lignes directrices FR</A></li> */}
         </Ul>
       </div>

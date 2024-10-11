@@ -160,7 +160,7 @@
         },
         "completion_page": {
           "title": "Grundsätze für den Projektabschluss",
-          "introduction": "lorem Ipsum",
+          "introduction": "Der erfolgreiche Abschluss eines IT-Projekts erfordert nicht nur die Erreichung der Projektziele und die Lancierung eines IT-Tools, sondern auch eine sorgfältige Sicherstellung, dass alle im Projekt erstellten Artefakte und das gewonnene Wissen nachhaltig gesichert, die relevanten Stakeholder entsprechend geschult und informiert wurden und der Betrieb des IT-Tools sichergestellt ist. Dies gewährleistet die langfristige Wertschöpfung und den reibungslosen Betrieb der entwickelten Lösung. ",
           "complete_project": "Projekt abschliessen",
           "content": "Inhalt",
           "downloads": "Hilfsblatt herunterladen"
