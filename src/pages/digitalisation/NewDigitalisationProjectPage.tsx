@@ -22,7 +22,7 @@ const defaultState = (): State => ({ currentSlide: 'projectPhase', clippyVariant
 const defaultReplies = (): Reply[] => ([])
 
 export default function NewDigitalisationProjectPage() {
-  const [state, setState] = useState<State>(defaultState)
+  const [state] = useState<State>(defaultState)
   const [replies, setReplies] = useState<Reply[]>(defaultReplies)
   const { t } = useTranslation()
   const [currentQuestion, setCurrentQuestion] = useState<number>(() => {
