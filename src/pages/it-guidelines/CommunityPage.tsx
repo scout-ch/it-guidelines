@@ -1,7 +1,7 @@
 // import styled from '@emotion/styled'
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { MainContainer, Ul } from '../App'
+import { MainContainer, NavLocation, Ul } from '../../App'
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -12,6 +12,7 @@ export default function CommunityPage() {
   <Helmet>
     <title>{t('community_page.title')}</title>
   </Helmet>
+  <NavLocation>{`${t('it_guidelines_page.title')} - ${t('community_page.title')}`}</NavLocation>
     <h1><FontAwesomeIcon icon="users" /> {t('community_page.title')}</h1>
     <p>
       {t('community_page.intro')}

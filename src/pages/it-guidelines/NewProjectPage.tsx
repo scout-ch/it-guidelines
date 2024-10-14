@@ -1,44 +1,19 @@
 import styled from '@emotion/styled'
 import React, { useState } from 'react'
-import ClippyStage from '../components/ClippyStage'
+import ClippyStage from '../../components/ClippyStage'
 import { useTranslation, Trans } from 'react-i18next';
 import { Helmet } from 'react-helmet'
-import { MainContainer, Ul } from '../App'
+import { MainContainer, Ul } from '../../App'
+import { Button, ButtonContainer } from '../HomePage';
 
 const Slide = styled.section<{ show?: boolean }>`
   display: ${props => props.show ? 'block' : 'none'};
 `
 
-const ButtonContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-
-  @media (max-width: 420px) {
-    flex-direction: column;
-  }
-`
-
-const Button = styled.button`
-  font-size: 1em;
-  padding: .5em;
-  text-align: center;
-  min-width: 5em;
-  background-color: #DDD;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  margin: 0.25em;
-
-  &:hover {
-    /* background-color: #eee; */
-    outline: 3px solid var(--color-primary)
-  }
-`
-
 type State = {
   currentSlide: string;
   clippyVariant: "" | "focus" | "rolleye" | 'angry';
-  projectPhase?: "idea" | "implementation";
+  projectPhase?: "idea" | "implementation" | "operation";
   targetAudience?: "bundesebene" | "canton" | "external" | "leaders" | "participants"
   toolType?: "dataProcessing" | "contentOnly"
   sensitiveData?: "yes" | "no" | "maybe"
@@ -58,15 +33,16 @@ export default function NewProjectPage() {
 
   return <MainContainer>
     <Helmet>
-      <title>{t('new_project_page.title')}</title>
+      <title>{t('new_project_guidelines_page.title')}</title>
     </Helmet>
-    <h1>{t('new_project_page.title')}</h1>
+    <h1>{t('new_project_guidelines_page.title')}</h1>
     <ClippyStage variant={state.clippyVariant}>
       <Slide show={isCurrentSlide("projectPhase")}>
         <p>{t("slides.projectPhase.text")}</p>
         <ButtonContainer>
           <Button type="button" onClick={() => updateState({ currentSlide: 'targetAudience', projectPhase: 'idea' })}>{t("slides.projectPhase.buttons.idea")}</Button>
           <Button type="button" onClick={() => updateState({ currentSlide: 'targetAudience', projectPhase: 'implementation' })}>{t("slides.projectPhase.buttons.implementation")}</Button>
+          <Button type="button" onClick={() => updateState({ currentSlide: 'targetAudience', projectPhase: 'operation' })}>{t("slides.projectPhase.buttons.operation")}</Button>
         </ButtonContainer>
       </Slide>
       <Slide show={isCurrentSlide("targetAudience")}>
@@ -139,6 +115,7 @@ export default function NewProjectPage() {
         <Ul>
           <li><a href="mailto:itkom@pbs.com">{t("slides.evaluation.todo.contact_itkom")}</a></li>
           <li>{t("slides.evaluation.todo.content_definition")}</li>
+          {state["projectPhase"] === 'operation' && <li>{t("slides.evaluation.todo.fill_operations")}</li>}
           {state["responsibility"] !== 'yes' && <li>{t("slides.evaluation.todo.define_po")}</li>}
           {state["apiNeeded"] === 'midata' && <li>{t("slides.evaluation.todo.define_api_consumption")}</li>}
           {state["similarToolAvailable"] === 'yes' && <li>{t("slides.evaluation.todo.check_existing")}</li>}

@@ -1,21 +1,169 @@
 {
     "translation": {
         "home_page": {
-            "title": "IT Richtlinien",
-            "introduction": "Diese IT-Richtlinien definieren die Prinzipien und regeln die Prozesse der IT auf der PBS Bundesebene, sie dürfen gerne von den Kantonalverbänden und Abteilungen übernommen und weiterentwickelt werden. Geregelt werden die Punkte Beschaffung, Betrieb und Informationssicherheit sowie die zugehörigen Verantwortlichkeiten. Weiter schaffen Sie die Voraussetzungen für eine aktive IT-Community in der PBS.",
-            "new_project": "Startest du gerade ein IT-Projekt? Dann bist du hier genau richtig! Schaue dir die Leitfragen hier an:",
-            "content": "Inhalt",
-            "principles": "Prinzipien",
-            "information_security": "Informationssicherheit",
-            "acquisition": "Beschaffung und Betrieb",
-            "community": "Community",
-            "contact": "Kontakt IT-Kom",
-            "downloads": "Downloads",
-            "mail": "Sende uns eine E-Mail",
-            "github": "Schaue unsere Projekte auf Github an"
+          "title": "IT-Kompass",
+          "introduction": "Hier findest du alle wichtigen Informationen zu digitalen Projekten in der Pfadi. Brauchst du Hilfe bei der Form deines digitalen Produkts? -> schau unter Grundsätze nach. ODER: du weisst wie dein Produkt aussehen soll, brauchst aber Unterstützung bei der Umsetzung -> schau dir die IT-Richtlinien an.",
+          "content": "Inhalt",
+          "it_guidelines": {
+            "title": "IT-Richtlinien",
+            "button": "zu den IT-Richtlinien",
+            "teaser": "Die IT-Richtlinien definieren die Prinzipien und regeln die Prozesse der IT auf der PBS Bundesebene. Schaue dir die Leitfragen für dein neues Projekt an."
+          },
+          "digitalisation": {
+            "title": "Grundsätze für die Digitalisierung",
+            "button": "zu den Grundsätzen für die Digitalisierung",
+            "teaser": "Finde heraus welches die beste Digitalisierungsart ist für dein Projekt."
+          },
+          "completion": {
+            "title": "Grundsätze für den Projektabschluss",
+            "button": "zu den Grundsätzen für den Projektabschluss",
+            "teaser": "Du schliesst ein IT-Projekt ab, schaue dir die Hilfsfragen an damit du nichts vergisst."
+          },
+          "contact": "Kontakt IT-Kom",
+          "mail": "Sende uns eine E-Mail",
+          "github": "Schaue unsere Projekte auf Github an"
         },
-        "new_project_page": {
+        "new_project_guidelines_page": {
           "title": "Neues Projekt"
+        },
+        "new_project_digitalisation_page": {
+          "title": "Neues Projekt",
+          "evaluation": {
+            "title": "Resultat",
+            "restart": "Antworten bearbeiten"
+          },
+          "tools": {
+            "app": "App",
+            "game": "Game",
+            "youtube": "Youtube",
+            "e_learning": "E-Learning Plattform",
+            "website": "Webseite",
+            "podcast": "Podcast",
+            "office": "Office",
+            "pdf": "PDF",
+            "pm_tool": "PM Tool (z. B. Trello)",
+            "collaboration": "kollaborative Plattformen"
+          },
+          "questions": {
+            "next": "weiter",
+            "warnings": "Warnungen",
+            "printable": {
+              "text": "Muss es gedruckt funktionieren?",
+              "responses": {
+                "yes": "Ja",
+                "no": "Nein"
+              }
+            },
+            "simultan": {
+              "text": "Müssen mehrere Personen gleichzeitig mit dem Tool etwas erarbeiten/verändern können?",
+              "responses": {
+                "no": "Nein",
+                "yes": "Ja"
+              }
+            },
+            "internet_connection": {
+              "text": "Wo wird das Produkt eingesetzt? Wird Internet benötigt?",
+              "responses": {
+                "none": "kein Internet (Wald)",
+                "instable": "instabiles / langsames Internet (Kurs, ÖV)",
+                "stable": "stabiles / schnelles Internet (Zuhause)"
+              }
+            },
+            "content_types": {
+              "text": "Welche Datenformate werden verwendet (Mehrfachauswahl)?",
+              "responses": {
+                "audio": "Audio",
+                "video": "Video",
+                "text": "Text",
+                "image": "Bild"
+              }
+            },
+            "interaction": {
+              "text": "Sollen die Nutzenden mit dem Produkt interagieren können?",
+              "responses": {
+                "none": "gar nicht",
+                "like_and_comment": "kommentieren / liken",
+                "content_creation": "Inhalte erstellen"
+              }
+            },
+            "feedback": {
+              "text": "Muss das Feedback auf die Interaktion automatisch generiert werden (z.B. Quiz, Datenberechnung, richtig oder falsch etc.)?",
+              "responses": {
+                "no": "Nein",
+                "yes": "Ja"
+              }
+            },
+            "creators": {
+              "text": "Wird das Tool durch die Projektgruppe erstellt oder von einer externer Firma?",
+              "responses": {
+                "self": "Projektgruppe",
+                "external": "Extern"
+              }
+            },
+            "self_creators": {
+              "text": "Gibt es im Team die folgenden Skills?",
+              "responses": {
+                "coding": "Programmieren",
+                "coding_light": "Programmieren light",
+                "basic": "Basic"
+              }
+            },
+            "external_creators": {
+              "text": "Welches Budget steht zur Verfügung?",
+              "responses": {
+                "large": "Gross (>50k)",
+                "medium": "Mittel (11-49k)",
+                "small": "Klein (<10k)"
+              }
+            },
+            "modification": {
+              "text": "Wie viel Vorwissen braucht es für das Anpassen der Inhalte?",
+              "responses": {
+                "much": "Viel",
+                "medium": "Mittel",
+                "little": "Wenig"
+              }
+            },
+            "moderation": {
+              "text": "Wie viel Aufwand bin ich bereit aufzuwenden für die Moderation (Forum, Community...)?",
+              "responses": {
+                "often": "Viel",
+                "little": "Wenig",
+                "none": "Kein"
+              }
+            }
+          }
+        },
+        "it_guidelines_page": {
+          "title": "IT-Richtlinien",
+          "introduction": "Diese IT-Richtlinien definieren die Prinzipien und regeln die Prozesse der IT auf der PBS Bundesebene, sie dürfen gerne von den Kantonalverbänden und Abteilungen übernommen und weiterentwickelt werden. Geregelt werden die Punkte Beschaffung, Betrieb und Informationssicherheit sowie die zugehörigen Verantwortlichkeiten. Weiter schaffen Sie die Voraussetzungen für eine aktive IT-Community in der PBS.",
+          "new_project": "Startest du gerade ein IT-Projekt? Dann bist du hier genau richtig! Schaue dir die Leitfragen hier an:",
+          "content": "Inhalt",
+          "principles": "Prinzipien",
+          "information_security": "Informationssicherheit",
+          "acquisition": "Beschaffung und Betrieb",
+          "community": "Community",
+          "organisation": "Organisation",
+          "downloads": "Downloads"
+        },
+        "digitalisation_page": {
+          "title": "Grundsätze für die Digitalisierung",
+          "introduction": "lorem Ipsum",
+          "new_project": "Finde heraus welches die beste Digitalisierungsart ist für dein Projekt. Beantworte die Hilfsfragen für dein",
+          "content": "Inhalt",
+          "documentation": "Hilfsmittel / Dokumentation",
+          "downloads": "Hilfsblatt herunterladen"
+        },
+        "documentation_page": {
+          "title": "Hilfsmittel / Dokumentation",
+          "introduction": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum"
+        },
+        "completion_page": {
+          "title": "Grundsätze für den Projektabschluss",
+          "introduction": "Der erfolgreiche Abschluss eines IT-Projekts erfordert nicht nur die Erreichung der Projektziele und die Lancierung eines IT-Tools, sondern auch eine sorgfältige Sicherstellung, dass alle im Projekt erstellten Artefakte und das gewonnene Wissen nachhaltig gesichert, die relevanten Stakeholder entsprechend geschult und informiert wurden und der Betrieb des IT-Tools sichergestellt ist. Dies gewährleistet die langfristige Wertschöpfung und den reibungslosen Betrieb der entwickelten Lösung. ",
+          "complete_project": "Projekt abschliessen",
+          "content": "Inhalt",
+          "downloads": "Hilfsblatt herunterladen"
         },
         "principles_page": {
           "title": "Prinzipien",
@@ -31,7 +179,8 @@
             "priciple": "Von der Bundesebene betriebene oder unterstützte IT-Tools sollen über Schnittstellen (APIs) untereinander vernetzt werden können.",
             "one": "IT-Tools stellen die von ihnen verwalteten Daten und Dienste so dynamisch und flexibel wie möglich über Schnittstellen zur Verfügung.",
             "two": "IT-Tools beziehen fremde Daten über die zur Verfügung gestellten Schnittstellen.",
-            "three": "Die Schnittstellen und ihre Dokumentation sollen für die Community zur Verfügung stehen, um weitere Entwicklungen zu ermöglichen."
+            "three": "Die Schnittstellen und ihre Dokumentation sollen für die Community zur Verfügung stehen, um weitere Entwicklungen zu ermöglichen.",
+            "four": "Schnittstellen sollen möglichst allgemein gehalten werden und stabil bleiben (d.h. Information bei Änderung, API-Versionierung)"
           },
           "ten": "Die PBS fördert und unterstützt Ideen, IT-Tools, -Services und -Projekte, welche dem Pfadibetrieb (insbesondere den Abteilungen und Kantonalverbänden) helfen. Dazu wird eine aktive Community angestrebt.",
           "eleven": {
@@ -85,7 +234,8 @@
             "two": "Ein verhältnismässiges Monitoring soll betrieben werden.",
             "three": "Ein zentrales Lifecycle Management mit Ablösungs-Roadmap über alle IT-Tools muss geführt werden.",
             "four": "Geschäftskritische Daten müssen durch ein Backup gesichert werden.",
-            "five": "Damit der Pfadibetrieb nicht unter dem Ausfall (Tool, Daten, Strom nicht verfügbar, usw.) von IT-Tools leidet, soll für geschäftskritischen IT-Tools ein Plan B (Business Continuity Management) existieren."
+            "five": "Damit der Pfadibetrieb nicht unter dem Ausfall (Tool, Daten, Strom nicht verfügbar, usw.) von IT-Tools leidet, soll für geschäftskritischen IT-Tools ein Plan B (Business Continuity Management) existieren.",
+            "six": "Der kontinuierliche Betrieb muss sichergestellt werden (z.B. durch kontinuierliches Patching, Monitoring, Pen-Test)"
           }
         },
         "community_page": {
@@ -97,6 +247,36 @@
           "three": "Es werden regelmässige Anlässe organisiert, um diese Ziele zu erreichen z.B. IT-Konferenz, MiData-Hackathon, usw.",
           "four": "Die Zusammenarbeit wird auch über den Verband hinaus gepflegt, um die Synergien von grösseren Communities (z.B. Hitobito) zu nutzen."
         },
+        "organisation_page": {
+          "title": "Organisation",
+          "intro": "Um IT-Tools zu managen, setzt die Bundesebene Product Owner (PO) ein. Diese sind auf der Bundesebene eingegliedert. PO müssen keine IT-Spezialisten sein, sondern die Anforderungen des Verbandes an das Produkt kennen, verstehen, weiterentwickeln und verantworten können.",
+          "po": {
+            "title": "Verantwortlichkeiten des Product Owner (PO)",
+            "intro": "Die Rolle PO wird idealerweise nur von einer Person besetzt, wobei eine Person mehrere PO- Rollen haben kann.",
+            "one": "Sammlung und Definition der Anforderungen an das Produkt sowie die Priorisierung der Arbeiten.",
+            "two": "Aufgaben nach PBS Projektleitfaden, falls keine dedizierte Projektleitung vorhanden ist.",
+            "three": "Verantwortung über den ganzen Lifecycle eines IT-Tools.",
+            "four": "Lieferung von Informationen bezüglich IT-Tool-Lifecycle an die ITKom.",
+            "five": "Erarbeitung der Datennutzungserklärung inkl. Zugriffsberechtigungen, wobei insbesondere auf alle schützenswerten Daten eingegangen werden muss.",
+            "six": "Erarbeitung eines Vorschlags zur Klassifikation von schützenswerten Daten des IT-Tools zuhanden der ITKom.",
+            "seven": "Im-Auge-Behalten von technischen Schulden und diese transparent machen. Grundsätzlich gilt, dass technische Schulden nur begründet in Kauf genommen und in der Weiterentwicklung abgebaut werden sollen."
+          },
+          "itkom": {
+            "title": "Verantwortlichkeiten der IT-Kommission (ITKom)",
+            "one": "Pflege der IT-Community. Die ITKom übernimmt in diesem Zusammenhang die Rolle eines Katalysators und vernetzt Ideen und Projekte der Pfadi in der Schweiz.",
+            "two": "Unterhaltung der Unternehmensarchitektur, mit deren Hilfe die Softwarelandschaft der PBS überblickt und weiterentwickelt werden kann. Die Unternehmensarchitektur sollte pro IT-Tool folgende Punkte beinhalten: Zweck, Services, High-Level-Prozesse, Klassifi- kation, Technologie-Stack, Lifecycle, Schnittstellen und Verbindungen (zu anderen IT- Tools) und deren Daten-Modelle.",
+            "three": "Zentrales Lifecycle-Management für die langfristige Planung der benötigten Ressourcen.",
+            "four": "Initiale Klassifikation von Geschäftskritikalität, schützenswerten und archivierungspflichtigen Daten pro IT-Tool. Diese Klassifikationen sollen jährlich überprüft werden.",
+            "five": "Regelmässige Überprüfung und bei Bedarf Anpassung der IT-Richtlinien."
+          }, 
+          "vl": {
+            "title": "Verantwortlichkeiten der Verbandsleitung (VL)",
+            "one": "Verantwortung für die Überprüfung aller Berechtigungen (z.B. Rollen in der MiData oder generelle Zugriffe auf gewisse IT-Tools) auf Bundesebene pro IT-Tool in einem jeweils sinnvollen, regelmässigen Abstand, mindestens aber jährlich.",
+            "two": "Sicherstellen der Zuweisung eines Product Owner pro IT-Tool.",
+            "three": "Sensibilisierung der Geschäftsstelle und der Bundesebene bezüglich Informationssicherheit und Cyber-Angriffe.",
+            "four": "Sicherstellen der Business Continuity im Zusammenhang mit IT-Tools."
+          }
+        },
         "impressum_page": {
           "title": "Impressum"
         },
@@ -107,6 +287,7 @@
               "title": "ToDo",
               "contact_itkom": "Kontakt aufnehmen mit der IT-Kom",
               "define_po": "Verantwortliche Person definieren",
+              "fill_operations": "Fülle das Formular für die Betriebsplattform aus",
               "content_definition": "Anforderungen definieren",
               "define_api_consumption": "Definieren welche Daten von der MiData benötigt werden",
               "check_existing": "Abklären, ob das existierende Tool genutzt werden kann",
@@ -122,7 +303,8 @@
             "text": "In welcher Phase des Projekts befindest du dich?",
             "buttons": {
               "idea": "Idee",
-              "implementation": "Umsetzung"
+              "implementation": "Umsetzung",
+              "operation": "Betrieb"
             }
           },
           "targetAudience": {

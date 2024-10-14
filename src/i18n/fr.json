@@ -1,21 +1,56 @@
 {
     "translation": {
         "home_page": {
+          "title": "IT-Compass",
+          "introduction": "Tu trouveras ici toutes les informations importantes concernant les projets numériques dans le scoutisme. Tu as besoin d'aide pour la forme de ton produit numérique ? -> consulte la rubrique Principes. OU : tu sais à quoi doit ressembler ton produit, mais tu as besoin d'aide pour le réaliser -> consulte les directives informatiques.",
+          "content": "Contenu",
+          "it_guidelines": "Lignes directrices IT",
+          "digitalisation": "Bases pour la numérisation des publications",
+          "completion": "Principes de clôture des projets​",
+          "contact": "Contact CoIT",
+          "mail": "Envoyez-nous un e-mail",
+          "github": "Consulter nos projets sur Github"
+        },
+        "new_project_guidelines_page": {
+          "title": "Nouveau projet"
+        },
+        "new_project_digitalisation_page": {
+          "title": "Nouveau projet",
+          "evaluation": {
+            "title": "Résultat",
+            "restart": "Modifier les réponses"
+          }
+        },
+        "it_guidelines_page": {
             "title": "Lignes directrices IT",
             "introduction": "Ces directives sur l’utilisation des Technologies de l’Information (en anglais IT - Information Technology) définissent les principes et règlent les processus informatiques au niveau fédéral du MSdS. Elles peuvent volontiers être reprises et développées davantage par les associations cantonales et les groupes. Les points régulés sont : l’approvisionnement, le fonctionnement et la sécurité des informations, ainsi que les responsabilités associées. C’est ensuite vous qui mettez en place les conditions préalables pour une communauté informatique active au sein du MSdS.",
-            "new_project": "#Startest du gerade ein IT-Projekt? Dann bist du hier genau richtig! Schaue dir die Leitfragen hier an:",
+            "new_project": "Tu démarres un projet informatique? Alors tu es au bon endroit ! Regarde les questions directrices ici:",
             "content": "Contenu",
             "principles": "Principes",
             "information_security": "Sécurité de l’information",
             "acquisition": "Acquisition et exploitation",
             "community": "Communauté",
-            "contact": "# Kontakt IT-Kom",
-            "downloads": "Downloads",
-            "mail": "# Sende unse eine E-Mail",
-            "github": "# Schaue unsere Projekte auf Github an"
+            "organisation": "Organisation",
+            "downloads": "Downloads"
         },
-        "new_project_page": {
-          "title": "Nouveau projet"
+        "digitalisation_page": {
+          "title": "Bases pour la numérisation des publications",
+          "introduction": "# lorem Ipsum",
+          "new_project": "Nouveau projet",
+          "content": "Contenu",
+          "documentation": "# Hilfsmittel / Dokumentation",
+          "downloads": "# Hilfsblatt herunterladen"
+        },
+        "documentation_page": {
+          "title": "# Hilfsmittel / Dokumentation",
+          "introduction": "# Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum"
+        },
+        "completion_page": {
+          "title": "Principes de clôture des projets",
+          "introduction": "# lorem Ipsum",
+          "complete_project": "# Projekt abschliessen",
+          "content": "Contenu",
+          "downloads": "# Hilfsblatt herunterladen"
         },
         "principles_page": {
           "title": "Principes",
@@ -31,7 +66,8 @@
             "priciple": "Les outils informatiques exploités ou soutenus par le niveau fédéral doivent être reliés entre eux via des interfaces API.",
             "one": "Les outils informatiques mettent à disposition les données et les services qu'ils gèrent de manière aussi dynamique et flexible que possible via des interfaces.",
             "two": "Les outils informatiques obtiennent des données externes via les interfaces fournies.",
-            "three": "Les interfaces et leur documentation doivent être mises à la disposition de la communauté pour permettre des développements ultérieurs."
+            "three": "Les interfaces et leur documentation doivent être mises à la disposition de la communauté pour permettre des développements ultérieurs.",
+            "four": "Les interfaces doivent être aussi générales que possible et rester stables (c'est-à-dire information en cas de modification, versionnement de l'API)."
           },
           "ten": "Le MSdS promeut et soutient les idées, les outils informatiques, les services et les projets qui aident le scoutisme (en particulier les groupes et les associations cantonales). À cette fin, une communauté active est recherchée.",
           "eleven": {
@@ -69,6 +105,7 @@
             }
           },
           "acquisition": {
+            "title": "Règles d’acquisition",
             "one": "La proportionnalité entre les coûts d'acquisition/d’exploitation et les bénéfices attendus doit être examinée puis respectée.",
             "two": "Le cycle de vie doit être pris en considération jusqu’à la mise hors service et ces considérations doivent être observées.",
             "three": "Un Product Owner doit être désigné tant pour l'acquisition de solutions standard que pour les développements sur mesure.",
@@ -84,7 +121,8 @@
             "two": "Un Monitoring proportionné doit être effectué.",
             "three": "Pour tous les outils informatiques, il faut une gestion centrale du cycle de vie (Lifecycle Management) avec une feuille de route en cas de remplacement.",
             "four": "Geschäftskritische Daten müssen durch ein Backup gesichert werden.",
-            "five": "Pour éviter que le fonctionnement scout ne souffre d’une défaillance technique (outil, données, électricité non disponible, etc.), un plan B (Business Continuity Management) doit exister pour les outils informatiques critiques pour l'activité."
+            "five": "Pour éviter que le fonctionnement scout ne souffre d’une défaillance technique (outil, données, électricité non disponible, etc.), un plan B (Business Continuity Management) doit exister pour les outils informatiques critiques pour l'activité.",
+            "six": "Le fonctionnement continu doit être assuré (par ex. par un patching continu, un monitoring, un pen-test)"
           }
         },
         "community_page": {
@@ -96,6 +134,36 @@
           "three": "Des événements réguliers sont organisés pour atteindre ces objectifs, par exemple la conférence sur l'informatique, Hackathon MiData, etc.",
           "four": "La coopération est également soignée au-delà de l'association afin de profiter des synergies de communautés plus importantes (par exemple Hitobito)."
         },
+        "organisation_page": {
+          "title": "Organisation",
+          "intro": "Pour gérer les outils informatiques, le niveau fédéral utilise des (Product Owner – PO). Ceux-ci sont intégrés au niveau fédéral. Les PO ne doivent pas être des spécialistes en informatique, mais doivent connaître les exigences de l'association pour le produit, les comprendre, les développer et en être responsables.",
+          "po": {
+            "title": "Responsabilité du Product Owner (PO)",
+            "intro": "Idéalement, le rôle de PO n'est rempli que par une seule personne, bien qu'une personne puisse avoir plusieurs rôles de PO.",
+            "one": "Récolte et définition des exigences pour le produit ainsi que hiérarchisation du travail.",
+            "two": "Tâches selon le guide de projet MSdS, si aucune gestion de projet spécifique n'est disponible.",
+            "three": "Responsabilité de l'ensemble du cycle de vie d'un outil informatique.",
+            "four": "Transmission des informations concernant le cycle de vie des outils informatiques à la CoIT.",
+            "five": "Élaboration de la politique de confidentialité, y compris les autorisations d'accès, qui doit couvrir en particulier toutes les données sensibles.",
+            "six": "Elaboration d'une proposition de classification des données sensibles de l'outil informatique à l'attention de la CoIT.",
+            "seven": "Garder un œil sur les dettes techniques et les rendre transparentes. En règle générale, les dettes techniques ne doivent être acceptées que sur justification et réduites dans le cadre d'un développement ultérieur."
+          },
+          "itkom": {
+            "title": "Responsabilités de la Commission Informatique (CoIT)",
+            "one": "Entretien de la communauté informatique. Dans ce contexte, la CoIT joue le rôle de cata- lyseur et met en réseau les idées et les projets du scoutisme en Suisse.",
+            "two": "Maintien de l'architecture d'entreprise, qui peut être utilisée pour avoir une vue d'ensemble et développer le paysage logiciel du MSdS. L'architecture d'entreprise doit inclure les éléments suivants par outil informatique : Objectif, services, processus de haut niveau, classification, pile technologique, cycle de vie, interfaces et connexions (avec d'autres outils informatiques) et leurs modèles de données.",
+            "three": "Gestion centrale du cycle de vie pour une planification à long terme des ressources nécessaires.",
+            "four": "Classification initiale de la criticité pour l’activité, des données à protéger et des données à archiver par outil informatique. Ces classifications doivent être revues chaque année.",
+            "five": "Révision régulière et, si nécessaire, ajustement des directives informatiques."
+          }, 
+          "vl": {
+            "title": "Responsabilités de la maîtrise fédérale (MF)",
+            "one": "Responsabilité de la vérification pour chaque outil informatique de toutes les autorisations (par exemple, les rôles dans MiData ou l'accès général à certains outils informatiques) au niveau fédéral à un intervalle régulier raisonnable, mais au moins une fois par an.",
+            "two": "Assurer l'attribution d'un Product Owner par outil informatique.",
+            "three": "Sensibiliser le secrétariat général et le niveau fédéral à la sécurité de l'information et aux cyber-attaques.",
+            "four": "Assurer la continuité des activités (Business Continuity) liées aux outils informatiques."
+          }
+        },
         "impressum_page": {
           "title": "Impressum"
         },
@@ -106,6 +174,7 @@
               "title": "ToDo",
               "contact_itkom": "Contacter le Comité IT",
               "define_po": "Définir la personne responsable",
+              "fill_operations": "#Fülle das Formular für die Betriebsplattform aus",
               "content_definition": "Définir les besoins",
               "define_api_consumption": "Définir quelles données sont requises par le MiData",
               "check_existing": "Clarifier si l'outil existant doit être utilisé",
@@ -121,7 +190,8 @@
             "text": "Dans quelle phase du projet vous trouvez-vous?",
             "buttons": {
               "idea": "Idée",
-              "implementation": "Mise en œuvre"
+              "implementation": "Mise en œuvre",
+              "operation": "Opération"
             }
           },
           "targetAudience": {
