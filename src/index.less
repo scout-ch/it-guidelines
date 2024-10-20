@@ -2,10 +2,13 @@
 
 @color-primary: #521d3a;
 @color-primary-light: #632949;
+@color-secondary-light: #f5f0e6;
 
 :root {
   --color-primary: @color-primary;
   --color-primary-light: @color-primary-light;
+  --color-secondary-light: @color-secondary-light;
+  font-size: clamp(1rem, calc(1rem + 1vw), 1.4rem);
 }
 
 html,
@@ -46,8 +49,9 @@ a.active {
   opacity: 0.5;
 }
 
-p {
+p, li {
   margin-top: 0;
+  margin-bottom: 0.3em;
 }
 
 p,
@@ -56,52 +60,7 @@ li,
 a,
 span,
 div {
-  line-height: 1.27;
-  font-size: 15px;
-}
-@media (min-width: 660px) {
-  p,
-  ul,
-  li,
-  a,
-  span,
-  div,
-  h2 .btn {
-    font-size: 16.25px;
-  }
-}
-@media (min-width: 860px) {
-  p,
-  ul,
-  li,
-  a,
-  span,
-  div,
-  h2 .btn {
-    font-size: 17.5px;
-  }
-}
-@media (min-width: 1100px) {
-  p,
-  ul,
-  li,
-  a,
-  span,
-  div,
-  h2 .btn {
-    font-size: 18.75px;
-  }
-}
-@media (min-width: 1300px) {
-  p,
-  ul,
-  li,
-  a,
-  span,
-  div,
-  h2 .btn {
-    font-size: 20px;
-  }
+  line-height: 1.5em;
 }
 
 table {
