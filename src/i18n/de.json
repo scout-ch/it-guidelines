@@ -148,15 +148,16 @@
     },
     "digitalisation_page": {
       "title": "Grundsätze für die Digitalisierung",
-      "introduction": "Du musst eine Publikation oder ein Hilfsmittel digitalisieren, bist aber nicht sicher, in welche Richtung es gehen soll? Finde hier heraus, welches die beste Digitalisierungsart für dein Projekt ist.",
-      "new_project": "Finde heraus welches die beste Digitalisierungsart ist für dein Projekt. Beantworte die Hilfsfragen für dein",
+      "introduction": "Die Grundsätze für die Digitalisierung von Publikationen und Hilfsmitteln unterstützt Projektgruppen bei der Umsetzung und Planung ihrer Vorhaben. Basierend auf der Frage, welche Publikationen und Hilfsmittel digitalisiert bzw. wo bewusst physische Versionen eingesetzt werden sollen, ist dieser «Digi-Clippy» entstanden. Anhand von gezielten Abfragen werden am Ende mögliche Digitalisierungsarten vorgeschlagen. Das Ziel davon ist, dass Endprodukte stets zeitgemäss und in einem geeigneten Format zur Verfügung stehen.",
+      "new_project": "Du musst eine Publikation oder ein Hilfsmittel digitalisieren, bist aber nicht sicher, in welche Richtung es gehen soll? Finde hier heraus, welches die beste Digitalisierungsart für dein Projekt ist.",
       "content": "Inhalt",
       "documentation": "Hilfsmittel / Dokumentation",
-      "downloads": "Hilfsblatt herunterladen"
+      "downloads": "Downloads",
+      "new_project_link": "Los gehts!"
     },
     "documentation_page": {
       "title": "Hilfsmittel / Dokumentation",
-      "introduction": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum"
+      "introduction": "Um sicherzustellen, dass das Projekt den optimalen Digitalisierungsgrad erhält, sollten vorab bestimmte Fragen und Überlegungen angestellt werden. Dieses Merkblatt hilft dir dabei, die wesentlichen Punkte zu durchdenken."
     },
     "completion_page": {
       "title": "Grundsätze für den Projektabschluss",
