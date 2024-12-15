@@ -30,7 +30,8 @@
       "title": "Neues Projekt",
       "evaluation": {
         "title": "Resultat",
-        "restart": "Antworten bearbeiten"
+        "restart": "Antworten bearbeiten",
+        "reset": "Antworten löschen"
       },
       "tools": {
         "app": "App",
@@ -55,7 +56,7 @@
           }
         },
         "simultan": {
-          "text": "Müssen mehrere Personen gleichzeitig mit dem Tool etwas erarbeiten/verändern können?",
+          "text": "Müssen mehrere Personen gleichzeitig mit dem Tool etwas erarbeiten/verändern können (Kollaboration)?",
           "responses": {
             "no": "Nein",
             "yes": "Ja"
@@ -117,7 +118,7 @@
           }
         },
         "modification": {
-          "text": "Wie viel Vorwissen braucht es für das Anpassen der Inhalte?",
+          "text": "Wie viel technisches Vorwissen braucht es für das Anpassen der Inhalte?",
           "responses": {
             "much": "Viel",
             "medium": "Mittel",

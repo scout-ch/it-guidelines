@@ -206,6 +206,7 @@
       "responses": [
         {
           "key": "none",
+          "next_question": 6,
           "tools": [
             "app",
             "game",
@@ -424,6 +425,54 @@
     },
     {
       "index": 9,
+      "key": "moderation",
+      "responses": [
+        {
+          "key": "often",
+          "tools": [
+            "youtube",
+            "e_learning",
+            "podcast",
+            "pm_tool",
+            "collaboration"
+          ],
+          "kills": []
+        },
+        {
+          "key": "little",
+          "tools": [
+            "app",
+            "office"
+          ],
+          "kills": [
+            "youtube",
+            "e_learning",
+            "podcast",
+            "pm_tool",
+            "collaboration"
+          ]
+        },
+        {
+          "key": "none",
+          "tools": [
+            "game",
+            "website",
+            "pdf"
+          ],
+          "kills": [
+            "app",
+            "youtube",
+            "e_learning",
+            "podcast",
+            "office",
+            "pm_tool",
+            "collaboration"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
       "key": "modification",
       "responses": [
         {
@@ -473,54 +522,6 @@
             "e_learning",
             "website",
             "podcast",
-            "collaboration"
-          ]
-        }
-      ]
-    },
-    {
-      "index": 10,
-      "key": "moderation",
-      "responses": [
-        {
-          "key": "often",
-          "tools": [
-            "youtube",
-            "e_learning",
-            "podcast",
-            "pm_tool",
-            "collaboration"
-          ],
-          "kills": []
-        },
-        {
-          "key": "little",
-          "tools": [
-            "app",
-            "office"
-          ],
-          "kills": [
-            "youtube",
-            "e_learning",
-            "podcast",
-            "pm_tool",
-            "collaboration"
-          ]
-        },
-        {
-          "key": "none",
-          "tools": [
-            "game",
-            "website",
-            "pdf"
-          ],
-          "kills": [
-            "app",
-            "youtube",
-            "e_learning",
-            "podcast",
-            "office",
-            "pm_tool",
             "collaboration"
           ]
         }

@@ -166,6 +166,12 @@ export default function NewDigitalisationProjectPage() {
     setCurrentQuestion(0)
   }
 
+  function reset() {
+    setShowScore(false)
+    setCurrentQuestion(0)
+    setReplies(defaultReplies)
+  }
+
   const questionsRoot: Root = questionJson
   const questions: Question[] = questionsRoot.questions
 
@@ -200,7 +206,7 @@ export default function NewDigitalisationProjectPage() {
     })
 
     return <div className='result-section'>
-      {score.sort((a, b) => b.score - a.score).map((a) => {
+      {score.sort((a, b) => (b.score - a.score) || (a.warnings.length - b.warnings.length)).map((a) => {
         let warnings = a.warnings
         return <div>
           <h3>{t(`new_project_digitalisation_page.tools.${a.key}`)} (Score: {a.score})</h3>
@@ -230,6 +236,7 @@ export default function NewDigitalisationProjectPage() {
       {showScore ? <div className='score-section'>
         <h2>{t("new_project_digitalisation_page.evaluation.title")}</h2>
         <Button type="button" onClick={() => restart()}>{t('new_project_digitalisation_page.evaluation.restart')}</Button>
+        <Button type="button" onClick={() => reset()}>{t('new_project_digitalisation_page.evaluation.reset')}</Button>
         {calculateResult()}
       </div> :
         <div className='question-section'>
