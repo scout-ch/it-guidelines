@@ -6,8 +6,9 @@ import { useTranslation } from 'react-i18next';
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { css } from '@emotion/react';
 
-export const Button = styled.button`
+const buttonStyle = css`
   font-size: 1em;
   padding: 0.5em;
   text-align: center;
@@ -16,45 +17,60 @@ export const Button = styled.button`
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  margin: 0.25em;
+  text-decoration: none;
 
   &:hover {
     /* background-color: #eee; */
     outline: 3px solid var(--color-primary);
+    text-decoration: none;
   }
 `;
+
+export const Button = styled.div`
+  font-size: 1em;
+  padding: 0.5em;
+  text-align: center;
+  min-width: 5em;
+  background-color: #ddd;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  align-content: center;
+
+  &:hover {
+    /* background-color: #eee; */
+    outline: 3px solid var(--color-primary);
+    text-decoration: none;
+  }
+`
 
 const Card = styled.div`
   background-color: var(--color-secondary-light);
   border-radius: 5px;
   padding: 1.5rem;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display:grid;
+  gap: 1.5rem;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
 
-  h2:first-child {
-    margin-top: 0;
+  &>* {
+    margin: 0;
   }
 
-  button {
+  a {
     background-color: var(--color-primary-light);
-    a {
-      color: white;
-    }
+    color: white;
   }
 `;
 
 export const ButtonContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
 
   @media (max-width: 420px) {
-    flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
   }
 `;
 
@@ -76,23 +92,17 @@ export default function HomePage() {
           <Card>
             <h2>1. {t('home_page.digitalisation.title')}</h2>
             <p>{t('home_page.digitalisation.teaser')}</p>
-            <Button>
-              <Link to="/digitalisation">{t('home_page.digitalisation.button')}</Link>
-            </Button>
+            <Link css={buttonStyle} to="/digitalisation">{t('home_page.digitalisation.button')}</Link>
           </Card>
           <Card>
             <h2>2. {t('home_page.it_guidelines.title')}</h2>
             <p>{t('home_page.it_guidelines.teaser')}</p>
-            <Button>
-              <Link to="/it-guidelines">{t('home_page.it_guidelines.button')}</Link>
-            </Button>
+            <Link css={buttonStyle} to="/it-guidelines">{t('home_page.it_guidelines.button')}</Link>
           </Card>
           <Card>
             <h2>3. {t('home_page.completion.title')}</h2>
             <p>{t('home_page.completion.title')}</p>
-            <Button>
-              <Link to="/completion">{t('home_page.completion.button')}</Link>
-            </Button>
+            <Link css={buttonStyle} to="/completion">{t('home_page.completion.button')}</Link>
           </Card>
         </ButtonContainer>
       </p>
