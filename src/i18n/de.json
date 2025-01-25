@@ -1,5 +1,6 @@
 {
   "translation": {
+    "close": "Schliessen",
     "home_page": {
       "title": "IT-Kompass",
       "introduction": "Hier findest du alle wichtigen Informationen zu digitalen Projekten in der Pfadi. Brauchst du Hilfe bei der Form deines digitalen Produkts? -> schau unter Grundsätze nach. ODER: du weisst wie dein Produkt aussehen soll, brauchst aber Unterstützung bei der Umsetzung -> schau dir die IT-Richtlinien an.",
@@ -30,8 +31,21 @@
       "title": "Neues Projekt",
       "evaluation": {
         "title": "Resultat",
+        "explanation": "Gemäss deinen Antworten haben wir für dich die möglichen Tools aufgelistet. Anhand des Scores siehst du wie viele deiner Anforderungen erfüllt werden. Die 'Warnungen' zeigen auf welche deiner Antworten gegen das Tool sprechen würden.",
         "restart": "Antworten bearbeiten",
         "reset": "Antworten löschen"
+      },
+      "tool_descriptions": {
+        "app": "<p>Applikation (Programm) für das Smartphone oder Tablet. Text, Bild, Audio und Video sind möglich.</p><strong>Vorteile:</strong> Überall verfügbar wo das Smartphone (und evtl. Daten/Internet) verfügbar ist. Braucht wenig Moderation. Ist sehr vielfältig.<br /><strong>Nachteile:</strong> Erfordert Programmierkenntnisse, es werden mit der Zeit technische (Sicherheits-) Updates benötigt und die Inhalte sollten attraktiv aufbereitet sein.",
+        "game": "<p>Ein Game, oft als Spiel bezeichnet, ist eine strukturierte Aktivität, die in der Regel aus bestimmten Regeln und Zielen besteht. Spiele können in verschiedenen Formaten vorkommen, darunter Brettspiele, Videospiele, Rollenspiele und Lernspiele. Sie können sowohl zur Unterhaltung als auch zur Bildung eingesetzt werden.</p>",
+        "youtube": "<p>Eine Videoplattform, auf welcher Kanäle erstellt werden können, um Videos zu publizieren. Die Videos können öffentlich, privat oder ungelistet (nur per Direktlink erreichbar) hochgeladen werden. Video und Audio möglich.</p><strong>Vorteile:</strong> Einfach und ohne grosses Vorwissen zugänglich, kostet nicht viel, Hosting läuft via die Plattform selbst, sehr bekannte Plattform für Videos <br/><strong>Nachteile:</strong> Braucht eine stabile Internetverbindung, hat meist Werbung, Plattform selbst braucht kaum Vorwissen, Videoproduktion aber schon <br/><strong>Beispiele:</strong> YouTube Kanal der PBS, YouTube Kanal von hajk ",
+        "e_learning": "<p>Unter E-Learning werden sämtliche Vorgänge verstanden, bei denen Menschen mit digitaler Unterstützung lernen. Dies können beispielsweise Formate wie Webinare, Videos oder Chats sein, die per Computer oder Smartphone konsumiert werden können. Die angewandten Methoden des Lernens sollten dabei stets einer didaktischen und pädagogischen Ausrichtung unterliegen. E-Learning ist eine Vermittlungsmethode, die z.B. im Rahmen der Pfadi-Ausbildung genutzt werden kann.</p><strong>Vorteile:</strong> Flexibilität für die Teilnehmenden, Zeit und Ort spielen keine Rolle, Mehrsprachigkeit, Interaktivität<br/><strong>Nachteile:</strong> Erstellung E-Learning Plattform eher kostspielig und aufwändig, erfordert Zugang zu Computern/Smartphones, Internetverbindung, findet vor dem Bildschirm statt",
+        "website": "<p>Ein Tool, um im Internet Informationen darzustellen. Benötigt Text und evt. Bilder, Audio und Video können eingebunden werden.</p><strong>Vorteile:</strong> Wenn Internet/Daten vorhanden sind, kann die Website von überall abgerufen werden. Kann von mehreren Personen gleichzeitig eingesehen werden. Kann auch ohne fundierte Programmierkenntnisse erstellt werden. <br/><strong>Nachteile:</strong> wiederkehrende Gebühren (Hosting), benötigt (Sicherheits-)Updates <br/><strong>Beispiele:</strong> pfadi.swiss ",
+        "podcast": "<p>Ein Podcast ist eine digitale Audio- oder Videodatei, die in Episoden bereitgestellt wird und über das Internet abgerufen werden kann. Oftmals behandeln Podcasts spezifische Themen, die von Bildung über Unterhaltung bis hin zu Nachrichten reichen.</p><strong>Vorteile:</strong> Flexibel (kann überall angehört werden), Unterhaltsame Präsentationmöglichkeiten,  <br/><strong>Nachteile:</strong> Keine Interaktionsmöglichkeit, Fehlende visuelle Unterstützung, aufwendige Produktion, Ablenkungspotential während des Hörens, Verfügbarkeit (meist nur Online) <br/><strong>Beispiele:</strong> Baywatchf Berlin, Eine kurze Geschichte über, Mordlust, ",
+        "office": "<p>Ein Formular ist ein vielseitig einsetzbares Tool zur Einholung von Feedback, (zB Kursfeedback), für Umfragen, Anmeldungen, Bestellungen o.Ä. Es kann von mehreren Personen gleichzeitig oder unabhängig verwendet werden.</p> <strong>Vorteile:</strong> einfach im Umgang, plattformunabhängig <br/><strong>Nachteile:</strong> Nur Text möglich und asynchrones Feedback. kein Video (ausser mit einem Link im Beschreibungstext) <br/><strong>Beispiele:</strong> Office Forms, Google Forms ",
+        "pdf": "<p>Das Portable Document Format, kurz PDF, ist ein gängiges Dateiformat, um Informationen digital aufzubereiten und diese anschliessend zu teilen.</p> <strong>Vorteile:</strong> plattformunabhängig, graphische Integrität: zeigt denselben Inhalt im exakt selben Layout an, kann ausgedruckt werden, Benutzer*innenfreundlich, sicher, kompakt  <br/><strong>Nachteile:</strong> schwierig optimierbar für Search Engines, nicht mobile-optimiert, Dateien werden als Bild gelesen, Programme zur Bearbeitung sind kostspielig, kein synchrones Arbeiten <br/><strong>Beispiele:</strong> pfadi.swiss/downloads ",
+        "pm_tool": "<p>Tool zur Organisation von Aufgaben in einem Projekt an denen mehrere Personen beteiligt sind. Text und Bild möglich.</p> <br /><strong>Vorteile:</strong> asynchrone Zusammenarbeit, kleines Budget, wenig Vorwissen nötig, <br /><strong>Nachteile:</strong> meist nur online, viel Moderation nötig <br /><strong>Beispiele:</strong> Trello, Jira, Planner, Asana ",
+        "collaboration": "<p>Ein Tool um Informationen und Resourcen jeglicher Art gemeinsam zu nutzen, zu bearbeiten und zu teilen.</p><strong>Vorteile:</strong> asynchrone und synchrone Zusammenarbeit & Austausch<br/><strong>Nachteile:</strong> meist nur Online verfügbar.<br/><strong>Beispiele:</strong> Microsoft 365, Google Workspace, Confluence, kSuite Infomaniak "
       },
       "tools": {
         "app": "App",
@@ -254,7 +268,7 @@
       "intro": "Um IT-Tools zu managen, setzt die Bundesebene Product Owner (PO) ein. Diese sind auf der Bundesebene eingegliedert. PO müssen keine IT-Spezialisten sein, sondern die Anforderungen des Verbandes an das Produkt kennen, verstehen, weiterentwickeln und verantworten können.",
       "po": {
         "title": "Verantwortlichkeiten des Product Owner (PO)",
-        "intro": "Die Rolle PO wird idealerweise nur von einer Person besetzt, wobei eine Person mehrere PO- Rollen haben kann.",
+        "intro": "Die Rolle PO wird idealerweise nur von einer Person besetzt, wobei eine Person mehrere PO-Rollen haben kann.",
         "one": "Sammlung und Definition der Anforderungen an das Produkt sowie die Priorisierung der Arbeiten.",
         "two": "Aufgaben nach PBS Projektleitfaden, falls keine dedizierte Projektleitung vorhanden ist.",
         "three": "Verantwortung über den ganzen Lifecycle eines IT-Tools.",
@@ -266,7 +280,7 @@
       "itkom": {
         "title": "Verantwortlichkeiten der IT-Kommission (ITKom)",
         "one": "Pflege der IT-Community. Die ITKom übernimmt in diesem Zusammenhang die Rolle eines Katalysators und vernetzt Ideen und Projekte der Pfadi in der Schweiz.",
-        "two": "Unterhaltung der Unternehmensarchitektur, mit deren Hilfe die Softwarelandschaft der PBS überblickt und weiterentwickelt werden kann. Die Unternehmensarchitektur sollte pro IT-Tool folgende Punkte beinhalten: Zweck, Services, High-Level-Prozesse, Klassifi- kation, Technologie-Stack, Lifecycle, Schnittstellen und Verbindungen (zu anderen IT- Tools) und deren Daten-Modelle.",
+        "two": "Unterhaltung der Unternehmensarchitektur, mit deren Hilfe die Softwarelandschaft der PBS überblickt und weiterentwickelt werden kann. Die Unternehmensarchitektur sollte pro IT-Tool folgende Punkte beinhalten: Zweck, Services, High-Level-Prozesse, Klassifikation, Technologie-Stack, Lifecycle, Schnittstellen und Verbindungen (zu anderen IT-Tools) und deren Daten-Modelle.",
         "three": "Zentrales Lifecycle-Management für die langfristige Planung der benötigten Ressourcen.",
         "four": "Initiale Klassifikation von Geschäftskritikalität, schützenswerten und archivierungspflichtigen Daten pro IT-Tool. Diese Klassifikationen sollen jährlich überprüft werden.",
         "five": "Regelmässige Überprüfung und bei Bedarf Anpassung der IT-Richtlinien."

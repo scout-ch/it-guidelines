@@ -18,7 +18,122 @@
           "title": "Nouveau projet",
           "evaluation": {
             "title": "Résultat",
-            "restart": "Modifier les réponses"
+            "explanation": "En fonction de tes réponses, nous avons listé pour toi les outils possibles. Le score te permet de voir combien de tes exigences sont satisfaites. Les 'alertes' indiquent quelles sont les réponses qui ne sont pas favorable à l'outil.",
+            "restart": "Supprimer les réponses",
+            "reset": "Modifier les réponses"
+          },
+          "tool_descriptions": {
+            "app": "<p>Application (programme) pour smartphone ou tablette. texte, image audio et vidéo sont possibles.</p><strong>Avantages:</strong> Disponible partout où le smartphone (et éventuellement les données/internet) est dispo-nible. Nécessite peu de modération. Est très polyvalent.<br /><strong>Inconvénients:</strong> Nécessite des connaissances en programmation, des mises à jour techniques (de sécurité) seront nécessaires avec le temps et les contenus doivent être préparés de manière at-trayante.",
+            "game": "<p>Un jeu, souvent appelé “game”, est une activité structurée, généralement composée de règles et d’objectifs spécifiques. Les jeux peuvent se présenter sous différents formats, notamment les jeux de société, les jeux vidéo, les jeux de rôle et les jeux éducatifs. Ils peu-vent être utilisés à des fins de divertissement ou d’éducation.</p>",
+            "youtube": "<p>Une plateforme vidéo sur laquelle des canaux peuvent être créés pour publier des vidéos. Les vidéos peuvent être téléchargées en public, en privé ou sans liste (accessibles uni-quement par lien direct). Vidéo et audio possibles.</p><strong>Avantages:</strong> Accessible facilement et sans grandes connaissances préalables, ne coûte pas cher, l’hébergement se fait via la plateforme elle-même, plateforme très connue pour les vidéos. <br/><strong>Inconvénients:</strong> Nécessite une connexion internet stable, a généralement de la publicité, la plateforme elle-même ne nécessite pas de connaissances préalables, mais la production de vidéos oui. <br/><strong>Exemples :</strong>Chaîne YouTube du MSdS, Chaîne YouTube de Hajk",
+            "e_learning": "<p>Par e-learning, on entend tous les processus dans lesquels les personnes apprennent avec un support numérique. Il peut s’agir par exemple de formats tels que les webinaires, les vidéos ou les chats (discussions), qui peuvent être utilisés via un ordinateur ou un smart-phone. Les méthodes d’apprentissage utilisées devraient toujours être soumises à une orientation didactique et pédagogique. L’e-learning est une méthode de transmission qui peut être utilisée par exemple dans le cadre de la formation scoute.</p><strong>Avantages:</strong> Flexibilité pour les participant·e·s, le temps et le lieu ne jouent aucun rôle, multilinguisme, interactivité.<br/><strong>Inconvénients:</strong> Création d’une plateforme d’e-learning plutôt coûteuse et complexe, nécessite un accès à des ordinateurs/smartphones, une connexion internet, se déroule devant un écran.",
+            "website": "<p>Un outil permettant de présenter des informations sur internet. Nécessite du texte et éven-tuellement des images, l’audio et la vidéo peuvent être intégrés.</p><strong>Avantages:</strong> Si internet/données sont disponibles, le site web peut être consulté de partout. Peut être consulté par plusieurs personnes en même temps. Peut être créé même sans connais-sances approfondies en programmation. <br/><strong>Inconvénients:</strong> frais récurrents (hébergement), nécessite des mises à jour (de sécurité) <br/><strong>Exemples :</strong> pfadi.swiss",
+            "podcast": "<p>Un podcast est un fichier audio ou vidéo numérique mis à disposition par épisodes et pou-vant être consulté sur internet. Souvent, les podcasts traitent de sujets spécifiques, allant de l’éducation à l’actualité en passant par le divertissement.</p><strong>Avantages:</strong> Flexible (peut être écouté partout), possibilité de présentation divertissantes. <br/><strong>Inconvénients:</strong> Pas de possibilité d’interaction, absence de support visuel, production coûteuse, potentiel de distratction pendant l’écoute, disponibilité (généralement uniquement en ligne).",
+            "office": "<p>Un formulaire est un outil polyvalent pour obtenir un feedback (par ex : feedback de cours), pour des enquêtes, des inscriptions, des commandes ou autres. Il peut être utilisé par plu-sieurs personnes simultanément ou indépendamment.</p> <strong>Avantages:</strong> facile à utiliser, indépendant de la plate-forme. <br/><strong>Inconvénients:</strong> seul le texte est possible et le feedback asynchrone. Pas de vidéo (sauf avec un lien dans le texte de description).<br/><strong>Exemples:</strong> Office Forms, Google Forms",
+            "pdf": "<p>Le Portable Document Format, ou PDF, est un format de fichier courant permettant de pré-parer des informations sous forme numérique et de les partager ensuite.</p> <strong>Avantages:</strong> indépendant de la plateforme, intégrité graphique : affiche le même contenu avec exacte-ment la même mise en page, peut être imprimé, convivial, sûr, compact. <br/><strong>Inconvénients:</strong> difficilement optimisable pour les moteurs de recherche, non optimisé pour les téléphones, les fichiers sont lus comme des images, les programmes de traitement sont coûteux, pas de travail synchrone. <br/><strong>Exemples :</strong> pfadi.swiss/downloads ",
+            "pm_tool": "<p>Outil permettant d’organiser les tâches d’un projet dans lequel plusieurs personnes sont impliquées. Texte et image possibles.</p> <br /><strong>Avantages:</strong> collaboration asynchrone, petit budget, peu de connaissances préalables nécessaires <br /><strong>Inconvénients:</strong> généralement uniquement en ligne, beaucoup de modération nécessaire. <br /><strong>Exemples:</strong> Trello, Jira, Planner, Asana ",
+            "collaboration": "<p>Un outil permettant de partager, de traiter et d’utiliser des informations et des ressources de toute nature.</p><strong>Avantages:</strong> collaboration et échange asynchrone et synchrone.<br/><strong>Inconvénients:</strong> généralement disponible uniquement en ligne.<br/><strong>Exemples:</strong> Microsoft 365, Google Workspace, Confluence, kSuite Infomaniak "
+          },
+          "tools": {
+            "app": "App",
+            "game": "Game",
+            "youtube": "Youtube",
+            "e_learning": "E-Learning Plattform",
+            "website": "Site internet",
+            "podcast": "Podcast",
+            "office": "Office",
+            "pdf": "PDF",
+            "pm_tool": "Outil de gestion de projet (par ex: Trello)",
+            "collaboration": "Plateformes collaboratives"
+          },
+          "questions": {
+            "next": "suivant",
+            "warnings": "Alertes",
+            "printable": {
+              "text": "Doit-il fonctionner en version imprimée?",
+              "responses": {
+                "yes": "Oui",
+                "no": "Non"
+              }
+            },
+            "simultan": {
+              "text": "Faut-il que plusieurs personnes puissent travailler/modifier quelque chose en même temps avec l'outil ?",
+              "responses": {
+                "no": "Non",
+                "yes": "Oui"
+              }
+            },
+            "internet_connection": {
+              "text": "Où le produit sera-t-il utilisé ? Internet est-il nécessaire?",
+              "responses": {
+                "none": "Pas d'internet (forêt)",
+                "instable": "Internet instable / lent (cours, transports publics)",
+                "stable": "Internet stable / rapide (à la maison)"
+              }
+            },
+            "content_types": {
+              "text": "Quels sont les formats de données utilisés (choix multiple)?",
+              "responses": {
+                "audio": "Audio",
+                "video": "Vidéo",
+                "text": "Texte",
+                "image": "Image"
+              }
+            },
+            "interaction": {
+              "text": "Les utilisateur·ice·s doivent-iels pouvoir interagir avec le produit?",
+              "responses": {
+                "none": "Pas du tout",
+                "like_and_comment": "Commenter / liker",
+                "content_creation": "Créer du contenu"
+              }
+            },
+            "feedback": {
+              "text": "Le feedback sur l'interaction doit-il être généré automatiquement (par ex: quiz, calcul de données, correct ou incorrect, etc...)?",
+              "responses": {
+                "no": "Non",
+                "yes": "Oui"
+              }
+            },
+            "creators": {
+              "text": "L'outil est-il crée par le groupe de projet ou par une entreprise externe?",
+              "responses": {
+                "self": "Groupe de projet",
+                "external": "Externe"
+              }
+            },
+            "self_creators": {
+              "text": "Les compétences suivantes sont-elles prsentes dans l'équipe?",
+              "responses": {
+                "coding": "Programmation",
+                "coding_light": "Programmation light",
+                "basic": "Basiques"
+              }
+            },
+            "external_creators": {
+              "text": "WQuel est le budget disponible?",
+              "responses": {
+                "large": "Gros (>50k)",
+                "medium": "Moyen (11-49k)",
+                "small": "Petit (<10k)"
+              }
+            },
+            "modification": {
+              "text": "Quelles connaissances techniques préalables sont nécessaires pour adapter les contenus?",
+              "responses": {
+                "much": "Beaucoup",
+                "medium": "Moyen",
+                "little": "Peu"
+              }
+            },
+            "moderation": {
+              "text": "Quel effort suis-je prêt·e à fournir pour la modération (forum, communauté,...) ?",
+              "responses": {
+                "often": "Beaucoup",
+                "little": "Peu",
+                "none": "Aucun"
+              }
+            }
           }
         },
         "it_guidelines_page": {

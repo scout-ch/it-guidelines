@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import ClippyStage from '../../components/ClippyStage'
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet'
 import { MainContainer } from '../../App'
 import { Question, ScoreList, Response, Warning, Root, Reply } from '../../types';
 import { Button, ButtonContainer } from '../HomePage';
 import questionJson from './../../questions.json';
 import styled from '@emotion/styled';
+import ReactModal from 'react-modal';
 
 type State = {
   currentSlide: string;
@@ -24,6 +25,7 @@ const defaultReplies = (): Reply[] => ([])
 export default function NewDigitalisationProjectPage() {
   const [state] = useState<State>(defaultState)
   const [replies, setReplies] = useState<Reply[]>(defaultReplies)
+  const [showModal, setShowModal] = useState<String>('none')
   const { t } = useTranslation()
   const [currentQuestion, setCurrentQuestion] = useState<number>(() => {
     const store = localStorage.getItem('digitalisationCurrentQuestion');
@@ -172,6 +174,32 @@ export default function NewDigitalisationProjectPage() {
     setReplies(defaultReplies)
   }
 
+  function showDescriptionModal(tool: String) {
+    return <div>
+      {/* <Button onClick={() => setShowModal(tool)}>Trigger Modal</Button> */}
+      {/* <span onClick={() => setShowModal(tool)}><FontAwesomeIcon icon="question" /></span> */}
+      <u onClick={() => setShowModal(tool)}>Details</u>
+
+      <ReactModal
+        isOpen={showModal === tool}
+        shouldCloseOnOverlayClick={true}
+        shouldCloseOnEsc={true}
+        style={{content: { 
+          position: 'relative',
+          width: '50%',
+          margin: "2rem auto"
+        }}}
+      >
+      <h2>{t(`new_project_digitalisation_page.tools.${tool}`)}</h2>
+      <Trans>
+        <p>{t(`new_project_digitalisation_page.tool_descriptions.${tool}`)}</p>
+      <br />
+      </Trans>
+
+      <Button type="button" onClick={() => setShowModal('none')}>{t('close')}</Button></ReactModal>
+    </div>
+  }
+
   const questionsRoot: Root = questionJson
   const questions: Question[] = questionsRoot.questions
 
@@ -210,6 +238,7 @@ export default function NewDigitalisationProjectPage() {
         let warnings = a.warnings
         return <div>
           <h3>{t(`new_project_digitalisation_page.tools.${a.key}`)} (Score: {a.score})</h3>
+          {showDescriptionModal(a.key)}
           {warnings && warnings.length > 0 ?
             <div><h5>{t('new_project_digitalisation_page.questions.warnings')}</h5>
               <ul>
@@ -235,8 +264,11 @@ export default function NewDigitalisationProjectPage() {
     <ClippyStage variant={state.clippyVariant}>
       {showScore ? <div className='score-section'>
         <h2>{t("new_project_digitalisation_page.evaluation.title")}</h2>
-        <Button type="button" onClick={() => restart()}>{t('new_project_digitalisation_page.evaluation.restart')}</Button>
-        <Button type="button" onClick={() => reset()}>{t('new_project_digitalisation_page.evaluation.reset')}</Button>
+        <p>{t("new_project_digitalisation_page.evaluation.explanation")}</p>
+        <ButtonContainer>
+          <Button type="button" onClick={() => restart()}>{t('new_project_digitalisation_page.evaluation.restart')}</Button>
+          <Button type="button" onClick={() => reset()}>{t('new_project_digitalisation_page.evaluation.reset')}</Button>
+        </ButtonContainer>
         {calculateResult()}
       </div> :
         <div className='question-section'>

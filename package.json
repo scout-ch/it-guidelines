@@ -23,6 +23,7 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-i18next": "^11.8.15",
+    "react-modal": "^3.16.3",
     "react-router": "^6.16.0",
     "react-router-dom": "^6.16.0",
     "react-scripts": "4.0.3",
@@ -32,6 +33,7 @@
   "devDependencies": {
     "@emotion/babel-preset-css-prop": "^11.2.0",
     "@types/react-helmet": "^6.1.1",
+    "@types/react-modal": "^3.16.3",
     "@types/react-router-dom": "^5.1.7",
     "prettier": "^2.3.0"
   },

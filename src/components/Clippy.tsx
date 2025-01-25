@@ -64,6 +64,9 @@ const svgStyles = css`
     .brows {
       opacity: 1;
     }
+    .brows2 {
+      opacity: 0;
+    }
     .pupil {
       animation: ${focus} 5s ease-in-out infinite;
     }
@@ -88,6 +91,11 @@ export default function Clippy({ variant }: ClippyProps) {
       <circle className="pupil" cx="70.5" cy="73.5" r="4.5" fill="black" />
       <path className="brows" d="M4 36L38 60" stroke="black" strokeWidth="8" strokeLinecap="round" />
       <path className="brows" d="M89 36L55 60" stroke="black" strokeWidth="8" strokeLinecap="round" />
+      
+      
+      <path className="brows2" d="M 52 55 q 20 -20 37 0" stroke="black" strokeWidth="3" strokeLinecap="round" />
+
+      <path className="brows2" d="M 4 55 q 16 -20 35 0" stroke="black" strokeWidth="3" strokeLinecap="round" />
       <defs>
         <linearGradient id="paint0_linear" x1="11.5" y1="65" x2="29" y2="94" gradientUnits="userSpaceOnUse">
           <stop stopColor="#F2F2F2" />
