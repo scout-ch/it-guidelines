@@ -4,7 +4,7 @@ import { Trans, useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet'
 import { MainContainer } from '../../App'
 import { Question, ScoreList, Response, Warning, Root, Reply } from '../../types';
-import { Button, ButtonContainer } from '../HomePage';
+import { Button, ButtonContainer, Card } from '../HomePage';
 import questionJson from './../../questions.json';
 import styled from '@emotion/styled';
 import ReactModal from 'react-modal';
@@ -159,7 +159,10 @@ export default function NewDigitalisationProjectPage() {
 
   function printWarnings(warnings: Warning[]) {
     return warnings.map(function (warning: Warning) {
-      return <li>{`${t(`new_project_digitalisation_page.questions.${warning.question.key}.text`)} => ${t(`new_project_digitalisation_page.questions.${warning.question.key}.responses.${warning.response.key}`)}`}</li>
+      return <li>
+        {`${t(`new_project_digitalisation_page.questions.${warning.question.key}.text`)} => `}
+         <i>{`${t(`new_project_digitalisation_page.questions.${warning.question.key}.responses.${warning.response.key}`)}`}</i>
+        </li>
     })
   }
 
@@ -236,11 +239,14 @@ export default function NewDigitalisationProjectPage() {
     return <div className='result-section'>
       {score.sort((a, b) => (b.score - a.score) || (a.warnings.length - b.warnings.length)).map((a) => {
         let warnings = a.warnings
-        return <div>
-          <h3>{t(`new_project_digitalisation_page.tools.${a.key}`)} (Score: {a.score})</h3>
+        return <Card style={{marginBottom: '1rem', marginTop: '1rem'}}>
+          <h3 style={{display: 'flex', justifyContent: 'space-between'}}>
+            <span>{t(`new_project_digitalisation_page.tools.${a.key}`)}</span> 
+            <span>Score: {a.score}</span>
+          </h3>
           {showDescriptionModal(a.key)}
           {warnings && warnings.length > 0 ?
-            <div><h5>{t('new_project_digitalisation_page.questions.warnings')}</h5>
+            <div><h5 style={{marginTop: 0}}>{t('new_project_digitalisation_page.questions.warnings')}</h5>
               <ul>
                 {printWarnings(warnings)}
               </ul>
@@ -248,9 +254,8 @@ export default function NewDigitalisationProjectPage() {
             :
             ""
           }
-          <hr />
 
-        </div>
+        </Card>
       })}
     </div>
   }

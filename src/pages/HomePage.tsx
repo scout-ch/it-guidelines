@@ -45,7 +45,7 @@ export const Button = styled.div`
   }
 `
 
-const Card = styled.div`
+export const Card = styled.div`
   background-color: var(--color-secondary-light);
   border-radius: 5px;
   padding: 1.5rem;
@@ -106,6 +106,12 @@ export default function HomePage() {
           </Card>
         </ButtonContainer>
       </p>
+
+      <Box>
+        <div>
+          <A href="https://scout-ch.github.io/it-landscape/">IT-Landscape</A>
+        </div>
+      </Box>
 
       <Box>
         <div>
