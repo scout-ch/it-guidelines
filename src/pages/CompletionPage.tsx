@@ -18,9 +18,19 @@ export default function CompletionPage() {
     <h1>{t('completion_page.title')}</h1>
     <p>{t('completion_page.introduction')}</p>
     <Infobox>
-      {t('completion_page.complete_project')}{' '}
-      <Link to="/digitalisation/tbd">{t('completion_page.complete_project')}</Link>
+      <Link to="/completion/tbd">{t('completion_page.complete_project')}</Link>
     </Infobox>
+    <p>
+      Die vorliegenden Grundsätze fokussieren sich auf folgende zentrale Aspekte des Abschlusses von IT-Projekten: 
+      <ul>
+        <li>Leitlinien zur Sicherstellung der im Projekt erstellten Artefakte</li>
+        <li>Diese Leitlinien definieren, wie sicherzustellen ist, dass alle erstellten Dokumentationen, Quellcodes, technischen Spezifikationen und weiteren Projektergebnisse vollständig und in geeigneter Form verfügbar bleiben. Dies umfasst sowohl die ordnungsgemäße Archivierung als auch den Zugriff durch berechtigte Parteien. </li>
+        <li>Wissenssicherung und Übergabe in den Betrieb</li>
+        <li>Gewährleistung eines sicheren Betriebes der Lösung</li>
+      </ul>
+
+      Ein erfolgreicher Projektabschluss erfordert eine umfassende Wissensübergabe an den Betrieb. Hierbei ist sicherzustellen, dass alle relevanten Projektbeteiligten, insbesondere die Betriebsteams, über das notwendige Wissen zur fortlaufenden Wartung und Weiterentwicklung
+    </p>
     <div>
       <h2>{t('completion_page.content')}</h2>
       <ul>

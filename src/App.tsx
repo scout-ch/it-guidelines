@@ -20,6 +20,7 @@ import DocumentationPage from './pages/digitalisation/DocumentationPage';
 import CompletionPage from './pages/CompletionPage';
 import OrganisationPage from './pages/it-guidelines/OrganisationPage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import NewCompletionProjectPage from './pages/completion/NewCompletionProjectPage';
 
 const Nav = styled.nav`
   display: flex;
@@ -174,6 +175,11 @@ const Header = () => {
           </li>
           <li>
             <Link to="/completion">{t('completion_page.title')}</Link>
+            <SubNav>
+              <li>
+                <Link to="/completion/new-project">{t('new_completion_project_page.title')}</Link>
+              </li>
+            </SubNav>
           </li>
         </ul>
       </Nav>
@@ -189,6 +195,7 @@ function App() {
         <Route path="/it-guidelines" element={<ItGuidelinesPage />} />
         <Route path="/digitalisation" element={<DigitalisationPage />} />
         <Route path="/completion" element={<CompletionPage />} />
+        <Route path="/completion/new-project" element={<NewCompletionProjectPage />} />
         <Route path="/digitalisation/new-project" element={<NewDigitalisationProjectPage />} />
         <Route path="/digitalisation/documentation" element={<DocumentationPage />} />
         <Route path="/it-guidelines/principles" element={<PrinciplesPage />} />

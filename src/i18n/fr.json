@@ -167,6 +167,9 @@
           "content": "Contenu",
           "downloads": "# Hilfsblatt herunterladen"
         },
+        "new_completion_project_page": {
+          "title": "# Fragebogen"
+        },
         "principles_page": {
           "title": "Principes",
           "one": "Les outils informatiques du MSdS sont des moyens et servent en première ligne au fonctionnement des groupes scouts et des associations cantonales.          ",
