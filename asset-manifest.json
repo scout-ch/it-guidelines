@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/it-guidelines/static/css/main.33cc9406.chunk.css",
-    "main.js": "/it-guidelines/static/js/main.3e453d40.chunk.js",
-    "main.js.map": "/it-guidelines/static/js/main.3e453d40.chunk.js.map",
-    "runtime-main.js": "/it-guidelines/static/js/runtime-main.17cc2b52.js",
-    "runtime-main.js.map": "/it-guidelines/static/js/runtime-main.17cc2b52.js.map",
-    "static/js/2.06c537e7.chunk.js": "/it-guidelines/static/js/2.06c537e7.chunk.js",
-    "static/js/2.06c537e7.chunk.js.map": "/it-guidelines/static/js/2.06c537e7.chunk.js.map",
-    "static/js/3.5d03ac5e.chunk.js": "/it-guidelines/static/js/3.5d03ac5e.chunk.js",
-    "static/js/3.5d03ac5e.chunk.js.map": "/it-guidelines/static/js/3.5d03ac5e.chunk.js.map",
-    "index.html": "/it-guidelines/index.html",
-    "static/css/main.33cc9406.chunk.css.map": "/it-guidelines/static/css/main.33cc9406.chunk.css.map",
-    "static/js/2.06c537e7.chunk.js.LICENSE.txt": "/it-guidelines/static/js/2.06c537e7.chunk.js.LICENSE.txt",
-    "static/media/index.less": "/it-guidelines/static/media/SourceSansPro-SemiBoldItalic.f035d6a1.woff2",
-    "static/media/footer.29b179b9.svg": "/it-guidelines/static/media/footer.29b179b9.svg",
-    "static/media/pbs_logo.33551793.svg": "/it-guidelines/static/media/pbs_logo.33551793.svg"
+    "main.css": "/static/css/main.6b80c6c8.chunk.css",
+    "main.js": "/static/js/main.f3c8a023.chunk.js",
+    "main.js.map": "/static/js/main.f3c8a023.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fc73d7c9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fc73d7c9.js.map",
+    "static/js/2.1177e219.chunk.js": "/static/js/2.1177e219.chunk.js",
+    "static/js/2.1177e219.chunk.js.map": "/static/js/2.1177e219.chunk.js.map",
+    "static/js/3.69be2ab0.chunk.js": "/static/js/3.69be2ab0.chunk.js",
+    "static/js/3.69be2ab0.chunk.js.map": "/static/js/3.69be2ab0.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.6b80c6c8.chunk.css.map": "/static/css/main.6b80c6c8.chunk.css.map",
+    "static/js/2.1177e219.chunk.js.LICENSE.txt": "/static/js/2.1177e219.chunk.js.LICENSE.txt",
+    "static/media/index.less": "/static/media/SourceSansPro-SemiBoldItalic.f035d6a1.woff2",
+    "static/media/footer.29b179b9.svg": "/static/media/footer.29b179b9.svg",
+    "static/media/pbs_logo.33551793.svg": "/static/media/pbs_logo.33551793.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.17cc2b52.js",
-    "static/js/2.06c537e7.chunk.js",
-    "static/css/main.33cc9406.chunk.css",
-    "static/js/main.3e453d40.chunk.js"
+    "static/js/runtime-main.fc73d7c9.js",
+    "static/js/2.1177e219.chunk.js",
+    "static/css/main.6b80c6c8.chunk.css",
+    "static/js/main.f3c8a023.chunk.js"
   ]
 }
