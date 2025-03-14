@@ -1,9 +1,10 @@
 // import styled from '@emotion/styled'
-import React from 'react'
+
 import { Helmet } from 'react-helmet'
 import { MainContainer, NavLocation, Ul } from '../../App'
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLock } from '@fortawesome/free-solid-svg-icons'
 
 export default function SecurityPage() {
   const { t } = useTranslation()
@@ -14,7 +15,7 @@ export default function SecurityPage() {
   </Helmet>
   <NavLocation>{`${t('it_guidelines_page.title')} - ${t('security_page.title')}`}</NavLocation>
   
-    <h1><FontAwesomeIcon icon="lock" /> {t('security_page.title')}</h1>
+    <h1><FontAwesomeIcon icon={faLock} /> {t('security_page.title')}</h1>
     <p>
       <Ul>
         <li>{t('security_page.one')}</li>

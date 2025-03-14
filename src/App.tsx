@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import React from 'react';
 import NewProjectPage from './pages/it-guidelines/NewProjectPage';
 import PrinciplesPage from './pages/it-guidelines/PrinciplesPage';
 import SecurityPage from './pages/it-guidelines/SecurityPage';
@@ -9,8 +8,6 @@ import { useTranslation } from 'react-i18next';
 import { HashRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import AcquisitionPage from './pages/it-guidelines/AcquisitionPage';
 import CommunityPage from './pages/it-guidelines/CommunityPage';
-import { faScroll, faLock, faTools, faShoppingCart, faUsers, faHandsHelping, faCalendarAlt, faCompass } from '@fortawesome/free-solid-svg-icons';
-import { library } from '@fortawesome/fontawesome-svg-core';
 import Footer from './components/Footer';
 import ImpressumPage from './pages/ImpressumPage';
 import ItGuidelinesPage from './pages/ItGuidelinesPage';
@@ -21,6 +18,7 @@ import CompletionPage from './pages/CompletionPage';
 import OrganisationPage from './pages/it-guidelines/OrganisationPage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import NewCompletionProjectPage from './pages/completion/NewCompletionProjectPage';
+import { faCompass } from '@fortawesome/free-solid-svg-icons';
 
 const Nav = styled.nav`
   display: flex;
@@ -128,15 +126,13 @@ export const Box = styled.div`
 const Header = () => {
   const { t } = useTranslation();
 
-  library.add(faScroll, faLock, faTools, faShoppingCart, faUsers, faHandsHelping, faCalendarAlt, faCompass);
-
   return (
     <div className="nav">
       <Nav role="nav">
         <ul>
           <li>
             <Link to="/">
-              <FontAwesomeIcon icon="compass" /> {t('home_page.title')}
+              <FontAwesomeIcon icon={faCompass} /> {t('home_page.title')}
             </Link>
           </li>
           <li>

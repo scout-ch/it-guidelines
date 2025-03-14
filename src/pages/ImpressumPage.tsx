@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet'
 import { MainContainer } from '../App'

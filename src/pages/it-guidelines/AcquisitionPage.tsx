@@ -1,9 +1,10 @@
 // import styled from '@emotion/styled'
-import React from 'react'
+
 import { Helmet } from 'react-helmet'
 import { MainContainer, NavLocation, Ul } from '../../App'
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart, faTools } from '@fortawesome/free-solid-svg-icons'
 
 export default function AcquisitionPage() {
   const { t } = useTranslation()
@@ -35,7 +36,7 @@ export default function AcquisitionPage() {
         </li>
       </Ul>
     </p>
-    <h2><FontAwesomeIcon icon="shopping-cart" /> {t('acquisition_page.acquisition.title')}</h2>
+    <h2><FontAwesomeIcon icon={faShoppingCart} /> {t('acquisition_page.acquisition.title')}</h2>
     <p>
       <Ul>
         <li>{t('acquisition_page.acquisition.one')}</li>
@@ -48,7 +49,7 @@ export default function AcquisitionPage() {
         <li>{t('acquisition_page.acquisition.eight')}</li>
       </Ul>
     </p>
-    <h2><FontAwesomeIcon icon="tools" /> {t('acquisition_page.operation.title')}</h2>
+    <h2><FontAwesomeIcon icon={faTools} /> {t('acquisition_page.operation.title')}</h2>
     <p>
       <Ul>
         <li>{t('acquisition_page.operation.one')}</li>

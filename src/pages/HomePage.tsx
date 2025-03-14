@@ -1,5 +1,5 @@
 // import styled from '@emotion/styled'
-import React from 'react';
+;
 import { Helmet } from 'react-helmet';
 import { A, Box, MainContainer, Ul } from '../App';
 import { useTranslation } from 'react-i18next';
@@ -7,6 +7,7 @@ import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { css } from '@emotion/react';
+import { faCompass } from '@fortawesome/free-solid-svg-icons';
 
 const buttonStyle = css`
   font-size: 1em;
@@ -26,7 +27,7 @@ const buttonStyle = css`
   }
 `;
 
-export const Button = styled.div`
+export const Button = styled.button`
   font-size: 1em;
   padding: 0.5em;
   text-align: center;
@@ -83,10 +84,9 @@ export default function HomePage() {
         <title>{t('home_page.title')}</title>
       </Helmet>
       <h1>
-        <FontAwesomeIcon icon="compass" /> {t('home_page.title')}
+        <FontAwesomeIcon icon={faCompass} /> {t('home_page.title')}
       </h1>
       <p>{t('home_page.introduction')}</p>
-      <p>
         <h2>{t('home_page.content')}</h2>
         <ButtonContainer>
           <Card>
@@ -105,7 +105,6 @@ export default function HomePage() {
             <Link css={buttonStyle} to="/completion">{t('home_page.completion.button')}</Link>
           </Card>
         </ButtonContainer>
-      </p>
 
       <Box>
         <div>

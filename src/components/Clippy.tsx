@@ -1,4 +1,4 @@
-import React from 'react';
+;
 import { keyframes, css } from '@emotion/react';
 
 const blink = keyframes`

@@ -180,7 +180,7 @@ export default function NewDigitalisationProjectPage() {
   function showDescriptionModal(tool: String) {
     return <div>
       {/* <Button onClick={() => setShowModal(tool)}>Trigger Modal</Button> */}
-      {/* <span onClick={() => setShowModal(tool)}><FontAwesomeIcon icon="question" /></span> */}
+      {/* <span onClick={() => setShowModal(tool)}><FontAwesomeIcon icon={faquestion} /></span> */}
       <u onClick={() => setShowModal(tool)}>Details</u>
 
       <ReactModal
