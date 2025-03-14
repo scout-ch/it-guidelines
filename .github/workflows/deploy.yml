@@ -23,10 +23,13 @@ jobs:
       - run: pnpm install
       - run: pnpm build
 
-      - uses: actions/upload-artifact@v4
-        with:
-          name: github-pages
+      - uses: actions/upload-pages-artifact@v1
+        with: 
           path: ./dist
+      # - uses: actions/upload-artifact@v4
+      #   with:
+      #     name: github-pages
+      #     path: ./dist
 
   deploy:
     name: Deploy
@@ -42,5 +45,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-
       - uses: actions/deploy-pages@v3
