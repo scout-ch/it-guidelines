@@ -1,6 +1,6 @@
 {
-  "name": "it-guidelines",
-  "homepage": "https://scout-ch.github.io/it-guidelines",
+  "name": "itkompass",
+  "homepage": "https://itkompass.scout.ch.",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.1.2",
