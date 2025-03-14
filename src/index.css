@@ -1,0 +1,82 @@
+@import './fonts/fonts.css';
+
+:root {
+  --color-primary: #521d3a;
+  --color-primary-light: #632949;
+  --color-secondary-light: #f5f0e6;
+  font-size: clamp(1rem, calc(2rem), 1.4rem);
+}
+
+html,
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.bg-primary {
+  background-color: var(--color-primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--color-primary-light) !important;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-primary-light);
+}
+
+a {
+  color: var(--color-primary);
+  opacity: 1;
+}
+
+a:focus,
+a:hover,
+a:active,
+a.active {
+  opacity: 0.5;
+}
+
+p,
+li {
+  margin-top: 0;
+  margin-bottom: 0.3em;
+}
+
+p,
+ul,
+li,
+a,
+span,
+div {
+  line-height: 1.5em;
+}
+
+table th {
+  text-align: left;
+}
+
+table td {
+  border-top: 1px solid var(--color-primary-light);
+  padding: 5px;
+  margin: 0;
+}
+
+table tr {
+  font-weight: 300;
+}
+
+.selected-response {
+  background-color: rgba(99, 41, 73, 0.5) !important;
+}

@@ -1,45 +1,54 @@
-# IT Richtlinien
+# React + TypeScript + Vite
 
-Die IT-Richtlinien der PBS mit Leitfragen
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Available Scripts
+Currently, two official plugins are available:
 
-In the project directory, you can run:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-### `yarn start`
+## Expanding the ESLint configuration
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```js
+export default tseslint.config({
+  extends: [
+    // Remove ...tseslint.configs.recommended and replace with this
+    ...tseslint.configs.recommendedTypeChecked,
+    // Alternatively, use this for stricter rules
+    ...tseslint.configs.strictTypeChecked,
+    // Optionally, add this for stylistic rules
+    ...tseslint.configs.stylisticTypeChecked,
+  ],
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
+```
 
-### `yarn build`
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-----
-Datengrundlage für die Fragen:
-
-
-
-| Questions     |    |                                                                                                                                                               |                              |                    |                                   |                                                |                              |                                   |                                                |                                   |                                                |                                                |
-|---------------|----|---------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|--------------------|-----------------------------------|------------------------------------------------|------------------------------|-----------------------------------|------------------------------------------------|-----------------------------------|------------------------------------------------|------------------------------------------------|
-| key           |    | Frage                                                                                                                                                         | App                          | Game               | Youtube kanal video platform      | eLearning                                      | Website                      | Podcast                           | office (formular)                              | PDF                               | PM Tool (z. B. Trello)                         | kollaborative Plattformen                      |
-| printable     | 1  | Muss es gedruckt funktionieren?                                                                                                                               | nein                         | nein               | nein                              | nein                                           | nein                         | nein                              | nein                                           | ja                                | nein                                           | nein                                           |
-| internet      | 3  | Wo wird das Produkt eingesetzt? Wird Internet benötigt? kein Internet (Wald)instabiles / langsames Internet (Kurs, ÖV)stabiles / schnelles Internet (Zuhause) | instabiles stabiles          | stabiles           | kein Internet instabiles stabiles | instabiles stabiles                            | instabiles stabiles          | kein internet instabiles stabiles | instabiles stabiles                            | kein internet instabiles stabiles | instabiles stabiles                            | stabiles                                       |
-| content_types | 4  | Welche Datenformate werden verwendet (ankreuzen)? AudioVideoTextBild                                                                                          | AudioVideoTextBild           | AudioVideoTextBild | AudioVideoBild                    | AudioVideoTextBild                             | AudioVideoTextBild           | audio                             | text bild                                      | text bild                         | text bild                                      | text bild                                      |
-| simultan      | 2  | Müssen mehrere Personen gleichzeitig mit dem Tool etwas erarbeiten/verändern können?                                                                          | nein                         | nein               | nein                              | ja                                             | ja                           | nein                              | ja                                             | ja                                | ja                                             | ja                                             |
-| creators      | 7  | Wird das Tool durch die Projektgruppe erstellt oder von einer externer Firma?                                                                                 |                              |                    |                                   |                                                |                              |                                   |                                                |                                   |                                                |                                                |
-| self          | 8  | Gibt es im Team die folgenden Skills? Skala 1-10 1 = Kann eine Seite ausdrucken 10 = Kann Java programmieren                                                  | programmieren                | programmieren      | hochladen                         | programmieren light                            | programmieren light          | hochladen                         | Basic                                          | Basic                             | Basic                                          | Programmieren light                            |
-| external      | 9  | Welches Budget steht zur Verfügung? gross >50k mittel 11-49k klein <10k                                                                                       | gross                        | gross              | klein                             | mittel                                         | klein                        | klein                             | klein                                          | klein                             | klein                                          | mittel                                         |
-| interaction   | 5  | Sollen die Nutzenden mit dem Produkt interagieren können? gar nichtkommentieren / likenInhalte erstellen                                                      | gar nicht kommentieren/liken | gar nicht          | gar nicht kommentieren/liken      | gar nicht kommentieren/liken Inhalte erstellen | gar nicht kommentieren/liken | gar nicht kommentieren/liken      | gar nicht kommentieren/liken Inhalte erstellen | gar nicht                         | gar nicht kommentieren/liken Inhalte erstellen | gar nicht kommentieren/liken Inhalte erstellen |
-| feedback      | 6  | Muss das Feedback auf die Interaktion automatisch generiert werden (z.B. Quiz, Datenberechnung, richtig oder falsch etc.)?                                    | Ja                           | Ja                 | Nein                              | ja                                             | Ja                           | Nein                              | nein                                           | Nein                              | Ja                                             | Ja                                             |
-| modification  | 10 | Wie viel Vorwissen braucht es für das Anpassen der Inhalte?                                                                                                   | viel                         | viel               | mittel                            | viel                                           | mittel                       | mittel                            | wenig                                          | wenig                             | wenig                                          | viel                                           |
-| moderation    | 11 | Wie viel Aufwand bin ich bereit aufzuwenden für die Moderation (Forum, Community...)?                                                                         | wenig                        | kein               | viel                              | viel                                           | kein                         | viel                              | wenig                                          | kein                              | viel                                           | viel                                           |
-| passen nicht  |    | Gibt es eine wiederkehrende Kosten (Lizenz, Hosting, Speicherplatz)?                                                                                          | nein                         | ja                 | ja?                               | ja                                             | ja                           | ja?                               | tendent ja                                     | nein                              | tendenz ja                                     | ja                                             |
-| passen nicht  |    | Werden regelmässige technische (Sicherheits-)Updates benötigt?                                                                                                | ja                           | ja                 | nein                              | nein                                           | ja                           | nein                              | nein                                           | nein                              | nein                                           | nein                                           |
+export default tseslint.config({
+  plugins: {
+    // Add the react-x and react-dom plugins
+    'react-x': reactX,
+    'react-dom': reactDom,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended typescript rules
+    ...reactX.configs['recommended-typescript'].rules,
+    ...reactDom.configs.recommended.rules,
+  },
+})
+```

@@ -1,9 +1,10 @@
 // import styled from '@emotion/styled'
-import React from 'react'
+
 import { Helmet } from 'react-helmet'
 import { MainContainer, NavLocation, Ul } from '../../App'
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
 
 export default function OrganisationPage() {
   const { t } = useTranslation()
@@ -14,7 +15,7 @@ export default function OrganisationPage() {
   </Helmet>
     <NavLocation>{`${t('it_guidelines_page.title')} - ${t('organisation_page.title')}`}</NavLocation>
     
-    <h1><FontAwesomeIcon icon="calendar-alt" /> {t('organisation_page.title')}</h1>
+    <h1><FontAwesomeIcon icon={faCalendarAlt} /> {t('organisation_page.title')}</h1>
     <p>
       {t('organisation_page.intro')}
     </p>

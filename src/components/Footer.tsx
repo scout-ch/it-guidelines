@@ -1,6 +1,6 @@
-import React from 'react'
-import { ReactComponent as FooterLogo } from './../images/footer.svg'
-import { ReactComponent as PBSLogo } from './../images/pbs_logo.svg'
+
+import FooterLogo from './../images/footer.svg?react'
+import PBSLogo from './../images/pbs_logo.svg?react'
 import styled from '@emotion/styled';
 import i18n from './../i18n';
 import { Link } from 'react-router-dom'

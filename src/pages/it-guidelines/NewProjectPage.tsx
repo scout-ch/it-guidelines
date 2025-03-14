@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import ClippyStage from '../../components/ClippyStage'
 import { useTranslation, Trans } from 'react-i18next';
 import { Helmet } from 'react-helmet'
@@ -125,7 +125,6 @@ export default function NewProjectPage() {
         </Ul>
 
         <h2>{t("slides.evaluation.answers.title")}</h2>
-        {console.log(state)}
         <p><em>{t('slides.projectPhase.text')}:</em><br /> {t(`slides.projectPhase.buttons.${state.projectPhase}`)}</p>
         <p><em>{t('slides.targetAudience.text')}:</em><br /> {t(`slides.targetAudience.buttons.${state.targetAudience}`)}</p>
         <p><em>{t('slides.toolType.text')}:</em><br /> {t(`slides.toolType.buttons.${state.toolType}`)}</p>
