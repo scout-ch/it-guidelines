@@ -5,6 +5,7 @@
 /.pnp
 /tmp
 .pnp.js
+.pnpm-store/
 
 # testing
 /coverage
