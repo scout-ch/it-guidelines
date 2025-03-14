@@ -4,9 +4,21 @@
           "title": "IT-Compass",
           "introduction": "Tu trouveras ici toutes les informations importantes concernant les projets numériques dans le scoutisme. Tu as besoin d'aide pour la forme de ton produit numérique ? -> consulte la rubrique Principes. OU : tu sais à quoi doit ressembler ton produit, mais tu as besoin d'aide pour le réaliser -> consulte les directives informatiques.",
           "content": "Contenu",
-          "it_guidelines": "Lignes directrices IT",
-          "digitalisation": "Bases pour la numérisation des publications",
-          "completion": "Principes de clôture des projets​",
+          "it_guidelines": {
+            "title": "Lignes directrices IT",
+            "button": "vers les lignes directrices IT",
+            "teaser": "Les directives IT définissent les principes et règlent les processus de l'IT au niveau fédéral du MSdS. Consulte les questions directrices pour ton nouveau projet."
+          },
+          "digitalisation": {
+            "title": "Bases pour la numérisation des publications",
+            "button": "vers les Bases pour la numérisation des publications",
+            "teaser": "Découvre quel est le meilleur mode de numérisation pour ton projet."
+          },
+          "completion": {
+            "title": "Principes de clôture des projets",
+            "button": "vers les Principes de clôture des projets",
+            "teaser": "Tu termines un projet informatique, consulte les questions d'aide pour ne rien oublier."
+          },
           "contact": "Contact CoIT",
           "mail": "Envoyez-nous un e-mail",
           "github": "Consulter nos projets sur Github"
@@ -150,14 +162,15 @@
         },
         "digitalisation_page": {
           "title": "Bases pour la numérisation des publications",
-          "introduction": "# lorem Ipsum",
-          "new_project": "Nouveau projet",
+          "introduction": "Les principes pour la numérisation des publications et des moyens auxiliaires soutiennent les groupes de projet dans la mise en œuvre et la planification de leurs projets. Ce « Digi-Clippy » a été élaboré sur la base de la question de savoir quelles publications et quels moyens auxiliaires doivent être numérisés ou où des versions physiques doivent être délibérément utilisées. Sur la base d'interrogations ciblées, des types de numérisation possibles sont proposés à la fin. L'objectif est que les produits finaux soient toujours disponibles en temps voulu et dans un format approprié.",
+          "new_project": "Tu dois numériser une publication ou un outil, mais tu n'es pas sûr de la direction à prendre ? Découvre ici quel est le meilleur type de numérisation pour ton projet.",
           "content": "Contenu",
-          "documentation": "# Hilfsmittel / Dokumentation",
-          "downloads": "# Hilfsblatt herunterladen"
+          "documentation": "Fiche d’information principes de la numérisation",
+          "downloads": "Downloads",
+          "media_description": "Tu trouveras ici de brèves descriptions, les avantages et les inconvénients ainsi que des exemples de différents outils:"
         },
         "documentation_page": {
-          "title": "# Hilfsmittel / Dokumentation",
+          "title": "Fiche d’information",
           "introduction": "Pour s’assurer que le projet bénéficie d’un niveau de numérisation optimal, il convient de se poser certaines questions et de réfléchir au préalable. Cette fiche d’information t’aidera à réfléchir aux points essentiels. "
         },
         "completion_page": {
