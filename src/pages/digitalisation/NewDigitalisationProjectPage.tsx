@@ -4,10 +4,9 @@ import { Trans, useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet'
 import { MainContainer } from '../../App'
 import { Question, ScoreList, Response, Warning, Root, Reply } from '../../types';
-import { Button, ButtonContainer, Card } from '../HomePage';
+import { Button, ButtonContainer } from '../HomePage';
 import questionJson from './../../questions.json';
 import styled from '@emotion/styled';
-import ReactModal from 'react-modal';
 
 type State = {
   currentSlide: string;
@@ -25,7 +24,6 @@ const defaultReplies = (): Reply[] => ([])
 export default function NewDigitalisationProjectPage() {
   const [state] = useState<State>(defaultState)
   const [replies, setReplies] = useState<Reply[]>(defaultReplies)
-  const [showModal, setShowModal] = useState<String>('none')
   const { t } = useTranslation()
   const [currentQuestion, setCurrentQuestion] = useState<number>(() => {
     const store = localStorage.getItem('digitalisationCurrentQuestion');
@@ -48,7 +46,7 @@ export default function NewDigitalisationProjectPage() {
     if (store) {
       const items = JSON.parse(store);
       if (items) {
-       setReplies(items);
+        setReplies(items);
       }
     }
   }, []);
@@ -84,7 +82,7 @@ export default function NewDigitalisationProjectPage() {
     if (event) {
       if (event.target.checked) {
 
-        const existing = replies.find((r:Reply) =>  r.id === question.key + option.key)
+        const existing = replies.find((r: Reply) => r.id === question.key + option.key)
         if (existing) {
           setReplies(replies.filter(a =>
             a.id !== question.key + option.key
@@ -104,8 +102,8 @@ export default function NewDigitalisationProjectPage() {
     }
 
     nextQuestion(option)
-    
-    const found = replies.find((r:Reply) =>  r.question.key === question.key)
+
+    const found = replies.find((r: Reply) => r.question.key === question.key)
     if (found) {
       found.response = option
       const newReplies = replies.map<Reply>((r: Reply) => r.question.key === question.key ? found : r)
@@ -121,16 +119,16 @@ export default function NewDigitalisationProjectPage() {
   function printOptions(question: Question) {
     if (question.multiple_choice && question.multiple_choice === true) {
       const checkboxes = question.responses.map(function (option: Response) {
-        const response = replies.find((r:Reply) =>  r.id === question.key + option.key)
+        const response = replies.find((r: Reply) => r.id === question.key + option.key)
         let storedResponseKey
         if (response) {
           storedResponseKey = response.response.key
         }
         return <div>
           <label>
-            <Checkbox type="checkbox" value={option.key} name={question.key} 
-            onChange={(e) => replyWith(option, question, e)}
-            checked={storedResponseKey === option.key} />
+            <Checkbox type="checkbox" value={option.key} name={question.key}
+              onChange={(e) => replyWith(option, question, e)}
+              checked={storedResponseKey === option.key} />
             {t(`new_project_digitalisation_page.questions.${question.key}.responses.${option.key}`)}
           </label>
         </div>
@@ -146,7 +144,7 @@ export default function NewDigitalisationProjectPage() {
       let storedResponseKey
       if (replyStore) {
         const items = JSON.parse(replyStore);
-        const response:Reply = items.find((e: Reply) => e.question.key === question.key);
+        const response: Reply = items.find((e: Reply) => e.question.key === question.key);
         if (response) {
           storedResponseKey = response.response.key
         }
@@ -161,8 +159,8 @@ export default function NewDigitalisationProjectPage() {
     return warnings.map(function (warning: Warning) {
       return <li>
         {`${t(`new_project_digitalisation_page.questions.${warning.question.key}.text`)} => `}
-         <i>{`${t(`new_project_digitalisation_page.questions.${warning.question.key}.responses.${warning.response.key}`)}`}</i>
-        </li>
+        <i>{`${t(`new_project_digitalisation_page.questions.${warning.question.key}.responses.${warning.response.key}`)}`}</i>
+      </li>
     })
   }
 
@@ -177,35 +175,22 @@ export default function NewDigitalisationProjectPage() {
     setReplies(defaultReplies)
   }
 
-  function showDescriptionModal(tool: String) {
-    return <div>
-      {/* <Button onClick={() => setShowModal(tool)}>Trigger Modal</Button> */}
-      {/* <span onClick={() => setShowModal(tool)}><FontAwesomeIcon icon={faquestion} /></span> */}
-      <u onClick={() => setShowModal(tool)}>Details</u>
-
-      <ReactModal
-        isOpen={showModal === tool}
-        shouldCloseOnOverlayClick={true}
-        shouldCloseOnEsc={true}
-        style={{content: { 
-          position: 'relative',
-          width: '50%',
-          margin: "2rem auto"
-        }}}
-      >
-      <h2>{t(`new_project_digitalisation_page.tools.${tool}`)}</h2>
-      <Trans>
-        <p>{t(`new_project_digitalisation_page.tool_descriptions.${tool}`)}</p>
-      <br />
-      </Trans>
-
-      <Button type="button" onClick={() => setShowModal('none')}>{t('close')}</Button></ReactModal>
-    </div>
-  }
-
   const questionsRoot: Root = questionJson
   const questions: Question[] = questionsRoot.questions
 
+
+  function handleAccordion(event: React.MouseEvent<HTMLDivElement>) {
+    let parent = (event.target as HTMLElement).parentElement
+
+    if (!parent?.classList.contains("accordion--open")) {
+      document
+        .querySelectorAll(".accordion--open")
+        .forEach((el) => el.classList.remove("accordion--open"))
+      parent?.classList.add("accordion--open")
+    } else {
+      parent.classList.remove("accordion--open")
+    }
+  }
 
   function calculateResult() {
 
@@ -239,23 +224,31 @@ export default function NewDigitalisationProjectPage() {
     return <div className='result-section'>
       {score.sort((a, b) => (b.score - a.score) || (a.warnings.length - b.warnings.length)).map((a) => {
         let warnings = a.warnings
-        return <Card style={{marginBottom: '1rem', marginTop: '1rem'}}>
-          <h3 style={{display: 'flex', justifyContent: 'space-between'}}>
-            <span>{t(`new_project_digitalisation_page.tools.${a.key}`)}</span> 
-            <span>Score: {a.score}</span>
-          </h3>
-          {showDescriptionModal(a.key)}
-          {warnings && warnings.length > 0 ?
-            <div><h5 style={{marginTop: 0}}>{t('new_project_digitalisation_page.questions.warnings')}</h5>
+
+        return <div className="accordions">
+          <div className="accordion accordion--ope n">
+            <div className="accordion__header" onClick={(event) => handleAccordion(event)}>
+              <p className="accordion__title">{t(`new_project_digitalisation_page.tools.${a.key}`)}</p>
+              <div className={`accordion__rating accordion__rating--${a.score}`}>
+                <div className="accordion__rating__bar">
+                  <div className="accordion__rating__bar__fill"></div>
+                </div>
+                <div className="accordion__rating__label">{a.score}/10</div>
+              </div>
+            </div>
+            <div className="accordion__body">
+            <div className="accordion__secondary">
+                <Trans>
+                  <p>{t(`new_project_digitalisation_page.tool_descriptions.${a.key}`)}</p>
+                </Trans>
+              </div>
+              <p className="accordion__chapter">{t('new_project_digitalisation_page.questions.warnings')}</p>
               <ul>
                 {printWarnings(warnings)}
               </ul>
             </div>
-            :
-            ""
-          }
-
-        </Card>
+          </div>
+        </div>
       })}
     </div>
   }
