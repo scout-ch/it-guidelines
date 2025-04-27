@@ -1,10 +1,11 @@
 // import styled from '@emotion/styled'
 
 import { Helmet } from 'react-helmet'
-import { MainContainer, NavLocation, Ul } from '../../App'
+import { MainContainer, NavLocation } from '../../App'
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUsers } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 export default function CommunityPage() {
   const { t } = useTranslation()
@@ -17,17 +18,18 @@ export default function CommunityPage() {
     <h1><FontAwesomeIcon icon={faUsers} /> {t('community_page.title')}</h1>
     <p>
       {t('community_page.intro')}
-      <Ul>
+      <ul>
         <li>{t('community_page.one')}</li>
         <li>{t('community_page.two')}</li>
-      </Ul>
+      </ul>
     </p>
     <p>
       {t('community_page.intro2')}
-      <Ul>
+      <ul>
         <li>{t('community_page.three')}</li>
         <li>{t('community_page.four')}</li>
-      </Ul>
+      </ul>
     </p>
+    <Link to="/it-guidelines">{t('back')}</Link>
   </MainContainer>
 }

@@ -1,7 +1,7 @@
 // import styled from '@emotion/styled'
 
 import { Helmet } from 'react-helmet'
-import { Box, Infobox, MainContainer, Ul } from '../App'
+import { A, Box, Infobox, MainContainer } from '../App'
 import { useTranslation } from 'react-i18next'
 import {
   Link,
@@ -53,10 +53,10 @@ export default function CompletionPage() {
     <Box>
       <div>
         <h3>{t('completion_page.downloads')}</h3>
-        <Ul>
-          {/* <li><A href={process.env.PUBLIC_URL + '/docs/guidelines_de.pdf'} download>Hilfsblatt DE</A></li> */}
-          {/* <li><A href={process.env.PUBLIC_URL + '/docs/guidelines_fr.pdf'} download>Lignes directrices FR</A></li> */}
-        </Ul>
+        <ul>
+          <li><A href={process.env.PUBLIC_URL + '/docs/guidelines_de.pdf'} download>Hilfsblatt DE</A></li>
+          <li><A href={process.env.PUBLIC_URL + '/docs/guidelines_fr.pdf'} download>Lignes directrices FR</A></li>
+        </ul>
       </div>
     </Box>
 

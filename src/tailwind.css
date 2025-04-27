@@ -1,3 +1,31 @@
 @import "tailwindcss";
 
 @theme {}
+
+@layer base {
+  h1 {
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    line-height: 1.2;
+    margin: revert;
+  }
+
+  h2 {
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    line-height: 1.2;
+    margin: revert;
+  }
+
+  h3 {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    line-height: 1.2;
+    margin: revert;
+  }
+
+  ul, ol {
+    all: revert;
+  }
+
+}

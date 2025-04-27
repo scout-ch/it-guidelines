@@ -27,7 +27,7 @@ const ContentContainer = styled.div`
 
 const ClippyContainer = styled.div`
   position: sticky;
-  padding: 2rem;
+  padding: 1rem;
   align-self: flex-start;
   max-width: 5rem;
   flex-grow: 1;

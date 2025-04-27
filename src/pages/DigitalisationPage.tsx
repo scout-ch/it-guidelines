@@ -1,7 +1,7 @@
 // import styled from '@emotion/styled'
 
 import { Helmet } from 'react-helmet'
-import { A, Box, Infobox, MainContainer, Ul } from '../App'
+import { A, Box, Infobox, MainContainer } from '../App'
 import { useTranslation } from 'react-i18next'
 import {
   Link,
@@ -30,12 +30,12 @@ export default function DigitalisationPage() {
     <Box>
       <div>
         <h3>{t('digitalisation_page.downloads')}</h3>
-        <Ul>
+        <ul>
           <li><A href={process.env.PUBLIC_URL + '/docs/MerkblattGrundsätzederDigitalisierung.pdf'} download>Merkblatt DE</A></li>
           <li><A href={process.env.PUBLIC_URL + '/docs/MerkblattGrundsätzederDigitalisierung_FR.pdf'} download>Fiche d’information principes de la numérisation FR</A></li>
           <li>{t('digitalisation_page.media_description')} <br/><A href={process.env.PUBLIC_URL + '/docs/BeschreibungMedien.pdf'} download>Beschreibung Medien DE</A>
           <br/><A href={process.env.PUBLIC_URL + '/docs/BeschreibungMedien_FR.pdf'} download>Description des médias FR</A></li>
-        </Ul>
+        </ul>
       </div>
     </Box>
 

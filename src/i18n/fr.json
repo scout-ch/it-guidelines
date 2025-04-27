@@ -1,392 +1,394 @@
 {
-    "translation": {
-        "home_page": {
-          "title": "IT-Compass",
-          "introduction": "Tu trouveras ici toutes les informations importantes concernant les projets numériques dans le scoutisme. Tu as besoin d'aide pour la forme de ton produit numérique ? -> consulte la rubrique Principes. OU : tu sais à quoi doit ressembler ton produit, mais tu as besoin d'aide pour le réaliser -> consulte les directives informatiques.",
-          "content": "Contenu",
-          "it_guidelines": {
-            "title": "Lignes directrices IT",
-            "button": "vers les lignes directrices IT",
-            "teaser": "Les directives IT définissent les principes et règlent les processus de l'IT au niveau fédéral du MSdS. Consulte les questions directrices pour ton nouveau projet."
-          },
-          "digitalisation": {
-            "title": "Bases pour la numérisation des publications",
-            "button": "vers les Bases pour la numérisation des publications",
-            "teaser": "Découvre quel est le meilleur mode de numérisation pour ton projet."
-          },
-          "completion": {
-            "title": "Principes de clôture des projets",
-            "button": "vers les Principes de clôture des projets",
-            "teaser": "Tu termines un projet informatique, consulte les questions d'aide pour ne rien oublier."
-          },
-          "contact": "Contact CoIT",
-          "mail": "Envoyez-nous un e-mail",
-          "github": "Consulter nos projets sur Github"
-        },
-        "new_project_guidelines_page": {
-          "title": "Nouveau projet"
-        },
-        "new_project_digitalisation_page": {
-          "title": "Nouveau projet",
-          "evaluation": {
-            "title": "Résultat",
-            "explanation": "En fonction de tes réponses, nous avons listé pour toi les outils possibles. Le score te permet de voir combien de tes exigences sont satisfaites. Les 'alertes' indiquent quelles sont les réponses qui ne sont pas favorable à l'outil.",
-            "restart": "Supprimer les réponses",
-            "reset": "Modifier les réponses"
-          },
-          "tool_descriptions": {
-            "app": "<p>Application (programme) pour smartphone ou tablette. texte, image audio et vidéo sont possibles.</p><strong>Avantages:</strong> Disponible partout où le smartphone (et éventuellement les données/internet) est dispo-nible. Nécessite peu de modération. Est très polyvalent.<br /><strong>Inconvénients:</strong> Nécessite des connaissances en programmation, des mises à jour techniques (de sécurité) seront nécessaires avec le temps et les contenus doivent être préparés de manière at-trayante.",
-            "game": "<p>Un jeu, souvent appelé “game”, est une activité structurée, généralement composée de règles et d’objectifs spécifiques. Les jeux peuvent se présenter sous différents formats, notamment les jeux de société, les jeux vidéo, les jeux de rôle et les jeux éducatifs. Ils peu-vent être utilisés à des fins de divertissement ou d’éducation.</p>",
-            "youtube": "<p>Une plateforme vidéo sur laquelle des canaux peuvent être créés pour publier des vidéos. Les vidéos peuvent être téléchargées en public, en privé ou sans liste (accessibles uni-quement par lien direct). Vidéo et audio possibles.</p><strong>Avantages:</strong> Accessible facilement et sans grandes connaissances préalables, ne coûte pas cher, l’hébergement se fait via la plateforme elle-même, plateforme très connue pour les vidéos. <br/><strong>Inconvénients:</strong> Nécessite une connexion internet stable, a généralement de la publicité, la plateforme elle-même ne nécessite pas de connaissances préalables, mais la production de vidéos oui. <br/><strong>Exemples :</strong>Chaîne YouTube du MSdS, Chaîne YouTube de Hajk",
-            "e_learning": "<p>Par e-learning, on entend tous les processus dans lesquels les personnes apprennent avec un support numérique. Il peut s’agir par exemple de formats tels que les webinaires, les vidéos ou les chats (discussions), qui peuvent être utilisés via un ordinateur ou un smart-phone. Les méthodes d’apprentissage utilisées devraient toujours être soumises à une orientation didactique et pédagogique. L’e-learning est une méthode de transmission qui peut être utilisée par exemple dans le cadre de la formation scoute.</p><strong>Avantages:</strong> Flexibilité pour les participant·e·s, le temps et le lieu ne jouent aucun rôle, multilinguisme, interactivité.<br/><strong>Inconvénients:</strong> Création d’une plateforme d’e-learning plutôt coûteuse et complexe, nécessite un accès à des ordinateurs/smartphones, une connexion internet, se déroule devant un écran.",
-            "website": "<p>Un outil permettant de présenter des informations sur internet. Nécessite du texte et éven-tuellement des images, l’audio et la vidéo peuvent être intégrés.</p><strong>Avantages:</strong> Si internet/données sont disponibles, le site web peut être consulté de partout. Peut être consulté par plusieurs personnes en même temps. Peut être créé même sans connais-sances approfondies en programmation. <br/><strong>Inconvénients:</strong> frais récurrents (hébergement), nécessite des mises à jour (de sécurité) <br/><strong>Exemples :</strong> pfadi.swiss",
-            "podcast": "<p>Un podcast est un fichier audio ou vidéo numérique mis à disposition par épisodes et pou-vant être consulté sur internet. Souvent, les podcasts traitent de sujets spécifiques, allant de l’éducation à l’actualité en passant par le divertissement.</p><strong>Avantages:</strong> Flexible (peut être écouté partout), possibilité de présentation divertissantes. <br/><strong>Inconvénients:</strong> Pas de possibilité d’interaction, absence de support visuel, production coûteuse, potentiel de distratction pendant l’écoute, disponibilité (généralement uniquement en ligne).",
-            "office": "<p>Un formulaire est un outil polyvalent pour obtenir un feedback (par ex : feedback de cours), pour des enquêtes, des inscriptions, des commandes ou autres. Il peut être utilisé par plu-sieurs personnes simultanément ou indépendamment.</p> <strong>Avantages:</strong> facile à utiliser, indépendant de la plate-forme. <br/><strong>Inconvénients:</strong> seul le texte est possible et le feedback asynchrone. Pas de vidéo (sauf avec un lien dans le texte de description).<br/><strong>Exemples:</strong> Office Forms, Google Forms",
-            "pdf": "<p>Le Portable Document Format, ou PDF, est un format de fichier courant permettant de pré-parer des informations sous forme numérique et de les partager ensuite.</p> <strong>Avantages:</strong> indépendant de la plateforme, intégrité graphique : affiche le même contenu avec exacte-ment la même mise en page, peut être imprimé, convivial, sûr, compact. <br/><strong>Inconvénients:</strong> difficilement optimisable pour les moteurs de recherche, non optimisé pour les téléphones, les fichiers sont lus comme des images, les programmes de traitement sont coûteux, pas de travail synchrone. <br/><strong>Exemples :</strong> pfadi.swiss/downloads ",
-            "pm_tool": "<p>Outil permettant d’organiser les tâches d’un projet dans lequel plusieurs personnes sont impliquées. Texte et image possibles.</p> <br /><strong>Avantages:</strong> collaboration asynchrone, petit budget, peu de connaissances préalables nécessaires <br /><strong>Inconvénients:</strong> généralement uniquement en ligne, beaucoup de modération nécessaire. <br /><strong>Exemples:</strong> Trello, Jira, Planner, Asana ",
-            "collaboration": "<p>Un outil permettant de partager, de traiter et d’utiliser des informations et des ressources de toute nature.</p><strong>Avantages:</strong> collaboration et échange asynchrone et synchrone.<br/><strong>Inconvénients:</strong> généralement disponible uniquement en ligne.<br/><strong>Exemples:</strong> Microsoft 365, Google Workspace, Confluence, kSuite Infomaniak "
-          },
-          "tools": {
-            "app": "App",
-            "game": "Game",
-            "youtube": "Youtube",
-            "e_learning": "E-Learning Plattform",
-            "website": "Site internet",
-            "podcast": "Podcast",
-            "office": "Office",
-            "pdf": "PDF",
-            "pm_tool": "Outil de gestion de projet (par ex: Trello)",
-            "collaboration": "Plateformes collaboratives"
-          },
-          "questions": {
-            "next": "suivant",
-            "warnings": "Alertes",
-            "printable": {
-              "text": "Doit-il fonctionner en version imprimée?",
-              "responses": {
-                "yes": "Oui",
-                "no": "Non"
-              }
-            },
-            "simultan": {
-              "text": "Faut-il que plusieurs personnes puissent travailler/modifier quelque chose en même temps avec l'outil ?",
-              "responses": {
-                "no": "Non",
-                "yes": "Oui"
-              }
-            },
-            "internet_connection": {
-              "text": "Où le produit sera-t-il utilisé ? Internet est-il nécessaire?",
-              "responses": {
-                "none": "Pas d'internet (forêt)",
-                "instable": "Internet instable / lent (cours, transports publics)",
-                "stable": "Internet stable / rapide (à la maison)"
-              }
-            },
-            "content_types": {
-              "text": "Quels sont les formats de données utilisés (choix multiple)?",
-              "responses": {
-                "audio": "Audio",
-                "video": "Vidéo",
-                "text": "Texte",
-                "image": "Image"
-              }
-            },
-            "interaction": {
-              "text": "Les utilisateur·ice·s doivent-iels pouvoir interagir avec le produit?",
-              "responses": {
-                "none": "Pas du tout",
-                "like_and_comment": "Commenter / liker",
-                "content_creation": "Créer du contenu"
-              }
-            },
-            "feedback": {
-              "text": "Le feedback sur l'interaction doit-il être généré automatiquement (par ex: quiz, calcul de données, correct ou incorrect, etc...)?",
-              "responses": {
-                "no": "Non",
-                "yes": "Oui"
-              }
-            },
-            "creators": {
-              "text": "L'outil est-il crée par le groupe de projet ou par une entreprise externe?",
-              "responses": {
-                "self": "Groupe de projet",
-                "external": "Externe"
-              }
-            },
-            "self_creators": {
-              "text": "Les compétences suivantes sont-elles prsentes dans l'équipe?",
-              "responses": {
-                "coding": "Programmation",
-                "coding_light": "Programmation light",
-                "basic": "Basiques"
-              }
-            },
-            "external_creators": {
-              "text": "WQuel est le budget disponible?",
-              "responses": {
-                "large": "Gros (>50k)",
-                "medium": "Moyen (11-49k)",
-                "small": "Petit (<10k)"
-              }
-            },
-            "modification": {
-              "text": "Quelles connaissances techniques préalables sont nécessaires pour adapter les contenus?",
-              "responses": {
-                "much": "Beaucoup",
-                "medium": "Moyen",
-                "little": "Peu"
-              }
-            },
-            "moderation": {
-              "text": "Quel effort suis-je prêt·e à fournir pour la modération (forum, communauté,...) ?",
-              "responses": {
-                "often": "Beaucoup",
-                "little": "Peu",
-                "none": "Aucun"
-              }
-            }
+  "translation": {
+    "close": "Fermer",
+    "back": "Retour",
+    "home_page": {
+      "title": "IT-Compass",
+      "introduction": "Tu trouveras ici toutes les informations importantes concernant les projets numériques dans le scoutisme. Tu as besoin d'aide pour la forme de ton produit numérique ? -> consulte la rubrique Principes. OU : tu sais à quoi doit ressembler ton produit, mais tu as besoin d'aide pour le réaliser -> consulte les directives informatiques.",
+      "content": "Contenu",
+      "it_guidelines": {
+        "title": "Lignes directrices IT",
+        "button": "vers les lignes directrices IT",
+        "teaser": "Les directives IT définissent les principes et règlent les processus de l'IT au niveau fédéral du MSdS. Consulte les questions directrices pour ton nouveau projet."
+      },
+      "digitalisation": {
+        "title": "Bases pour la numérisation des publications",
+        "button": "vers les Bases pour la numérisation des publications",
+        "teaser": "Découvre quel est le meilleur mode de numérisation pour ton projet."
+      },
+      "completion": {
+        "title": "Principes de clôture des projets",
+        "button": "vers les Principes de clôture des projets",
+        "teaser": "Tu termines un projet informatique, consulte les questions d'aide pour ne rien oublier."
+      },
+      "contact": "Contact CoIT",
+      "mail": "Envoyez-nous un e-mail",
+      "github": "Consulter nos projets sur Github"
+    },
+    "new_project_guidelines_page": {
+      "title": "Nouveau projet"
+    },
+    "new_project_digitalisation_page": {
+      "title": "Nouveau projet",
+      "evaluation": {
+        "title": "Résultat",
+        "explanation": "En fonction de tes réponses, nous avons listé pour toi les outils possibles. Le score te permet de voir combien de tes exigences sont satisfaites. Les 'alertes' indiquent quelles sont les réponses qui ne sont pas favorable à l'outil.",
+        "restart": "Supprimer les réponses",
+        "reset": "Modifier les réponses"
+      },
+      "tool_descriptions": {
+        "app": "<p>Application (programme) pour smartphone ou tablette. texte, image audio et vidéo sont possibles.</p><strong>Avantages:</strong> Disponible partout où le smartphone (et éventuellement les données/internet) est dispo-nible. Nécessite peu de modération. Est très polyvalent.<br /><strong>Inconvénients:</strong> Nécessite des connaissances en programmation, des mises à jour techniques (de sécurité) seront nécessaires avec le temps et les contenus doivent être préparés de manière at-trayante.",
+        "game": "<p>Un jeu, souvent appelé “game”, est une activité structurée, généralement composée de règles et d’objectifs spécifiques. Les jeux peuvent se présenter sous différents formats, notamment les jeux de société, les jeux vidéo, les jeux de rôle et les jeux éducatifs. Ils peu-vent être utilisés à des fins de divertissement ou d’éducation.</p>",
+        "youtube": "<p>Une plateforme vidéo sur laquelle des canaux peuvent être créés pour publier des vidéos. Les vidéos peuvent être téléchargées en public, en privé ou sans liste (accessibles uni-quement par lien direct). Vidéo et audio possibles.</p><strong>Avantages:</strong> Accessible facilement et sans grandes connaissances préalables, ne coûte pas cher, l’hébergement se fait via la plateforme elle-même, plateforme très connue pour les vidéos. <br/><strong>Inconvénients:</strong> Nécessite une connexion internet stable, a généralement de la publicité, la plateforme elle-même ne nécessite pas de connaissances préalables, mais la production de vidéos oui. <br/><strong>Exemples :</strong>Chaîne YouTube du MSdS, Chaîne YouTube de Hajk",
+        "e_learning": "<p>Par e-learning, on entend tous les processus dans lesquels les personnes apprennent avec un support numérique. Il peut s’agir par exemple de formats tels que les webinaires, les vidéos ou les chats (discussions), qui peuvent être utilisés via un ordinateur ou un smart-phone. Les méthodes d’apprentissage utilisées devraient toujours être soumises à une orientation didactique et pédagogique. L’e-learning est une méthode de transmission qui peut être utilisée par exemple dans le cadre de la formation scoute.</p><strong>Avantages:</strong> Flexibilité pour les participant·e·s, le temps et le lieu ne jouent aucun rôle, multilinguisme, interactivité.<br/><strong>Inconvénients:</strong> Création d’une plateforme d’e-learning plutôt coûteuse et complexe, nécessite un accès à des ordinateurs/smartphones, une connexion internet, se déroule devant un écran.",
+        "website": "<p>Un outil permettant de présenter des informations sur internet. Nécessite du texte et éven-tuellement des images, l’audio et la vidéo peuvent être intégrés.</p><strong>Avantages:</strong> Si internet/données sont disponibles, le site web peut être consulté de partout. Peut être consulté par plusieurs personnes en même temps. Peut être créé même sans connais-sances approfondies en programmation. <br/><strong>Inconvénients:</strong> frais récurrents (hébergement), nécessite des mises à jour (de sécurité) <br/><strong>Exemples :</strong> pfadi.swiss",
+        "podcast": "<p>Un podcast est un fichier audio ou vidéo numérique mis à disposition par épisodes et pou-vant être consulté sur internet. Souvent, les podcasts traitent de sujets spécifiques, allant de l’éducation à l’actualité en passant par le divertissement.</p><strong>Avantages:</strong> Flexible (peut être écouté partout), possibilité de présentation divertissantes. <br/><strong>Inconvénients:</strong> Pas de possibilité d’interaction, absence de support visuel, production coûteuse, potentiel de distratction pendant l’écoute, disponibilité (généralement uniquement en ligne).",
+        "office": "<p>Un formulaire est un outil polyvalent pour obtenir un feedback (par ex : feedback de cours), pour des enquêtes, des inscriptions, des commandes ou autres. Il peut être utilisé par plu-sieurs personnes simultanément ou indépendamment.</p> <strong>Avantages:</strong> facile à utiliser, indépendant de la plate-forme. <br/><strong>Inconvénients:</strong> seul le texte est possible et le feedback asynchrone. Pas de vidéo (sauf avec un lien dans le texte de description).<br/><strong>Exemples:</strong> Office Forms, Google Forms",
+        "pdf": "<p>Le Portable Document Format, ou PDF, est un format de fichier courant permettant de pré-parer des informations sous forme numérique et de les partager ensuite.</p> <strong>Avantages:</strong> indépendant de la plateforme, intégrité graphique : affiche le même contenu avec exacte-ment la même mise en page, peut être imprimé, convivial, sûr, compact. <br/><strong>Inconvénients:</strong> difficilement optimisable pour les moteurs de recherche, non optimisé pour les téléphones, les fichiers sont lus comme des images, les programmes de traitement sont coûteux, pas de travail synchrone. <br/><strong>Exemples :</strong> pfadi.swiss/downloads ",
+        "pm_tool": "<p>Outil permettant d’organiser les tâches d’un projet dans lequel plusieurs personnes sont impliquées. Texte et image possibles.</p> <br /><strong>Avantages:</strong> collaboration asynchrone, petit budget, peu de connaissances préalables nécessaires <br /><strong>Inconvénients:</strong> généralement uniquement en ligne, beaucoup de modération nécessaire. <br /><strong>Exemples:</strong> Trello, Jira, Planner, Asana ",
+        "collaboration": "<p>Un outil permettant de partager, de traiter et d’utiliser des informations et des ressources de toute nature.</p><strong>Avantages:</strong> collaboration et échange asynchrone et synchrone.<br/><strong>Inconvénients:</strong> généralement disponible uniquement en ligne.<br/><strong>Exemples:</strong> Microsoft 365, Google Workspace, Confluence, kSuite Infomaniak "
+      },
+      "tools": {
+        "app": "App",
+        "game": "Game",
+        "youtube": "Youtube",
+        "e_learning": "E-Learning Plattform",
+        "website": "Site internet",
+        "podcast": "Podcast",
+        "office": "Office",
+        "pdf": "PDF",
+        "pm_tool": "Outil de gestion de projet (par ex: Trello)",
+        "collaboration": "Plateformes collaboratives"
+      },
+      "questions": {
+        "next": "suivant",
+        "warnings": "Alertes",
+        "printable": {
+          "text": "Doit-il fonctionner en version imprimée?",
+          "responses": {
+            "yes": "Oui",
+            "no": "Non"
           }
         },
-        "it_guidelines_page": {
-            "title": "Lignes directrices IT",
-            "introduction": "Ces directives sur l’utilisation des Technologies de l’Information (en anglais IT - Information Technology) définissent les principes et règlent les processus informatiques au niveau fédéral du MSdS. Elles peuvent volontiers être reprises et développées davantage par les associations cantonales et les groupes. Les points régulés sont : l’approvisionnement, le fonctionnement et la sécurité des informations, ainsi que les responsabilités associées. C’est ensuite vous qui mettez en place les conditions préalables pour une communauté informatique active au sein du MSdS.",
-            "new_project": "Tu démarres un projet informatique? Alors tu es au bon endroit ! Regarde les questions directrices ici:",
-            "content": "Contenu",
-            "principles": "Principes",
-            "information_security": "Sécurité de l’information",
-            "acquisition": "Acquisition et exploitation",
-            "community": "Communauté",
-            "organisation": "Organisation",
-            "downloads": "Downloads"
-        },
-        "digitalisation_page": {
-          "title": "Bases pour la numérisation des publications",
-          "introduction": "Les principes pour la numérisation des publications et des moyens auxiliaires soutiennent les groupes de projet dans la mise en œuvre et la planification de leurs projets. Ce « Digi-Clippy » a été élaboré sur la base de la question de savoir quelles publications et quels moyens auxiliaires doivent être numérisés ou où des versions physiques doivent être délibérément utilisées. Sur la base d'interrogations ciblées, des types de numérisation possibles sont proposés à la fin. L'objectif est que les produits finaux soient toujours disponibles en temps voulu et dans un format approprié.",
-          "new_project": "Tu dois numériser une publication ou un outil, mais tu n'es pas sûr de la direction à prendre ? Découvre ici quel est le meilleur type de numérisation pour ton projet.",
-          "content": "Contenu",
-          "documentation": "Fiche d’information principes de la numérisation",
-          "downloads": "Downloads",
-          "media_description": "Tu trouveras ici de brèves descriptions, les avantages et les inconvénients ainsi que des exemples de différents outils:"
-        },
-        "documentation_page": {
-          "title": "Fiche d’information",
-          "introduction": "Pour s’assurer que le projet bénéficie d’un niveau de numérisation optimal, il convient de se poser certaines questions et de réfléchir au préalable. Cette fiche d’information t’aidera à réfléchir aux points essentiels. "
-        },
-        "completion_page": {
-          "title": "Principes de clôture des projets",
-          "introduction": "# lorem Ipsum",
-          "complete_project": "# Projekt abschliessen",
-          "content": "Contenu",
-          "downloads": "# Hilfsblatt herunterladen"
-        },
-        "new_completion_project_page": {
-          "title": "# Fragebogen"
-        },
-        "principles_page": {
-          "title": "Principes",
-          "one": "Les outils informatiques du MSdS sont des moyens et servent en première ligne au fonctionnement des groupes scouts et des associations cantonales.          ",
-          "two": "Toutes les données appartiennent au MSdS et à ses membres et doivent être correctement protégées. Les données doivent être stockées séparément des outils informatiques et sécurisées. Les données non protégées peuvent être publiées en tant que open data.",
-          "three": "Les processus existants sont examinés de manière critique avant la numérisation et adaptés si nécessaire.",
-          "four": "Chaque outil informatique a un usage thématique défini, le plus limité possible. Cela facilite le remplacement.",
-          "five": "Pour les nouveaux outils informatique, l'acquisition de solutions standard doit être préférée aux développements sur mesure. Il convient aussi, dans chaque contexte, d'examiner si un processus existe déjà et peut être adapté.",
-          "six": "Les outils informatiques développés, commandés ou soutenus par le MSdS sont publiés sous une licence open source.",
-          "seven": "Les outils informatiques doivent être conçus sans barrières. S'il y a un petit effort financier supplémentaire, il est fait automatiquement, sinon les coûts et les bénéfices sont évalués.",
-          "eight": "Pour l'exploitation des outils informatiques au niveau fédéral, les services de prestataires professionnels doivent généralement être préférés à une infrastructure en interne afin de garantir la disponibilité et le support nécessaires.",
-          "nine": {
-            "priciple": "Les outils informatiques exploités ou soutenus par le niveau fédéral doivent être reliés entre eux via des interfaces API.",
-            "one": "Les outils informatiques mettent à disposition les données et les services qu'ils gèrent de manière aussi dynamique et flexible que possible via des interfaces.",
-            "two": "Les outils informatiques obtiennent des données externes via les interfaces fournies.",
-            "three": "Les interfaces et leur documentation doivent être mises à la disposition de la communauté pour permettre des développements ultérieurs.",
-            "four": "Les interfaces doivent être aussi générales que possible et rester stables (c'est-à-dire information en cas de modification, versionnement de l'API)."
-          },
-          "ten": "Le MSdS promeut et soutient les idées, les outils informatiques, les services et les projets qui aident le scoutisme (en particulier les groupes et les associations cantonales). À cette fin, une communauté active est recherchée.",
-          "eleven": {
-            "priciple": "Le niveau fédéral adopte une approche ouverte et pragmatique des outils informatiques:",
-            "one": "Les synergies entre les différents outils informatiques sont utilisées dans la mesure du possible. Cependant, si une solution multipiste/multivoie est plus efficace, c'est également possible.",
-            "two": "Pour chaque outil informatique, une décision individuelle est prise sur la technologie la plus appropriée et l’outillage (tooling) utilisé. Toutefois on cherche à utiliser dans la mesure du possible les technologies basées sur le web et multiplateformes."
+        "simultan": {
+          "text": "Faut-il que plusieurs personnes puissent travailler/modifier quelque chose en même temps avec l'outil ?",
+          "responses": {
+            "no": "Non",
+            "yes": "Oui"
           }
         },
-        "security_page": {
-          "title": "Sécurité de l’information",
-          "one": "Les lois sur la protection des données en vigueur en Suisse sont respectées à tout moment.",
-          "two": "Les données sensibles sont déclarées et traitées en conséquence.",
-          "three": "Une déclaration d'utilisation des données par outil informatique est disponible et est accessible à tous les membres du MSdS.",
-          "four": "Les données sensibles ne peuvent être consultées que s’il y a un bénéfice proportionné et justifié pour le fonctionnement scout. Les outils informatiques du MSdS assurent cette protection, par exemple via les rôles et les droits d'accès des personnes et des outils informatiques.",
-          "five": "Lorsqu'une personne n'a plus besoin d'une autorisation/login, celle-ci est révoquée.",
-          "six": "Les données sensibles ne peuvent être stockées que dans des pays dont la législation sur la protection des données est équivalente ou plus stricte que celle de la Suisse.",
-          "seven": "L'archivage est assuré pour toutes les données pertinentes (voir chapitre 6.2).",
-          "eight": "L'accès externe aux données sensibles est régi par un accord de non-divulgation (AND).",
-          "nine": "La cybersécurité doit être thématisée relativement à chaque outil informatique et implémentée en conséquence. Les outils informatiques considérés critiques pour l'activité, ou qui traitent des données sensibles, doivent répondre à des normes communes de cybersécurité.",
-          "ten": "Le MSdS sensibilise ses membres à la protection des données et aux éventuelles cyberattaques telles que le phishing et l’ingénieurie sociale (Social Engineering), afin d'assurer la sécurité des données sensibles (par exemple, sécurité des mots de passe, W-LAN étranger, login sur des appareils étrangers, protection visuelle, mais aussi laisser traîner des listes de participants sur papier)."
-        },
-        "acquisition_page": {
-          "title": "Acquisition et exploitation",
-          "intro": {
-            "text": "Les principes suivants s’appliquent aux outils informatiques:",
-            "standard": {
-              "text": "Solutions standards : « Nous adaptons nos processus au logiciel »",
-              "one": "L’exploitation à long terme est assurée par le recours aux solutions standard.",
-              "two": "Il faut éviter les adaptations afin de maintenir bas les coûts initiaux et permanents."
-            },
-            "inhouse": {
-              "text": "Développement sur mesure : « Nous adaptons le logiciel à nos processus »",
-              "one": "Le développement sur mesure doit être considéré sur le long terme car il n'est pas possible de prendre en compte tous les aspects au stade de l’acquisition.",
-              "two": "Une spécification approximative du \"produit minimal viable (PMV)\" doit être établie à l'avance ; elle sert de base pour passer la commande de développement."
-            }
-          },
-          "acquisition": {
-            "title": "Règles d’acquisition",
-            "one": "La proportionnalité entre les coûts d'acquisition/d’exploitation et les bénéfices attendus doit être examinée puis respectée.",
-            "two": "Le cycle de vie doit être pris en considération jusqu’à la mise hors service et ces considérations doivent être observées.",
-            "three": "Un Product Owner doit être désigné tant pour l'acquisition de solutions standard que pour les développements sur mesure.",
-            "four": "Les développements sur mesure doivent être développés en Suisse. Les solutions standard peu- vent être achetées également à l'étranger.",
-            "five": "Les outils informatiques doivent être conformes, dans la mesure du possible, aux directives CI/CD du MSdS.",
-            "six": "Les outils informatiques critiques pour l’activité doivent être mis en œuvre selon les standards courants de développement de logiciels, y compris dans le choix de la technologie.",
-            "seven": "Pour les outils informatique critiques pour l’activité il faut de plus réfléchir aux utilisateurs (soutien technique).",
-            "eight": "Les outils informatiques doivent être maintenus les plus économes possibles en ressources."
-          },
-          "operation": {
-            "title": "Exploitation",
-            "one": "Une SLA/SLO doit être définie en fonction de la criticité pour l’activité.",
-            "two": "Un Monitoring proportionné doit être effectué.",
-            "three": "Pour tous les outils informatiques, il faut une gestion centrale du cycle de vie (Lifecycle Management) avec une feuille de route en cas de remplacement.",
-            "four": "Geschäftskritische Daten müssen durch ein Backup gesichert werden.",
-            "five": "Pour éviter que le fonctionnement scout ne souffre d’une défaillance technique (outil, données, électricité non disponible, etc.), un plan B (Business Continuity Management) doit exister pour les outils informatiques critiques pour l'activité.",
-            "six": "Le fonctionnement continu doit être assuré (par ex. par un patching continu, un monitoring, un pen-test)"
+        "internet_connection": {
+          "text": "Où le produit sera-t-il utilisé ? Internet est-il nécessaire?",
+          "responses": {
+            "none": "Pas d'internet (forêt)",
+            "instable": "Internet instable / lent (cours, transports publics)",
+            "stable": "Internet stable / rapide (à la maison)"
           }
         },
-        "community_page": {
-          "title": "Communauté",
-          "intro": "Le MSdS promeut et soutient les idées, outils, services et projets informatiques qui aident au fonc- tionnement scout (en particulier les groupes et les associations cantonales).",
-          "one": "Tous les outils informatiques soutenus d  oivent être publiés sous une licence Open source pour que le plus grand nombre possible en profite.",
-          "two": "Le soutien peut prendre diverses formes : Hosting, Source Control, mise à disposition d'outils informatiques, organisation d'un Hackathon, mise à disposition de ressources et de savoir-faire ou recherche de fonds.",
-          "intro2": "Le MSdS est un point de contact pour les associations cantonales et les groupes. Il favorise un échange actif, récolte des idées, s'informe sur les besoins et les pratiques de la communauté et les entretient.",
-          "three": "Des événements réguliers sont organisés pour atteindre ces objectifs, par exemple la conférence sur l'informatique, Hackathon MiData, etc.",
-          "four": "La coopération est également soignée au-delà de l'association afin de profiter des synergies de communautés plus importantes (par exemple Hitobito)."
-        },
-        "organisation_page": {
-          "title": "Organisation",
-          "intro": "Pour gérer les outils informatiques, le niveau fédéral utilise des (Product Owner – PO). Ceux-ci sont intégrés au niveau fédéral. Les PO ne doivent pas être des spécialistes en informatique, mais doivent connaître les exigences de l'association pour le produit, les comprendre, les développer et en être responsables.",
-          "po": {
-            "title": "Responsabilité du Product Owner (PO)",
-            "intro": "Idéalement, le rôle de PO n'est rempli que par une seule personne, bien qu'une personne puisse avoir plusieurs rôles de PO.",
-            "one": "Récolte et définition des exigences pour le produit ainsi que hiérarchisation du travail.",
-            "two": "Tâches selon le guide de projet MSdS, si aucune gestion de projet spécifique n'est disponible.",
-            "three": "Responsabilité de l'ensemble du cycle de vie d'un outil informatique.",
-            "four": "Transmission des informations concernant le cycle de vie des outils informatiques à la CoIT.",
-            "five": "Élaboration de la politique de confidentialité, y compris les autorisations d'accès, qui doit couvrir en particulier toutes les données sensibles.",
-            "six": "Elaboration d'une proposition de classification des données sensibles de l'outil informatique à l'attention de la CoIT.",
-            "seven": "Garder un œil sur les dettes techniques et les rendre transparentes. En règle générale, les dettes techniques ne doivent être acceptées que sur justification et réduites dans le cadre d'un développement ultérieur."
-          },
-          "itkom": {
-            "title": "Responsabilités de la Commission Informatique (CoIT)",
-            "one": "Entretien de la communauté informatique. Dans ce contexte, la CoIT joue le rôle de cata- lyseur et met en réseau les idées et les projets du scoutisme en Suisse.",
-            "two": "Maintien de l'architecture d'entreprise, qui peut être utilisée pour avoir une vue d'ensemble et développer le paysage logiciel du MSdS. L'architecture d'entreprise doit inclure les éléments suivants par outil informatique : Objectif, services, processus de haut niveau, classification, pile technologique, cycle de vie, interfaces et connexions (avec d'autres outils informatiques) et leurs modèles de données.",
-            "three": "Gestion centrale du cycle de vie pour une planification à long terme des ressources nécessaires.",
-            "four": "Classification initiale de la criticité pour l’activité, des données à protéger et des données à archiver par outil informatique. Ces classifications doivent être revues chaque année.",
-            "five": "Révision régulière et, si nécessaire, ajustement des directives informatiques."
-          }, 
-          "vl": {
-            "title": "Responsabilités de la maîtrise fédérale (MF)",
-            "one": "Responsabilité de la vérification pour chaque outil informatique de toutes les autorisations (par exemple, les rôles dans MiData ou l'accès général à certains outils informatiques) au niveau fédéral à un intervalle régulier raisonnable, mais au moins une fois par an.",
-            "two": "Assurer l'attribution d'un Product Owner par outil informatique.",
-            "three": "Sensibiliser le secrétariat général et le niveau fédéral à la sécurité de l'information et aux cyber-attaques.",
-            "four": "Assurer la continuité des activités (Business Continuity) liées aux outils informatiques."
+        "content_types": {
+          "text": "Quels sont les formats de données utilisés (choix multiple)?",
+          "responses": {
+            "audio": "Audio",
+            "video": "Vidéo",
+            "text": "Texte",
+            "image": "Image"
           }
         },
-        "impressum_page": {
-          "title": "Impressum"
+        "interaction": {
+          "text": "Les utilisateur·ice·s doivent-iels pouvoir interagir avec le produit?",
+          "responses": {
+            "none": "Pas du tout",
+            "like_and_comment": "Commenter / liker",
+            "content_creation": "Créer du contenu"
+          }
         },
-        "slides": {
-          "evaluation": {
-            "text": "Merci de me remplacer.",
-            "todo": {
-              "title": "ToDo",
-              "contact_itkom": "Contacter le Comité IT",
-              "define_po": "Définir la personne responsable",
-              "fill_operations": "#Fülle das Formular für die Betriebsplattform aus",
-              "content_definition": "Définir les besoins",
-              "define_api_consumption": "Définir quelles données sont requises par le MiData",
-              "check_existing": "Clarifier si l'outil existant doit être utilisé",
-              "check_login": "Clarifier s'il n'est vraiment pas nécessaire d'avoir une connexion.",
-              "content": "Définir le contenu et la présentation appropriée",
-              "data_processing": "Définir les exigences relatives aux données à traiter"
-            },
-            "answers": {
-              "title": "Réponses"
-            }
-          },
-          "projectPhase": {
-            "text": "Dans quelle phase du projet vous trouvez-vous?",
-            "buttons": {
-              "idea": "Idée",
-              "implementation": "Mise en œuvre",
-              "operation": "Opération"
-            }
-          },
-          "targetAudience": {
-            "text": "Qui est le public cible ?",
-            "buttons": {
-              "bundesebene": "Niveau fédéral",
-              "canton": "Cantons, régions",
-              "leaders": "Responsable",
-              "participants": "Scouts",
-              "external": "Externes (par exemple, les parents)"
-            }
-          },
-          "toolType": {
-            "text": "Les données sont-elles traitées ou le contenu est-il seulement affiché?",
-            "buttons": {
-              "dataProcessing": "Données de processus",
-              "contentOnly": "Contenu uniquement"
-            }
-          },
-          "loginNeeded": {
-            "text": "Faut-il pouvoir se connecter?",
-            "buttons": {
-              "yes": "Oui",
-              "no": "No"
-            }
-          },
-          "sensitiveData": {
-            "text": "Des données dignes de protection sont-elles traitées?",
-            "buttons": {
-              "yes": "Oui",
-              "no": "No",
-              "maybe": "Je ne pense pas"
-            }
-          },
-          "apiNeeded": {
-            "text": "Les données provenant d'autres outils informatiques sont-elles nécessaires?",
-            "buttons": {
-              "midata": "Oui, à partir du MiData",
-              "other": "Un autre outil",
-              "no": "No, n'a pas besoin"
-            }
-          },
-          "similarToolAvailable": {
-            "text": "Existe-t-il déjà un outil similaire de ce type (gratuit ou payant) ?",
-            "buttons": {
-              "yes": "Oui",
-              "no": "No",
-              "maybe": "Aucune idée"
-            }
-          },
-          "similarToolAvailableMaybe": {
-            "text": "Veuillez donc clarifier ce point avant de commencer un nouveau projet!",
-            "buttons": {
-              "ok": "Ok"
-            }
-          },
-          "responsibility": {
-            "text": "Une personne responsable est-elle définie ?",
-            "buttons": {
-              "yes": "Oui",
-              "no": "No",
-              "maybe": "Nous n'avons pas besoin de cela"
-            }
+        "feedback": {
+          "text": "Le feedback sur l'interaction doit-il être généré automatiquement (par ex: quiz, calcul de données, correct ou incorrect, etc...)?",
+          "responses": {
+            "no": "Non",
+            "yes": "Oui"
+          }
+        },
+        "creators": {
+          "text": "L'outil est-il crée par le groupe de projet ou par une entreprise externe?",
+          "responses": {
+            "self": "Groupe de projet",
+            "external": "Externe"
+          }
+        },
+        "self_creators": {
+          "text": "Les compétences suivantes sont-elles prsentes dans l'équipe?",
+          "responses": {
+            "coding": "Programmation",
+            "coding_light": "Programmation light",
+            "basic": "Basiques"
+          }
+        },
+        "external_creators": {
+          "text": "WQuel est le budget disponible?",
+          "responses": {
+            "large": "Gros (>50k)",
+            "medium": "Moyen (11-49k)",
+            "small": "Petit (<10k)"
+          }
+        },
+        "modification": {
+          "text": "Quelles connaissances techniques préalables sont nécessaires pour adapter les contenus?",
+          "responses": {
+            "much": "Beaucoup",
+            "medium": "Moyen",
+            "little": "Peu"
+          }
+        },
+        "moderation": {
+          "text": "Quel effort suis-je prêt·e à fournir pour la modération (forum, communauté,...) ?",
+          "responses": {
+            "often": "Beaucoup",
+            "little": "Peu",
+            "none": "Aucun"
           }
         }
+      }
+    },
+    "it_guidelines_page": {
+      "title": "Lignes directrices IT",
+      "introduction": "Ces directives sur l’utilisation des Technologies de l’Information (en anglais IT - Information Technology) définissent les principes et règlent les processus informatiques au niveau fédéral du MSdS. Elles peuvent volontiers être reprises et développées davantage par les associations cantonales et les groupes. Les points régulés sont : l’approvisionnement, le fonctionnement et la sécurité des informations, ainsi que les responsabilités associées. C’est ensuite vous qui mettez en place les conditions préalables pour une communauté informatique active au sein du MSdS.",
+      "new_project": "Tu démarres un projet informatique? Alors tu es au bon endroit ! Regarde les questions directrices ici:",
+      "content": "Contenu",
+      "principles": "Principes",
+      "information_security": "Sécurité de l’information",
+      "acquisition": "Acquisition et exploitation",
+      "community": "Communauté",
+      "organisation": "Organisation",
+      "downloads": "Downloads"
+    },
+    "digitalisation_page": {
+      "title": "Bases pour la numérisation des publications",
+      "introduction": "Les principes pour la numérisation des publications et des moyens auxiliaires soutiennent les groupes de projet dans la mise en œuvre et la planification de leurs projets. Ce « Digi-Clippy » a été élaboré sur la base de la question de savoir quelles publications et quels moyens auxiliaires doivent être numérisés ou où des versions physiques doivent être délibérément utilisées. Sur la base d'interrogations ciblées, des types de numérisation possibles sont proposés à la fin. L'objectif est que les produits finaux soient toujours disponibles en temps voulu et dans un format approprié.",
+      "new_project": "Tu dois numériser une publication ou un outil, mais tu n'es pas sûr de la direction à prendre ? Découvre ici quel est le meilleur type de numérisation pour ton projet.",
+      "content": "Contenu",
+      "documentation": "Fiche d’information principes de la numérisation",
+      "downloads": "Downloads",
+      "media_description": "Tu trouveras ici de brèves descriptions, les avantages et les inconvénients ainsi que des exemples de différents outils:"
+    },
+    "documentation_page": {
+      "title": "Fiche d’information",
+      "introduction": "Pour s’assurer que le projet bénéficie d’un niveau de numérisation optimal, il convient de se poser certaines questions et de réfléchir au préalable. Cette fiche d’information t’aidera à réfléchir aux points essentiels. "
+    },
+    "completion_page": {
+      "title": "Principes de clôture des projets",
+      "introduction": "# lorem Ipsum",
+      "complete_project": "# Projekt abschliessen",
+      "content": "Contenu",
+      "downloads": "# Hilfsblatt herunterladen"
+    },
+    "new_completion_project_page": {
+      "title": "# Fragebogen"
+    },
+    "principles_page": {
+      "title": "Principes",
+      "one": "Les outils informatiques du MSdS sont des moyens et servent en première ligne au fonctionnement des groupes scouts et des associations cantonales.          ",
+      "two": "Toutes les données appartiennent au MSdS et à ses membres et doivent être correctement protégées. Les données doivent être stockées séparément des outils informatiques et sécurisées. Les données non protégées peuvent être publiées en tant que open data.",
+      "three": "Les processus existants sont examinés de manière critique avant la numérisation et adaptés si nécessaire.",
+      "four": "Chaque outil informatique a un usage thématique défini, le plus limité possible. Cela facilite le remplacement.",
+      "five": "Pour les nouveaux outils informatique, l'acquisition de solutions standard doit être préférée aux développements sur mesure. Il convient aussi, dans chaque contexte, d'examiner si un processus existe déjà et peut être adapté.",
+      "six": "Les outils informatiques développés, commandés ou soutenus par le MSdS sont publiés sous une licence open source.",
+      "seven": "Les outils informatiques doivent être conçus sans barrières. S'il y a un petit effort financier supplémentaire, il est fait automatiquement, sinon les coûts et les bénéfices sont évalués.",
+      "eight": "Pour l'exploitation des outils informatiques au niveau fédéral, les services de prestataires professionnels doivent généralement être préférés à une infrastructure en interne afin de garantir la disponibilité et le support nécessaires.",
+      "nine": {
+        "priciple": "Les outils informatiques exploités ou soutenus par le niveau fédéral doivent être reliés entre eux via des interfaces API.",
+        "one": "Les outils informatiques mettent à disposition les données et les services qu'ils gèrent de manière aussi dynamique et flexible que possible via des interfaces.",
+        "two": "Les outils informatiques obtiennent des données externes via les interfaces fournies.",
+        "three": "Les interfaces et leur documentation doivent être mises à la disposition de la communauté pour permettre des développements ultérieurs.",
+        "four": "Les interfaces doivent être aussi générales que possible et rester stables (c'est-à-dire information en cas de modification, versionnement de l'API)."
+      },
+      "ten": "Le MSdS promeut et soutient les idées, les outils informatiques, les services et les projets qui aident le scoutisme (en particulier les groupes et les associations cantonales). À cette fin, une communauté active est recherchée.",
+      "eleven": {
+        "priciple": "Le niveau fédéral adopte une approche ouverte et pragmatique des outils informatiques:",
+        "one": "Les synergies entre les différents outils informatiques sont utilisées dans la mesure du possible. Cependant, si une solution multipiste/multivoie est plus efficace, c'est également possible.",
+        "two": "Pour chaque outil informatique, une décision individuelle est prise sur la technologie la plus appropriée et l’outillage (tooling) utilisé. Toutefois on cherche à utiliser dans la mesure du possible les technologies basées sur le web et multiplateformes."
+      }
+    },
+    "security_page": {
+      "title": "Sécurité de l’information",
+      "one": "Les lois sur la protection des données en vigueur en Suisse sont respectées à tout moment.",
+      "two": "Les données sensibles sont déclarées et traitées en conséquence.",
+      "three": "Une déclaration d'utilisation des données par outil informatique est disponible et est accessible à tous les membres du MSdS.",
+      "four": "Les données sensibles ne peuvent être consultées que s’il y a un bénéfice proportionné et justifié pour le fonctionnement scout. Les outils informatiques du MSdS assurent cette protection, par exemple via les rôles et les droits d'accès des personnes et des outils informatiques.",
+      "five": "Lorsqu'une personne n'a plus besoin d'une autorisation/login, celle-ci est révoquée.",
+      "six": "Les données sensibles ne peuvent être stockées que dans des pays dont la législation sur la protection des données est équivalente ou plus stricte que celle de la Suisse.",
+      "seven": "L'archivage est assuré pour toutes les données pertinentes (voir chapitre 6.2).",
+      "eight": "L'accès externe aux données sensibles est régi par un accord de non-divulgation (AND).",
+      "nine": "La cybersécurité doit être thématisée relativement à chaque outil informatique et implémentée en conséquence. Les outils informatiques considérés critiques pour l'activité, ou qui traitent des données sensibles, doivent répondre à des normes communes de cybersécurité.",
+      "ten": "Le MSdS sensibilise ses membres à la protection des données et aux éventuelles cyberattaques telles que le phishing et l’ingénieurie sociale (Social Engineering), afin d'assurer la sécurité des données sensibles (par exemple, sécurité des mots de passe, W-LAN étranger, login sur des appareils étrangers, protection visuelle, mais aussi laisser traîner des listes de participants sur papier)."
+    },
+    "acquisition_page": {
+      "title": "Acquisition et exploitation",
+      "intro": {
+        "text": "Les principes suivants s’appliquent aux outils informatiques:",
+        "standard": {
+          "text": "Solutions standards : « Nous adaptons nos processus au logiciel »",
+          "one": "L’exploitation à long terme est assurée par le recours aux solutions standard.",
+          "two": "Il faut éviter les adaptations afin de maintenir bas les coûts initiaux et permanents."
+        },
+        "inhouse": {
+          "text": "Développement sur mesure : « Nous adaptons le logiciel à nos processus »",
+          "one": "Le développement sur mesure doit être considéré sur le long terme car il n'est pas possible de prendre en compte tous les aspects au stade de l’acquisition.",
+          "two": "Une spécification approximative du \"produit minimal viable (PMV)\" doit être établie à l'avance ; elle sert de base pour passer la commande de développement."
+        }
+      },
+      "acquisition": {
+        "title": "Règles d’acquisition",
+        "one": "La proportionnalité entre les coûts d'acquisition/d’exploitation et les bénéfices attendus doit être examinée puis respectée.",
+        "two": "Le cycle de vie doit être pris en considération jusqu’à la mise hors service et ces considérations doivent être observées.",
+        "three": "Un Product Owner doit être désigné tant pour l'acquisition de solutions standard que pour les développements sur mesure.",
+        "four": "Les développements sur mesure doivent être développés en Suisse. Les solutions standard peu- vent être achetées également à l'étranger.",
+        "five": "Les outils informatiques doivent être conformes, dans la mesure du possible, aux directives CI/CD du MSdS.",
+        "six": "Les outils informatiques critiques pour l’activité doivent être mis en œuvre selon les standards courants de développement de logiciels, y compris dans le choix de la technologie.",
+        "seven": "Pour les outils informatique critiques pour l’activité il faut de plus réfléchir aux utilisateurs (soutien technique).",
+        "eight": "Les outils informatiques doivent être maintenus les plus économes possibles en ressources."
+      },
+      "operation": {
+        "title": "Exploitation",
+        "one": "Une SLA/SLO doit être définie en fonction de la criticité pour l’activité.",
+        "two": "Un Monitoring proportionné doit être effectué.",
+        "three": "Pour tous les outils informatiques, il faut une gestion centrale du cycle de vie (Lifecycle Management) avec une feuille de route en cas de remplacement.",
+        "four": "Geschäftskritische Daten müssen durch ein Backup gesichert werden.",
+        "five": "Pour éviter que le fonctionnement scout ne souffre d’une défaillance technique (outil, données, électricité non disponible, etc.), un plan B (Business Continuity Management) doit exister pour les outils informatiques critiques pour l'activité.",
+        "six": "Le fonctionnement continu doit être assuré (par ex. par un patching continu, un monitoring, un pen-test)"
+      }
+    },
+    "community_page": {
+      "title": "Communauté",
+      "intro": "Le MSdS promeut et soutient les idées, outils, services et projets informatiques qui aident au fonc- tionnement scout (en particulier les groupes et les associations cantonales).",
+      "one": "Tous les outils informatiques soutenus d  oivent être publiés sous une licence Open source pour que le plus grand nombre possible en profite.",
+      "two": "Le soutien peut prendre diverses formes : Hosting, Source Control, mise à disposition d'outils informatiques, organisation d'un Hackathon, mise à disposition de ressources et de savoir-faire ou recherche de fonds.",
+      "intro2": "Le MSdS est un point de contact pour les associations cantonales et les groupes. Il favorise un échange actif, récolte des idées, s'informe sur les besoins et les pratiques de la communauté et les entretient.",
+      "three": "Des événements réguliers sont organisés pour atteindre ces objectifs, par exemple la conférence sur l'informatique, Hackathon MiData, etc.",
+      "four": "La coopération est également soignée au-delà de l'association afin de profiter des synergies de communautés plus importantes (par exemple Hitobito)."
+    },
+    "organisation_page": {
+      "title": "Organisation",
+      "intro": "Pour gérer les outils informatiques, le niveau fédéral utilise des (Product Owner – PO). Ceux-ci sont intégrés au niveau fédéral. Les PO ne doivent pas être des spécialistes en informatique, mais doivent connaître les exigences de l'association pour le produit, les comprendre, les développer et en être responsables.",
+      "po": {
+        "title": "Responsabilité du Product Owner (PO)",
+        "intro": "Idéalement, le rôle de PO n'est rempli que par une seule personne, bien qu'une personne puisse avoir plusieurs rôles de PO.",
+        "one": "Récolte et définition des exigences pour le produit ainsi que hiérarchisation du travail.",
+        "two": "Tâches selon le guide de projet MSdS, si aucune gestion de projet spécifique n'est disponible.",
+        "three": "Responsabilité de l'ensemble du cycle de vie d'un outil informatique.",
+        "four": "Transmission des informations concernant le cycle de vie des outils informatiques à la CoIT.",
+        "five": "Élaboration de la politique de confidentialité, y compris les autorisations d'accès, qui doit couvrir en particulier toutes les données sensibles.",
+        "six": "Elaboration d'une proposition de classification des données sensibles de l'outil informatique à l'attention de la CoIT.",
+        "seven": "Garder un œil sur les dettes techniques et les rendre transparentes. En règle générale, les dettes techniques ne doivent être acceptées que sur justification et réduites dans le cadre d'un développement ultérieur."
+      },
+      "itkom": {
+        "title": "Responsabilités de la Commission Informatique (CoIT)",
+        "one": "Entretien de la communauté informatique. Dans ce contexte, la CoIT joue le rôle de cata- lyseur et met en réseau les idées et les projets du scoutisme en Suisse.",
+        "two": "Maintien de l'architecture d'entreprise, qui peut être utilisée pour avoir une vue d'ensemble et développer le paysage logiciel du MSdS. L'architecture d'entreprise doit inclure les éléments suivants par outil informatique : Objectif, services, processus de haut niveau, classification, pile technologique, cycle de vie, interfaces et connexions (avec d'autres outils informatiques) et leurs modèles de données.",
+        "three": "Gestion centrale du cycle de vie pour une planification à long terme des ressources nécessaires.",
+        "four": "Classification initiale de la criticité pour l’activité, des données à protéger et des données à archiver par outil informatique. Ces classifications doivent être revues chaque année.",
+        "five": "Révision régulière et, si nécessaire, ajustement des directives informatiques."
+      },
+      "vl": {
+        "title": "Responsabilités de la maîtrise fédérale (MF)",
+        "one": "Responsabilité de la vérification pour chaque outil informatique de toutes les autorisations (par exemple, les rôles dans MiData ou l'accès général à certains outils informatiques) au niveau fédéral à un intervalle régulier raisonnable, mais au moins une fois par an.",
+        "two": "Assurer l'attribution d'un Product Owner par outil informatique.",
+        "three": "Sensibiliser le secrétariat général et le niveau fédéral à la sécurité de l'information et aux cyber-attaques.",
+        "four": "Assurer la continuité des activités (Business Continuity) liées aux outils informatiques."
+      }
+    },
+    "impressum_page": {
+      "title": "Impressum"
+    },
+    "slides": {
+      "evaluation": {
+        "text": "Merci de me remplacer.",
+        "todo": {
+          "title": "ToDo",
+          "contact_itkom": "Contacter le Comité IT",
+          "define_po": "Définir la personne responsable",
+          "fill_operations": "#Fülle das Formular für die Betriebsplattform aus",
+          "content_definition": "Définir les besoins",
+          "define_api_consumption": "Définir quelles données sont requises par le MiData",
+          "check_existing": "Clarifier si l'outil existant doit être utilisé",
+          "check_login": "Clarifier s'il n'est vraiment pas nécessaire d'avoir une connexion.",
+          "content": "Définir le contenu et la présentation appropriée",
+          "data_processing": "Définir les exigences relatives aux données à traiter"
+        },
+        "answers": {
+          "title": "Réponses"
+        }
+      },
+      "projectPhase": {
+        "text": "Dans quelle phase du projet vous trouvez-vous?",
+        "buttons": {
+          "idea": "Idée",
+          "implementation": "Mise en œuvre",
+          "operation": "Opération"
+        }
+      },
+      "targetAudience": {
+        "text": "Qui est le public cible ?",
+        "buttons": {
+          "bundesebene": "Niveau fédéral",
+          "canton": "Cantons, régions",
+          "leaders": "Responsable",
+          "participants": "Scouts",
+          "external": "Externes (par exemple, les parents)"
+        }
+      },
+      "toolType": {
+        "text": "Les données sont-elles traitées ou le contenu est-il seulement affiché?",
+        "buttons": {
+          "dataProcessing": "Données de processus",
+          "contentOnly": "Contenu uniquement"
+        }
+      },
+      "loginNeeded": {
+        "text": "Faut-il pouvoir se connecter?",
+        "buttons": {
+          "yes": "Oui",
+          "no": "No"
+        }
+      },
+      "sensitiveData": {
+        "text": "Des données dignes de protection sont-elles traitées?",
+        "buttons": {
+          "yes": "Oui",
+          "no": "No",
+          "maybe": "Je ne pense pas"
+        }
+      },
+      "apiNeeded": {
+        "text": "Les données provenant d'autres outils informatiques sont-elles nécessaires?",
+        "buttons": {
+          "midata": "Oui, à partir du MiData",
+          "other": "Un autre outil",
+          "no": "No, n'a pas besoin"
+        }
+      },
+      "similarToolAvailable": {
+        "text": "Existe-t-il déjà un outil similaire de ce type (gratuit ou payant) ?",
+        "buttons": {
+          "yes": "Oui",
+          "no": "No",
+          "maybe": "Aucune idée"
+        }
+      },
+      "similarToolAvailableMaybe": {
+        "text": "Veuillez donc clarifier ce point avant de commencer un nouveau projet!",
+        "buttons": {
+          "ok": "Ok"
+        }
+      },
+      "responsibility": {
+        "text": "Une personne responsable est-elle définie ?",
+        "buttons": {
+          "yes": "Oui",
+          "no": "No",
+          "maybe": "Nous n'avons pas besoin de cela"
+        }
+      }
     }
+  }
 }

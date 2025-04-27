@@ -19,27 +19,10 @@ import OrganisationPage from './pages/it-guidelines/OrganisationPage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import NewCompletionProjectPage from './pages/completion/NewCompletionProjectPage';
 import { faCompass } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
 
 const Nav = styled.nav`
-  display: flex;
-  justify-content: space-between;
   background-color: var(--color-primary);
-
-  &>ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-
-    li {
-      border-right: 1px solid white;
-      margin: 5px 0;
-      &:hover ul:first-of-type {
-        display: block;
-      }
-    }
-  }
 
   a, button {
     color: white;
@@ -49,26 +32,7 @@ const Nav = styled.nav`
     padding: 0.7rem 0.8rem;
     text-decoration: none;
   }
-
-  a:focus, button:focus,
-  a:hover, button:hover,
-  a:active, button:active,
-  a.active, button.active {
-    color: white;
-    opacity: 0.5;
-  }
-
-  .active {
-    text-decoration: underline;
-  }
 }
-`;
-const SubNav = styled.ul`
-  display: none;
-  position: absolute;
-  background-color: var(--color-primary);
-  list-style-type: none;
-  padding-left: 0;
 `;
 
 export const NavLocation = styled.div`
@@ -86,31 +50,10 @@ export const MainContainer = styled.main`
   }
 `;
 
-export const Ol = styled.ol`
-  @media (max-width: 1100px) {
-    padding: 8px;
-  }
-
-  li {
-    margin-bottom: 1em;
-  }
-`;
-
-export const Ul = styled.ul`
-  @media (max-width: 1100px) {
-    padding: 8px;
-  }
-
-  li {
-    margin-bottom: 1em;
-  }
-`;
 export const A = styled.a``;
 
 export const Infobox = styled.p`
-  // background: rgba(250, 250, 250, 0.8);
   background: var(--color-secondary-light);
-  // border: 1px solid;
   color: black;
   padding: 1em;
   border-radius: 8px;
@@ -125,61 +68,95 @@ export const Box = styled.div`
 
 const Header = () => {
   const { t } = useTranslation();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const closeDropdown = () => {
+    document.querySelectorAll(".dropdown-menu").forEach((menu) => {
+      menu.classList.add("hidden")
+    })
+    toggleMenu()
+  }
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const toggleDropdown = (event: React.MouseEvent<HTMLElement>) => {
+    const dropdownMenu = (event.target as HTMLElement).parentElement?.querySelector(".dropdown-menu") as HTMLElement;
+    if (dropdownMenu.classList.contains("hidden")) {
+      // Hide any open dropdown menus before showing the new one
+      document.querySelectorAll(".dropdown-menu").forEach((menu) => {
+        menu.classList.add("hidden")
+      })
+
+      dropdownMenu.classList.remove("hidden")
+    } else {
+      dropdownMenu.classList.add("hidden")
+    }
+  }
 
   return (
-    <div className="nav">
-      <Nav role="nav">
-        <ul>
-          <li>
-            <Link to="/">
-              <FontAwesomeIcon icon={faCompass} /> {t('home_page.title')}
-            </Link>
-          </li>
-          <li>
-            <Link to="/digitalisation">{t('digitalisation_page.title')}</Link>
-            <SubNav>
-              <li>
-                <Link to="/digitalisation/new-project">{t('new_project_digitalisation_page.title')}</Link>
-              </li>
-              <li>
-                <Link to="/digitalisation/documentation">{t('documentation_page.title')}</Link>
-              </li>
-            </SubNav>
-          </li>
-          <li>
-            <Link to="/it-guidelines">{t('it_guidelines_page.title')}</Link>
-            <SubNav>
-              <li>
-                <Link to="/it-guidelines/new-project">{t('new_project_guidelines_page.title')}</Link>
-              </li>
-              <li>
-                <Link to="/it-guidelines/principles">{t('principles_page.title')}</Link>
-              </li>
-              <li>
-                <Link to="/it-guidelines/security">{t('security_page.title')}</Link>
-              </li>
-              <li>
-                <Link to="/it-guidelines/acquisition">{t('acquisition_page.title')}</Link>
-              </li>
-              <li>
-                <Link to="/it-guidelines/community">{t('community_page.title')}</Link>
-              </li>
-              <li>
-                <Link to="/it-guidelines/organisation">{t('organisation_page.title')}</Link>
-              </li>
-            </SubNav>
-          </li>
-          <li>
-            <Link to="/completion">{t('completion_page.title')}</Link>
-            <SubNav>
-              <li>
-                <Link to="/completion/new-project">{t('new_completion_project_page.title')}</Link>
-              </li>
-            </SubNav>
-          </li>
-        </ul>
-      </Nav>
-    </div>
+    <Nav>
+      <div className="container mx-auto px-4 md:flex gap-6">
+        {/* <!-- Logo --> */}
+        <div className="flex items-center justify-between md:w-auto w-full">
+          <a href="#" className="flex items-center py-5 px-2 text-white flex-1 w-32">
+            <span className="font-bold"><FontAwesomeIcon icon={faCompass} /> {t('home_page.title')}</span>
+          </a>
+          {/* <!-- Mobile Menu Button --> */}
+          <div onClick={toggleMenu} className="md:hidden flex items-center">
+            <button className="mobile-menu-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <title>bars-3-bottom-left</title>
+                <g fill="none">
+                  <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+        {/* <!-- Primary Navigation --> */}
+        <div className={"md:flex md:flex-row flex-col justify-between md:space-x-1 pb-3 md:pb-0 navigation-menu" + (isOpen ? " block" : " hidden")}>
+          
+          {/* <!-- Dropdown Menu --> */}
+          <div className="relative">
+            <button onClick={(event) => toggleDropdown(event)} className="dropdown-toggle text-left py-2 px-3 flex gap-2 rounded">
+              <span className="pointer-events-none">{t('digitalisation_page.title')}</span>
+            </button>
+            <div className={"dropdown-menu absolute bg-gray-700 text-white rounded-b-lg pb-2 w-51 hidden z-10"}>
+              <Link onClick={closeDropdown} className="block px-6 py-2 hover:font-semibold" to="/digitalisation">{t('digitalisation_page.title')}</Link>
+              <Link onClick={closeDropdown} className="block px-6 py-2 hover:font-semibold" to="/digitalisation/new-project">{t('new_project_digitalisation_page.title')}</Link>
+            </div>
+          </div>
+
+          <div className="relative">
+            <button onClick={(event) => toggleDropdown(event)} className="dropdown-toggle text-left py-2 px-3 flex gap-2 rounded my-auto h-full w-32">
+              <span className="pointer-events-none">{t('it_guidelines_page.title')}</span>
+            </button>
+            <div className={"dropdown-menu absolute bg-gray-700 text-white rounded-b-lg pb-2 w-52 hidden z-10"}>
+                <Link onClick={closeDropdown} className="block px-6 py-2 hover:font-semibold" to="/it-guidelines">{t('it_guidelines_page.title')}</Link>
+                <Link onClick={closeDropdown} className="block px-6 py-2 hover:font-semibold" to="/it-guidelines/new-project">{t('new_project_guidelines_page.title')}</Link>
+                <Link onClick={closeDropdown} className="block px-6 py-2 hover:font-semibold" to="/it-guidelines/principles">{t('principles_page.title')}</Link>
+                <Link onClick={closeDropdown} className="block px-6 py-2 hover:font-semibold" to="/it-guidelines/security">{t('security_page.title')}</Link>
+                <Link onClick={closeDropdown} className="block px-6 py-2 hover:font-semibold" to="/it-guidelines/acquisition">{t('acquisition_page.title')}</Link>
+                <Link onClick={closeDropdown} className="block px-6 py-2 hover:font-semibold" to="/it-guidelines/community">{t('community_page.title')}</Link>
+                <Link onClick={closeDropdown} className="block px-6 py-2 hover:font-semibold" to="/it-guidelines/organisation">{t('organisation_page.title')}</Link>
+            </div>
+          </div>
+
+          <div className="relative">
+            <button onClick={(event) => toggleDropdown(event)} className="dropdown-toggle text-left py-2 px-3 flex gap-2 rounded">
+              <span className="pointer-events-none">{t('completion_page.title')}</span>
+            </button>
+            <div className={"dropdown-menu absolute bg-gray-700 text-white rounded-b-lg pb-2 w-51 hidden z-10"}>
+              <Link onClick={closeDropdown} className="block px-6 py-2 hover:font-semibold" to="/completion">{t('completion_page.title')}</Link>
+              <Link onClick={closeDropdown} className="block px-6 py-2 hover:font-semibold" to="/completion/new-project">{t('new_completion_project_page.title')}</Link>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </Nav>
   );
 };
 

@@ -1,10 +1,11 @@
 // import styled from '@emotion/styled'
 
 import { Helmet } from 'react-helmet'
-import { MainContainer, NavLocation, Ul } from '../../App'
+import { MainContainer, NavLocation } from '../../App'
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 export default function OrganisationPage() {
   const { t } = useTranslation()
@@ -23,7 +24,7 @@ export default function OrganisationPage() {
     <h2>{t('organisation_page.po.title')}</h2>
     <p>
       {t('organisation_page.po.intro')}
-      <Ul>
+      <ul>
         <li>{t('organisation_page.po.one')}</li>
         <li>{t('organisation_page.po.two')}</li>
         <li>{t('organisation_page.po.three')}</li>
@@ -31,28 +32,29 @@ export default function OrganisationPage() {
         <li>{t('organisation_page.po.five')}</li>
         <li>{t('organisation_page.po.six')}</li>
         <li>{t('organisation_page.po.seven')}</li>
-      </Ul>
+      </ul>
     </p>
 
     <h2>{t('organisation_page.itkom.title')}</h2>
     <p>
-      <Ul>
+      <ul>
         <li>{t('organisation_page.itkom.one')}</li>
         <li>{t('organisation_page.itkom.two')}</li>
         <li>{t('organisation_page.itkom.three')}</li>
         <li>{t('organisation_page.itkom.four')}</li>
         <li>{t('organisation_page.itkom.five')}</li>
-      </Ul>
+      </ul>
     </p>
 
     <h2>{t('organisation_page.vl.title')}</h2>
     <p>
-      <Ul>
+      <ul>
         <li>{t('organisation_page.vl.one')}</li>
         <li>{t('organisation_page.vl.two')}</li>
         <li>{t('organisation_page.vl.three')}</li>
         <li>{t('organisation_page.vl.four')}</li>
-      </Ul>
+      </ul>
     </p>
+    <Link to="/it-guidelines">{t('back')}</Link>
   </MainContainer>
 }

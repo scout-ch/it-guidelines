@@ -97,7 +97,7 @@ function Footer() {
         <Logo><PBSLogo></PBSLogo></Logo>
         <ul>
           <li>
-            <Button className={lang === 'de' ? 'active' : ''} onClick={() => changeLanguage('de')}>Deutsch</Button>
+            <Button className={lang === 'de' ? 'active' : ''} onClick={() => changeLanguage('de')}>Deutsch</Button>&nbsp;
             <Button className={lang === 'fr' ? 'active' : ''} onClick={() => changeLanguage('fr')}>Français</Button>
           </li>
         </ul>

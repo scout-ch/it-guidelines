@@ -1,10 +1,11 @@
 // import styled from '@emotion/styled'
 
 import { Helmet } from 'react-helmet'
-import { MainContainer, NavLocation, Ol } from '../../App'
+import { MainContainer, NavLocation } from '../../App'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from 'react-i18next'
 import { faScroll } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 export default function PrinciplesPage() {
   const { t } = useTranslation()
@@ -17,7 +18,7 @@ export default function PrinciplesPage() {
   
     <h1><FontAwesomeIcon icon={faScroll} /> {t('principles_page.title')}</h1>
     <p>
-      <Ol>
+      <ol>
         <li>{t('principles_page.one')}</li>
         <li>{t('principles_page.two')}</li>
         <li>{t('principles_page.three')}</li>
@@ -43,7 +44,8 @@ export default function PrinciplesPage() {
             <li>{t('principles_page.eleven.two')}</li>
           </ul>
         </li>
-      </Ol>
+      </ol>
     </p>
+    <Link to="/it-guidelines">{t('back')}</Link>
   </MainContainer>
 }

@@ -1,10 +1,11 @@
 // import styled from '@emotion/styled'
 
 import { Helmet } from 'react-helmet'
-import { MainContainer, NavLocation, Ul } from '../../App'
+import { MainContainer, NavLocation } from '../../App'
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLock } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 export default function SecurityPage() {
   const { t } = useTranslation()
@@ -17,7 +18,7 @@ export default function SecurityPage() {
   
     <h1><FontAwesomeIcon icon={faLock} /> {t('security_page.title')}</h1>
     <p>
-      <Ul>
+      <ul>
         <li>{t('security_page.one')}</li>
         <li>{t('security_page.two')}</li>
         <li>{t('security_page.three')}</li>
@@ -28,7 +29,8 @@ export default function SecurityPage() {
         <li>{t('security_page.eight')}</li>
         <li>{t('security_page.nine')}</li>
         <li>{t('security_page.ten')}</li>
-      </Ul>
+      </ul>
     </p>
+    <Link to="/it-guidelines">{t('back')}</Link>
   </MainContainer>
 }
