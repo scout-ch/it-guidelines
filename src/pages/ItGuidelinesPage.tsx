@@ -33,8 +33,8 @@ export default function ItGuidelinesPage() {
       <div>
         <h3>{t('it_guidelines_page.downloads')}</h3>
         <ul>
-            <li><A href={process.env.PUBLIC_URL + '/docs/guidelines_de.pdf'} download>Richtlinien DE</A></li>
-            <li><A href={process.env.PUBLIC_URL + '/docs/guidelines_fr.pdf'} download>Lignes directrices FR</A></li>
+            <li><A href={'/docs/guidelines_de.pdf'} download>Richtlinien DE</A></li>
+            <li><A href={'/docs/guidelines_fr.pdf'} download>Lignes directrices FR</A></li>
         </ul>
       </div>
     </Box>

@@ -31,10 +31,10 @@ export default function DigitalisationPage() {
       <div>
         <h3>{t('digitalisation_page.downloads')}</h3>
         <ul>
-          <li><A href={process.env.PUBLIC_URL + '/docs/MerkblattGrundsätzederDigitalisierung.pdf'} download>Merkblatt DE</A></li>
-          <li><A href={process.env.PUBLIC_URL + '/docs/MerkblattGrundsätzederDigitalisierung_FR.pdf'} download>Fiche d’information principes de la numérisation FR</A></li>
-          <li>{t('digitalisation_page.media_description')} <br/><A href={process.env.PUBLIC_URL + '/docs/BeschreibungMedien.pdf'} download>Beschreibung Medien DE</A>
-          <br/><A href={process.env.PUBLIC_URL + '/docs/BeschreibungMedien_FR.pdf'} download>Description des médias FR</A></li>
+          <li><A href={'/docs/MerkblattGrundsätzederDigitalisierung.pdf'} download>Merkblatt DE</A></li>
+          <li><A href={'/docs/MerkblattGrundsätzederDigitalisierung_FR.pdf'} download>Fiche d’information principes de la numérisation FR</A></li>
+          <li>{t('digitalisation_page.media_description')} <br/><A href={'/docs/BeschreibungMedien.pdf'} download>Beschreibung Medien DE</A>
+          <br/><A href={'/docs/BeschreibungMedien_FR.pdf'} download>Description des médias FR</A></li>
         </ul>
       </div>
     </Box>
