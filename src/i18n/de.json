@@ -182,8 +182,68 @@
       "content": "Inhalt",
       "downloads": "Hilfsblatt herunterladen"
     },
-    "new_completion_project_page": {
-      "title": "Fragebogen"
+    "new_project_completion_page": {
+      "title": "Fragebogen",
+      "result": {
+        "hints": {
+          "title": "ToDo",
+          "defaults": {
+            "contact_itkom": "Kontaktiere die IT-Kommission, damit das Tool in der IT-Landschaft aktualisiert werden kann.",
+            "fill_concept": "Fülle das Betriebskonzept aus un reiche es ein, eine Vorlage findest du im Downloadbereich."
+          }
+        },
+        "answers": {
+          "title": "Deine Antworten"
+        }
+      },
+      "questions": {
+        "next": "weiter",
+        "landscape": {
+          "text": "Ist das Tool bereits in der IT-Landaschaft dokumentiert?",
+          "responses": {
+            "yes": "Ja",
+            "no": "Nein"
+          },
+          "landscape_no": "Das Tool ist nicht in der IT-Landschaft dokumentiert. Bitte kontaktiere die IT-Kommission, damit das Tool in der IT-Landschaft aufgenommen werden kann"
+        },
+        "roles": {
+          "text": "Welche Rollen sind für das Tool definiert?",
+          "responses": {
+            "po": "Product Owner",
+            "technical_contact": "Technischer Kontakt",
+            "content_management": "Content Management"
+          }
+        },
+        "artifacts": {
+          "text": "Welche Artefakte sind für das Tool erstellt worden?",
+          "responses": {
+            "documentation": "Dokumentation / Architektur",
+            "passwords": "Passwörter / Zugriffe",
+            "code": "Sourcecode",
+            "api_documentation": "API Dokumentation",
+            "specifications": "Spezifikationen"
+          }
+        },
+        "budget": {
+          "text": "Sind die laufenden Kosten für den Betrieb des Tools geklärt?",
+          "responses": {
+            "no_costs": "Es fallen keine Kosten an",
+            "yes_defined": "Ja, es sind alle Kosten definiert",
+            "not_defined": "Weiss nicht, ob es Kosten gibt"
+          },
+          "budget_no_costs": "Keine Kosten? Bitte prüf dies nochmals",
+          "budget_yes_defined": "Super, die Kosten sind definiert. Bitte stelle sicher, dass diese auch im Budget der PBS berücksichtigt werden.",
+          "budget_not_defined": "Bitte kläre die Kosten ab, damit die PBS sie für den Betrieb des Tools berücksichtigen kann."
+        },
+        "tasks": {
+          "text": "Welche Aufgaben fallen an, um das Tool zu betreiben und zu unterhalten?",
+          "responses": {
+            "none": "Es gibt keine Aufgaben",
+            "still_open": "Weiss nicht, ob es Aufgaben gibt",
+            "defined": "Ja, es sind alle Aufgaben definiert"
+          }
+        }
+      }
     },
     "principles_page": {
       "title": "Prinzipien",

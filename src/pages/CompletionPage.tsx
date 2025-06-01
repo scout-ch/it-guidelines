@@ -28,7 +28,7 @@ export default function CompletionPage() {
     <h1>{t('completion_page.title')}</h1>
     <p>{t('completion_page.introduction')}</p>
     <Infobox>
-      <Link to="/completion/tbd">{t('completion_page.complete_project')}</Link>
+      <Link to="/completion/new-project">{t('completion_page.complete_project')}</Link>
     </Infobox>
     
     <div>

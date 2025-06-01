@@ -1,0 +1,126 @@
+{
+  "questions": [
+    {
+      "index": 0,
+      "key": "landscape",
+      "responses": [
+        {
+          "key": "no",
+          "result_hint_key": "landscape_no",
+          "next_question": null,
+          "clippy_variant": "angry",
+          "tools": [],
+          "kills": []
+        },
+        {
+          "key": "yes",
+          "next_question": 1,
+          "tools": [],
+          "kills": []
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "key": "roles",
+      "multiple_choice": true,
+      "responses": [
+        {
+          "key": "po",
+          "tools": [],
+          "kills": []
+
+        },
+        {
+          "key": "technical_contact",
+          "tools": [],
+          "kills": []
+        },
+        {
+          "key": "content_management",
+          "tools": [],
+          "kills": []
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "key": "artifacts",
+      "multiple_choice": true,
+      "responses": [
+        {
+          "key": "documentation",
+          "tools": [],
+          "kills": []
+        },
+        {
+          "key": "passwords",
+          "tools": [],
+          "kills": []
+        },
+        {
+          "key": "code",
+          "tools": [],
+          "kills": []
+        },
+        {
+          "key": "specifications",
+          "tools": [],
+          "kills": []
+        },
+        {
+          "key": "api_documentation",
+          "tools": [],
+          "kills": []
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "key": "budget",
+      "responses": [
+        {
+          "key": "no_costs",
+          "result_hint_key": "budget_no_costs",
+          "tools": [],
+          "kills": []
+        },
+        {
+          "key": "yes_defined",
+          "result_hint_key": "budget_yes_defined",
+          "tools": [],
+          "kills": []
+        },
+        {
+          "key": "not_defined",
+          "result_hint_key": "budget_not_defined",
+          "tools": [],
+          "kills": []
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "key": "tasks",
+      "responses": [
+        {
+          "key": "none",
+          "result_hint_key": "tasks_none",
+          "tools": [],
+          "kills": []
+        },
+        {
+          "key": "still_open",
+          "result_hint_key": "tasks_still_open",
+          "tools": [],
+          "kills": []
+        },
+        {
+          "key": "defined",
+          "tools": [],
+          "kills": []
+        }
+      ]
+    }
+  ]
+}
