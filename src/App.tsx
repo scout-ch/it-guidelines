@@ -150,7 +150,7 @@ const Header = () => {
             </button>
             <div className={"dropdown-menu absolute bg-gray-700 text-white rounded-b-lg pb-2 w-51 hidden z-10"}>
               <Link onClick={closeDropdown} className="block px-6 py-2 hover:font-semibold" to="/completion">{t('completion_page.title')}</Link>
-              <Link onClick={closeDropdown} className="block px-6 py-2 hover:font-semibold" to="/completion/new-project">{t('new_completion_project_page.title')}</Link>
+              <Link onClick={closeDropdown} className="block px-6 py-2 hover:font-semibold" to="/completion/new-project">{t('new_project_completion_page.title')}</Link>
             </div>
           </div>
           

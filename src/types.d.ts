@@ -30,7 +30,8 @@ export interface Question {
 
 export interface Response {
   key: string
+  result_hint_key?: string
   tools: string[]
   kills: string[]
-  next_question?: number
+  next_question?: number | null
 }

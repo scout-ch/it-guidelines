@@ -8,12 +8,12 @@ import { Button, ButtonContainer } from '../HomePage';
 import questionJson from './../../questions.json';
 import styled from '@emotion/styled';
 
-type State = {
+export type State = {
   currentSlide: string;
   clippyVariant: "" | "focus" | "rolleye" | 'angry';
 }
 
-const Checkbox = styled.input`
+export const Checkbox = styled.input`
     margin-right: 10px
 `
 
@@ -260,7 +260,8 @@ export default function NewDigitalisationProjectPage() {
     </Helmet>
     <h1>{t('new_project_digitalisation_page.title')}</h1>
     <ClippyStage variant={state.clippyVariant}>
-      {showScore ? <div className='score-section'>
+      {showScore ? 
+      <div className='score-section'>
         <h2>{t("new_project_digitalisation_page.evaluation.title")}</h2>
         <p>{t("new_project_digitalisation_page.evaluation.explanation")}</p>
         <ButtonContainer>

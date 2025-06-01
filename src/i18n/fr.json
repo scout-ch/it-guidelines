@@ -182,8 +182,68 @@
       "content": "Contenu",
       "downloads": "# Hilfsblatt herunterladen"
     },
-    "new_completion_project_page": {
-      "title": "# Fragebogen"
+    "new_project_completion_page": {
+      "title": "Questionnaire",
+      "result": {
+        "hints": {
+          "title": "À faire",
+          "defaults": {
+            "contact_itkom": "Contacte la Commission IT pour que l’outil soit mis à jour dans le paysage IT.",
+            "fill_concept": "Remplis le concept d’exploitation et soumets-le, un modèle se trouve dans la zone de téléchargement."
+          }
+        },
+        "answers": {
+          "title": "Tes réponses"
+        }
+      },
+      "questions": {
+        "next": "suivant",
+        "landscape": {
+          "text": "L’outil est-il déjà documenté dans le paysage IT ?",
+          "responses": {
+            "yes": "Oui",
+            "no": "Non"
+          },
+          "landscape_no": "L’outil n’est pas documenté dans le paysage IT. Merci de contacter la Commission IT pour qu’il soit intégré."
+        },
+        "roles": {
+          "text": "Quelles sont les rôles définis pour l’outil ?",
+          "responses": {
+            "po": "Product Owner",
+            "technical_contact": "Contact technique",
+            "content_management": "Gestion du contenu"
+          }
+        },
+        "artifacts": {
+          "text": "Quels artefacts ont été créés pour l’outil ?",
+          "responses": {
+            "documentation": "Documentation / Architecture",
+            "passwords": "Mots de passe / Accès",
+            "code": "Code source",
+            "api_documentation": "Documentation API",
+            "specifications": "Spécifications"
+          }
+        },
+        "budget": {
+          "text": "Les coûts d’exploitation de l’outil sont-ils clarifiés ?",
+          "responses": {
+            "no_costs": "Aucun coût",
+            "yes_defined": "Oui, tous les coûts sont définis",
+            "not_defined": "Je ne sais pas s’il y a des coûts"
+          },
+          "budget_no_costs": "Aucun coût ? Merci de vérifier à nouveau.",
+          "budget_yes_defined": "Super, les coûts sont définis. Merci de t’assurer qu’ils sont pris en compte dans le budget du MSdS.",
+          "budget_not_defined": "Merci de clarifier les coûts afin que le MSdS puisse les prendre en compte pour l’exploitation de l’outil."
+        },
+        "tasks": {
+          "text": "Quelles tâches sont nécessaires pour exploiter et entretenir l’outil ?",
+          "responses": {
+            "none": "Aucune tâche",
+            "still_open": "Je ne sais pas s’il y a des tâches",
+            "defined": "Oui, toutes les tâches sont définies"
+          }
+        }
+      }
     },
     "principles_page": {
       "title": "Principes",
