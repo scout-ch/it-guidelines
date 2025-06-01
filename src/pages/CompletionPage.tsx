@@ -1,15 +1,25 @@
 // import styled from '@emotion/styled'
 
 import { Helmet } from 'react-helmet'
-import { A, Box, Infobox, MainContainer } from '../App'
+import { Box, Infobox, MainContainer } from '../App'
 import { useTranslation } from 'react-i18next'
 import {
   Link,
 } from "react-router-dom";
+import ReactMarkdown from 'react-markdown';
+import { useEffect, useState } from 'react';
+import completionContentDe from './completion/completion-content.de.md?raw';
+import completionContentFr from './completion/completion-content.fr.md?raw';
+import i18n from '../i18n';
 
 
 export default function CompletionPage() {
   const { t } = useTranslation()
+  const [markdown, setMarkdown] = useState(i18n.language === 'fr' ? completionContentFr : completionContentDe);
+
+  useEffect(() => {
+    setMarkdown(i18n.language === 'fr' ? completionContentFr : completionContentDe);
+  }, [i18n.language]);
 
   return <MainContainer>
   <Helmet>
@@ -20,42 +30,17 @@ export default function CompletionPage() {
     <Infobox>
       <Link to="/completion/tbd">{t('completion_page.complete_project')}</Link>
     </Infobox>
-    <p>
-      Die vorliegenden Grundsätze fokussieren sich auf folgende zentrale Aspekte des Abschlusses von IT-Projekten: 
-      <ul>
-        <li>Leitlinien zur Sicherstellung der im Projekt erstellten Artefakte</li>
-        <li>Diese Leitlinien definieren, wie sicherzustellen ist, dass alle erstellten Dokumentationen, Quellcodes, technischen Spezifikationen und weiteren Projektergebnisse vollständig und in geeigneter Form verfügbar bleiben. Dies umfasst sowohl die ordnungsgemäße Archivierung als auch den Zugriff durch berechtigte Parteien. </li>
-        <li>Wissenssicherung und Übergabe in den Betrieb</li>
-        <li>Gewährleistung eines sicheren Betriebes der Lösung</li>
-      </ul>
-
-      Ein erfolgreicher Projektabschluss erfordert eine umfassende Wissensübergabe an den Betrieb. Hierbei ist sicherzustellen, dass alle relevanten Projektbeteiligten, insbesondere die Betriebsteams, über das notwendige Wissen zur fortlaufenden Wartung und Weiterentwicklung
-    </p>
+    
     <div>
-      <h2>{t('completion_page.content')}</h2>
-      <ul>
-        <li>Allgmeines</li>
-        <ul>
-          <li>Lifecycle-Überlegungen</li>
-          <li>Stakeholder</li>
-          <li>Spezifische Rollen definieren</li>
-        </ul>
-        <li>Betrieb</li>
-        <ul>
-          <li>Betriebskosten Budget / Ressourcen klären</li>
-          <li>Wartungskosten Budget</li>
-          <li>Sicherheit / Geschäftskritikalität</li>
-        </ul>
-        <li>Organisatorisches</li>
-      </ul>
+      <ReactMarkdown>{markdown}</ReactMarkdown>
     </div>
 
     <Box>
       <div>
         <h3>{t('completion_page.downloads')}</h3>
         <ul>
-          <li><A href={'/docs/guidelines_de.pdf'} download>Hilfsblatt DE</A></li>
-          <li><A href={'/docs/guidelines_fr.pdf'} download>Lignes directrices FR</A></li>
+          {/* <li><A href={'/docs/guidelines_de.pdf'} download>Hilfsblatt DE</A></li>
+          <li><A href={'/docs/guidelines_fr.pdf'} download>Lignes directrices FR</A></li> */}
         </ul>
       </div>
     </Box>
